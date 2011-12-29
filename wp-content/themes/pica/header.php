@@ -1,13 +1,25 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Free Land In Maine</title>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>Pica Design LLC</title>
         <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/style.css" />
+        
+    <!--IE SHIV-->
+            <!-- Internet Explorer HTML5 enabling code: -->        
+            <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <style type="text/css">
+            .clear {
+              zoom: 1;
+              display: block;
+            }
+            </style>
+            <![endif]-->
         <?php wp_head() ?>
     </head>
-    
+   
     <body>
-    	<div id="Site-Wrapper">
-        	<div id="Masthead">
-            </div><!-- END MASTHEAD -->
+            <nav>
+            </nav><!--end navigation bar-->
+			<div id="wrapper"> <!--site wrapper-->

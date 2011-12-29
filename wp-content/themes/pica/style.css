@@ -1,0 +1,142 @@
+	/*   
+		Theme Name: Pica Blank Theme
+		Description: Blank themebase for beginning development on client website themes
+		Author: Pica Design, LLC
+		Author URI: http://www.picadesign.com
+		Tags: Blank, Pica, Theme
+	*/
+/* Color Pallett
+#FFF -- White
+
+*/	
+	
+	/* ADMIN TEXT EDITOR STYLES ARE DECLARED WITHIN editor-style.css so they can be added to the WP WYSIWIG Editor */
+	@import "editor-style.css";
+	
+	/*--------------------------------------------------------------
+		CSS RESET
+		http://meyerweb.com/eric/tools/css/reset/ 
+		v2.0 | 20110126
+		License: none (public domain)
+	--------------------------------------------------------------*/
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+			}
+			
+	/**********************************************
+	
+		HTML DECLARATIONS 
+	*/
+	html {
+		height:100%;
+		margin: 0px ;
+		padding: 0px ;
+	}
+		body {
+			margin: 0px ;
+			font-family: Arial, Helvetica, sans-serif ;
+			font-size: 14px ;
+			background-color:#fff;
+			height:100%;
+		}
+			
+			/*
+			
+				LINK & HEADER STYLES ARE LOCATED IN editor-style.css
+			
+			*/
+				a img {
+					border: 0px ;
+				}
+		
+	
+	/**********************************************
+	
+		ADD WEBSITE LAYOUT DECLARATIONS HERE
+	*/
+	
+	#wrapper{
+		width:100%;
+		position:relative;
+		margin:0 auto 0 auto;
+		overflow:visible;
+		background-color:white;
+	}
+		header,footer,
+		contentblock,section,
+		hgroup,figure, nav{
+			display:block;
+		}
+			
+/*-------Navigation-------*/
+		nav, nav a{
+			background-color:#ccc;
+			width:100%;	
+			height:40px;
+		}
+/*-------Portfolio Page---*/
+		#contentwrapper{
+			margin:28px;
+			height:1000px;
+		}
+			#contentblock{
+				width:1200px;
+				position:relative;			
+				min-height:900px;
+				background-color:#FCC;
+			}
+				.contentblock{
+					border:2px white dashed;
+					float:left;
+					margin:28px 28px 0 0;
+					height:244px;
+					width:360px;
+					display:block;
+					position:relative;
+				}
+/*-------Footer-------*/
+	footer{
+		position: relative;
+		margin-top: -45px; /* negative value of footer height */
+		height: 85px;
+		clear:both;
+		bottom:0;
+		text-align:left;
+		font-size:small;
+		background-color:#32379d;
+	}
+			#footer-text{
+				width:900px;
+				margin:0 auto 0 auto;
+			}
+				footer p{ /*small text for footer sitemap*/
+					padding-top:25px;
+					font-size:12px;	
+					text-align:left;
+				}
