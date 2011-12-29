@@ -85,10 +85,24 @@
 		nav, nav a{
 			background-color:#ccc;
 			width:100%;	
-			height:40px;
+			min-height:40px;
 			color:white;
 		}
+			.navcontainer{
+				padding:10px 40px 10px 10px;
+			}
+				.menu{
+						
+				}
+			.hidden>div {display:none;}
+ 			.visible>div {display:block;}
+			
+					/*.show{display: none; }
+					.hide:focus + .show {display: inline; }
+					.hide:focus { display: none; }
+					.hide:focus ~ #list { display:none; }
 /*-------Portfolio Page---*/
+				
 		#contentwrapper{
 			margin:28px;
 			height:1000px;
