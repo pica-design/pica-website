@@ -1,15 +1,37 @@
 <?php
 
-	/* Wordpress Hook / Function Overrides */
-
-	// This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Masthead Navigation', 'FreeLandInMaine' ),
-		'secondary' => __( 'Footer Navigation', 'FreeLandInMaine' ),
-	) );
+	/* Wordpress Hook / Function Overrides */	
+	add_action( 'init', 'pica_Setup' );
+		
+		//Adding thumbnail images into Posts
+		add_theme_support( 'post-thumbnails', array( 'portfolio'));
+			set_post_thumbnail_size( 360, 244, false ); // Normal post thumbnails
+				add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size
+				
+				
+	function pica_Setup() {
+		// This theme styles the visual editor with editor-style.css to match the theme style.
+		add_editor_style();
+				
+				
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menu( 'primary', __( 'Primary Menu', 'pica' ) );
+		
+//Custom post types
+		//creates PORTFOLIO post type
+		register_post_type( 'portfolio',
+			array(
+				'labels' => array(
+					'name' => __( 'Portfolio' ),
+					'singular_name' => __( 'Portfolio' )
+				),
+			'public' => true,
+			'supports' => array('title','editor','thumbnail')
+			//'has_archive' => true
+			)	
+		);
+	
+	}
 	
 	/*-----------------------------------
 	
