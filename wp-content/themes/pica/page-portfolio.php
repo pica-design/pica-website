@@ -9,18 +9,22 @@
                     	<h1>Page Title</h1>
                         <hr>
                         	<div id="portfoliowrapper">
-								<?php foreach ($gallery['images'] as $image) : ?>				
+								<!--<?php //foreach ($gallery['images'] as $image) : ?>				
 
-                            <img src="<?php bloginfo('url') ?>/<?php echo $gallery['path'] ?>/<?php echo $image['filename'] ?>" alt="<?php echo $image['alttext'] ?>" class="contentblock shadow">
-                        <?php endforeach ?>
+                            <img src="<?php //bloginfo('url') ?>/<?php //echo $gallery['path'] ?>/<?php //echo $image['filename'] ?>" alt="<?php //echo $image['alttext'] ?>" class="contentblock shadow">
+                        <?php //endforeach ?>-->
                  			</div>		
-                <?php
-					if (have_posts()) :
-						while (have_posts()) : the_post();
-							the_content();
-						endwhile;
-					endif;
-				?>
+
+				<br />
+				<?php 
+					$loop = new WP_Query( array( 'post_type' => 'portfolio') );
+					while ( $loop->have_posts() ) : $loop->the_post();
+						//the_title();
+						the_content();
+						the_post_thumbnail();
+					
+					endwhile;
+                ?>
                             <!--<div id="portfoliowrapper">
                             
                             		<div class="contentblock"></div>

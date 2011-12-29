@@ -5,8 +5,7 @@
 		
 		//Adding thumbnail images into Posts
 		add_theme_support( 'post-thumbnails', array( 'portfolio'));
-			set_post_thumbnail_size( 360, 244, false ); // Normal post thumbnails
-				add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size
+			set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
 				
 				
 	function pica_Setup() {
@@ -30,7 +29,14 @@
 			//'has_archive' => true
 			)	
 		);
-	
+		register_taxonomy('type', 'portfolio',
+			array(
+				'hierarchical' => true,
+				'label' => 'Portfolio Categories',	// the human-readable taxonomy name
+				'query_var' => true,	// enable taxonomy-specific querying
+				'rewrite' => array( 'slug' => 'portfolio-categories'),	// pretty permalinks for your taxonomy?
+			)
+		);
 	}
 	
 	/*-----------------------------------
