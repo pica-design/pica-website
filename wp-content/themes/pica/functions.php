@@ -67,7 +67,7 @@
 				}
 				//Render the contents of our meta box
 				public function render_gallery_meta_box_content () {
-					global $post;
+					global $post, $wpdb;
 					//Define the meta box output
 					$galleries = $wpdb->get_results("SELECT * FROM wp_ngg_gallery");
 					$selectedGallery = get_post_meta($post->ID, 'gallery', true);
@@ -97,9 +97,11 @@
 						update_post_meta($post_id, 'gallery', $_POST['gallery']);
 					endif;
 				}
-			}	
-	/*-----------------------------------
+			}//END gallery_selection class
 	
+	
+	/*-----------------------------------
+		GET A NEXTGEN IMAGE GALLERY IN ARRAY FORMAT
 		PRE: Expects an INT representing the ID of the gallery you wish to select
 		POST: Returns a Multi-Dimensional Array containing all information about the gallery in question
 				+ Includes all gallery sort order
