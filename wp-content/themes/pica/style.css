@@ -106,13 +106,10 @@
 			height:1000px;
 		}
 			#portfoliowrapper{
-				width:1200px;
+				width:1280px;
 				position:relative;			
-				min-height:900px;
-				background-color:#FCC;
 			}
 				.contentblock{
-					border:2px white dashed;
 					float:left;
 					margin:28px 28px 0 0;
 					height:244px;
@@ -120,6 +117,13 @@
 					display:block;
 					position:relative;
 				}
+/*-------Pretty Styles---*/
+		.shadow{
+			box-shadow: 0px 0px 5px #999;
+			-moz-box-shadow: 0px 5px #999;
+			-webkit-box-shadow: 0px 0px 5px #999;
+			border:1px solid #ccc;
+		}
 /*-------Footer-------*/
 	footer{
 		position: relative;
