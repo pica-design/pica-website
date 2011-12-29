@@ -45,6 +45,7 @@ h1, h2, h3, h4 {
 	font-weight: normal ;
 	margin: 0px 0px 10px 0px ;
 	font-family: 'DINNextLTPro';
+	color:#000;
 }
 h1 strong, h2 strong, h3 strong, h4 strong {
 	font-family: 'DINNextLTProMedium';
@@ -63,11 +64,15 @@ h1 strong, h2 strong, h3 strong, h4 strong {
 	}
 P {
 	margin-top: 0px ;
-	color: rgb(114,114,114) ;
+	color: #333;
 }
 a {
-	color: rgb(122,193,66) ;
+	color:#06C;
 	text-decoration: none ;
 	outline: none ;
 	font-size: 14px ;
+}
+hr{
+	border:1px solid #ccc;
+	height:0;
 }

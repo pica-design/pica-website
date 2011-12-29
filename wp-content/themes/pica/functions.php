@@ -1,22 +1,21 @@
 <?php
 
 	/* Wordpress Hook / Function Overrides */	
-	add_action( 'init', 'pica_Setup' );
+	add_action( 'init', 'pica_theme_setup' );
 		
 		//Adding thumbnail images into Posts
 		add_theme_support( 'post-thumbnails', array( 'portfolio'));
 			set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
 				
 				
-	function pica_Setup() {
+	function pica_theme_setup() {
 		// This theme styles the visual editor with editor-style.css to match the theme style.
-		add_editor_style();
-				
+		add_editor_style();		
 				
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menu( 'primary', __( 'Primary Menu', 'pica' ) );
 		
-//Custom post types
+		//Custom post types
 		//creates PORTFOLIO post type
 		register_post_type( 'portfolio',
 			array(
@@ -38,7 +37,9 @@
 			)
 		);
 	}
-//Display a custom meta box on the cpt 'Portfolio' posts 
+	
+	
+	//Display a custom meta box on the cpt 'Portfolio' posts 
 	if (is_admin()) {
 		add_action ('load-post.php', 'add_page_meta_gallery_selection');
 	}
