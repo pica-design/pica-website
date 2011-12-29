@@ -1,0 +1,151 @@
+/* Color Pallett
+#FFF -- White
+
+*/
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+/* The clearfix hack to clear the floats: */
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+/*-------Framework-------*/
+html {
+	height:100%;	
+}
+	body{
+		/* Setting the default text color, size, page background and a font stack: */
+		font-size:12px;
+		background-color:#fff;
+		font-family:Arial, Helvetica, sans-serif;
+		height:100%;
+	}
+
+/*-------PTop-Content-------*/
+		#wrapper{
+			width:100%;
+			position:relative;
+			margin:0 auto 0 auto;
+			overflow:visible;
+			background-color:white;
+			}
+				header,footer,
+				contentblock,section,
+				hgroup,figure, nav{
+					display:block;
+				}
+/*-------Navigation-------*/
+			nav, nav a{
+				background-color:#ccc;
+				width:100%;	
+				height:40px;
+			}
+/*-------PTop-Content-------*/
+/*-------Content-------*/
+			h1{
+				font-size:36px;
+				color:#000;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+			hr{
+				color:#000;
+				border:8px solid black;
+				width:100%;
+			}
+#contentwrapper{
+	margin:28px;
+	height:1000px;
+}
+	#contentblock{
+		width:1200px;
+		position:relative;
+		
+		min-height:900px;
+		background-color:#FCC;
+	}
+	.contentblock{
+		border:2px white dashed;
+		float:left;
+		margin:28px 28px 0 0;
+		height:244px;
+		width:360px;
+		display:block;
+		position:relative;
+	}
+
+@media (max-width:1164px){
+#contentwrapper{
+	margin:1.75%;
+	height:1000px;
+}
+	#contentblock{
+		width:100%;
+		position:relative;
+		height:1600px;
+		background-color:#6CF;
+	}
+	.contentblock{
+		margin:1.75% 1.75% 0 0;
+		width:46%;
+		height:15%;
+		display:block;
+		position:relative;
+		float:left;
+		border:2px white dashed;
+	}		
+}
+@media (max-width:400px){
+#contentwrapper{
+	margin:1.75%;
+	height:1000px;
+}
+	#contentblock{
+		width:100%;
+		position:relative;
+		height:1000px;
+		background-color:#9F9;
+	}
+	.contentblock{
+		margin:1.75% 1.75% 0  0;
+		width:100%;
+		height:15%;
+		display:block;
+		position:relative;
+		float:left;
+		border:2px white dashed;
+	}		
+}
+/*-------Footer-------*/
+footer{
+	position: relative;
+	margin-top: -45px; /* negative value of footer height */
+	height: 85px;
+	clear:both;
+	bottom:0;
+	text-align:left;
+	font-size:small;
+	background-color:#32379d;
+}
+		#footer-text{
+			width:900px;
+			margin:0 auto 0 auto;
+		}
+			footer p{ /*small text for footer sitemap*/
+				padding-top:25px;
+				font-size:12px;	
+				text-align:left;
+			}

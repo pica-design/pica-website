@@ -1,0 +1,26 @@
+H1, H2, H3, H4 {
+	font-weight: normal ;
+	margin: 0px 0px 10px 0px ;
+}
+	H1 {
+		font-size: 58px ;
+	}
+	H2 {
+		font-size: 22px ;
+	}
+	H3 {
+		font-size: 18px ;
+	}
+	H1 A, H2 A, H3 A {
+		font-size: 14px ;
+	}
+P {
+	margin-top: 0px ;
+	color: rgb(114,114,114) ;
+}
+A {
+	color: rgb(122,193,66) ;
+	text-decoration: none ;
+	outline: none ;
+	font-size: 14px ;
+}
