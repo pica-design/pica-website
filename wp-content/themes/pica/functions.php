@@ -38,7 +38,65 @@
 			)
 		);
 	}
-	
+//Display a custom meta box on the cpt 'Portfolio' posts 
+	if (is_admin()) {
+		add_action ('load-post.php', 'add_page_meta_gallery_selection');
+	}
+		//Add a nextgen gallery selection meta box to pages
+		function add_page_meta_gallery_selection () {
+			return new gallery_selection ();
+		}
+			//Class controller for adding a ngg gallery selection meta box to pages
+			class gallery_selection {
+				//Initilize our meta box class
+				public function __construct () {
+					add_action('add_meta_boxes', array(&$this, 'add_meta_boxes'));
+					add_action('save_post', array(&$this, 'save_meta_box_data'));
+				}
+				//Add the meta box
+				public function add_meta_boxes () {
+					add_meta_box(
+						'Gallery Picker',
+						__( 'Attach a Gallery'),
+						array( &$this, 'render_gallery_meta_box_content'),
+						'portfolio',
+						'side',
+						'default'
+					);
+				}
+				//Render the contents of our meta box
+				public function render_gallery_meta_box_content () {
+					global $post;
+					//Define the meta box output
+					$galleries = $wpdb->get_results("SELECT * FROM wp_ngg_gallery");
+					$selectedGallery = get_post_meta($post->ID, 'gallery', true);
+					
+					?><select name="gallery"><option value=""></option><?php
+					foreach ($galleries as $key => $gallery) :
+						if ($gallery->gid == $selectedGallery) : $active = "selected='selected'"; 
+						else : $active = ""; endif ;
+						?><option value="<?php echo $gallery->gid ?>" <?php echo $active ?>><?php echo $gallery->title ?></option><?php
+					endforeach;
+					?>
+						</select>
+						<div style="margin-top: 8px ;">
+							<a href="<?php bloginfo('url') ?>/wp-admin/admin.php?page=nggallery-add-gallery">
+								Create new gallery
+							</a>
+						</div>
+					<?php
+				}
+				
+				//Store the meta box data
+				public function save_meta_box_data ($post_id) {
+					global $post;
+					//Ensure we're only saving meta data for the published post and not a revision
+					if ($post->ID == $post_id) :
+						//Save the meta data
+						update_post_meta($post_id, 'gallery', $_POST['gallery']);
+					endif;
+				}
+			}	
 	/*-----------------------------------
 	
 		PRE: Expects an INT representing the ID of the gallery you wish to select

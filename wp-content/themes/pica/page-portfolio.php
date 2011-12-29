@@ -6,7 +6,7 @@
 	$gallery = getGallery(1);
 ?>
                    <div id="contentwrapper">
-                    	<h1>Page Title</h1>
+                    	<h1>work</h1>
                         <hr>
                         	<div id="portfoliowrapper">
 								<!--<?php //foreach ($gallery['images'] as $image) : ?>				
@@ -20,9 +20,14 @@
 					$loop = new WP_Query( array( 'post_type' => 'portfolio') );
 					while ( $loop->have_posts() ) : $loop->the_post();
 						//the_title();
-						the_content();
-						the_post_thumbnail();
-					
+						//the_content();
+						echo "<a href='";
+						echo bloginfo('url');
+						echo "/";
+						echo $gallery['path'];
+						echo "'>";
+							the_post_thumbnail();
+						echo "</a>";
 					endwhile;
                 ?>
                             <!--<div id="portfoliowrapper">
