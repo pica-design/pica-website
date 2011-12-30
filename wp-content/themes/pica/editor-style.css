@@ -73,6 +73,6 @@ a {
 	font-size: 14px ;
 }
 hr{
-	border:1px solid #ccc;
+	border: 1px dashed #999 ;
 	height:0;
 }

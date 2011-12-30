@@ -45,7 +45,7 @@
 			margin: 0px ;
 			font-family: Arial, Helvetica, sans-serif ;
 			font-size: 14px ;
-			background-color: #fff ;
+			background-color: #dddddd ;
 			height: 100% ;
 		}
 			
@@ -63,48 +63,106 @@
 	
 		ADD WEBSITE LAYOUT DECLARATIONS HERE
 	*/
-	
-	#wrapper {
-		width: 100% ;
+	#site-wrapper {
 		position: relative ;
-		margin: 0 auto 0 auto ;
-		overflow: visible ;
-		background-color: white ;
+		min-height: 100% ;
 	}
+	
+	
 
 		/*-------Navigation-------*/
-		nav {
-			background-color: #ccc ;
+		#site-controller {
+			background-color: #939598 ;
 			width: 100% ;	
-			min-height: 40px ;
-			color: white ;
 		}
-			nav #menu-primary-navigation {
-				
+			#site-controller-trigger-container {
+				width: 72px ;
+				height: 50px ; /* 72 - 22 (padding-top) = 50 */
+				padding-top: 22px ;
 			}
-				nav #menu-primary-navigation li {
+				.site-controller-trigger {
+					width: 24px ;
+					height: 28px ;
+					margin: 0px auto 0 auto ;
 				}
-					nav #menu-primary-navigation li a {
-
+					.site-controller-trigger.inactive {
+						background-image: url(images/nav-trigger-inactive.png) ;
 					}
-					nav #menu-primary-navigation li.current-menu-item a {
-						backgrond-color: #58595B ;
+					.site-controller-trigger.active {
+						background-image: url(images/nav-trigger-active.png) ;						
 					}
-				
-				
-				.hidden > div { display: none; }
-				.visible > div { display: block; }
-			
-					/*.show{display: none; }
-					.hide:focus + .show {display: inline; }
-					.hide:focus { display: none; }
-					.hide:focus ~ #list { display:none; }
 					
-		/*-------Portfolio Page---*/		
-		#contentwrapper {
-			margin: 28px ;
+			nav {
+				display: none ;
+				padding: 0 24px 24px 24px ;
+				overflow: auto ;
+				width: 440px ;
+			}
+				/*
+				#menu-primary-navigation {
+					width: 440px ;
+				}
+				*/
+					nav ul li {
+						width: 220px ;
+						float: left ;
+						height: 40px ;
+						margin: 0 0 9px 0 ;
+					}
+						nav ul li a {
+							display: block ;
+							height: 28px ; /* 9px padding * 2 = 18 - 40 = 28 */
+							padding: 9px ;
+							color: #ffffff ;
+							font-size: 32px ;
+							font-family: 'DINNextLTPro';
+						}
+						nav ul li a span {
+							padding: 5px ;
+						}
+							nav ul li.active a span {
+								background-color: #262626 ;
+							}
+		
+		#content-wrapper {
+			padding: 40px 0 0 0px ;
+			width: 1247px ; /* 1280 - 33 = 1247 */
 			height: 1000px ;
+			margin: 0 auto 0 auto ;
 		}
+			#wrapper.home {
+				padding: 0 ;
+			}
+			
+			#page-title {
+				padding: 40px 0 14px 0 ;
+				width: 1247px ; /* 1280 - 33 = 1247 */
+				margin: 0 auto 24px auto ;
+				border-bottom: 2px dashed #999 ;
+				overflow:auto;
+				text-transform: lowercase;
+				display:block;
+				position:relative;
+			}
+				#page-title h1 {
+					margin: 0 ;
+					padding: 0 ;
+					float: left ;
+				}
+				.subtitle{
+					color:#666;	
+				}
+				.titleimage{
+					top:22px;
+					margin:0 15px 0 15px;
+					display:block;
+					position:relative;
+					float:left;
+				}
+			
+				
+		/*-------Portfolio Page---*/		
+
 			#workwrapper {
 				width: 1280px ;
 				position: relative ;			
@@ -116,7 +174,40 @@
 					position: relative ;
 				}
 				
-		
+			.workgallery{
+				margin:10px;
+				width:1134px;
+				height:791px;
+			}
+				.gallnav{
+					display:block;
+					float:left;
+				}
+					#prev{
+						left:-22px;
+						bottom:425px;
+						position:relative;
+						z-index:1000;
+					}
+					#next{
+						left:1037px;
+						bottom:425px;
+						position:relative;
+						z-index:1000;
+					}
+						#textslide{
+							width:988px !important;
+							height:645px !important;
+							position:realtive;
+							background-color:#64c234;
+							font-size:36px;
+							padding:73px;
+							overflow:visible;
+						}
+						#textslide p{
+							color:#fff !important;
+							
+						}
 		/*-------Pretty Styles---*/
 		.shadow {
 			box-shadow: 0px 0px 5px #999 ;
@@ -128,14 +219,14 @@
 	
 	/*-------Footer-------*/
 	footer {
-		position: relative ;
+		position: absolute ;
 		/*margin-top: -45px ;*/ /* negative value of footer height */
-		height: 85px ;
-		clear: both ;
+		/*height: 85px ;
+		clear: both ;*/
 		bottom: 0 ;
 		text-align: left ;
-		font-size: small ;
-		background-color: #32379d ;
+		/*font-size: small ;
+		background-color: #32379d ;*/
 	}
 			#footer-text {
 				width: 900px ;
