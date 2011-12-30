@@ -1,42 +1,78 @@
 <?php
 
 	/* Wordpress Hook / Function Overrides */	
+	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
+	remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
+	remove_action( 'wp_head', 'rsd_link' ); // Display the link to the Really Simple Discovery service endpoint, EditURI link
+	remove_action( 'wp_head', 'wlwmanifest_link' ); // Display the link to the Windows Live Writer manifest file.
+	remove_action( 'wp_head', 'index_rel_link' ); // index link
+	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 ); // prev link
+	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 ); // start link
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Display relational links for the posts adjacent to the current post.
+	remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
+	remove_action( 'wp_head', 'rel_canonical'); //Remove the wp canonical url
+	//wp_deregister_script('l10n'); //Remove the localization support for plugin scripts
+	add_filter( 'next_post_rel_link', 'disable_stuff' );
+	function disable_stuff( $data ) { return false; }
+	
+	function my_init_method() {
+		if (!is_admin()) {
+			add_action('wp_print_styles', 'remove_ngg_style');
+		}
+	}    
+	add_action('init', 'my_init_method');
+	
+	function remove_ngg_style () { wp_dequeue_style('NextGEN'); }
+	define('NGG_SKIP_LOAD_SCRIPTS', true);
+	
+	if (!is_admin()) :
+		//wp_deregister_script('jquery');
+	endif ;
+	
+	/* Pica Theme Setup Action */
 	add_action( 'init', 'pica_theme_setup' );
 		
 		//Adding thumbnail images into Posts
-		add_theme_support( 'post-thumbnails', array( 'portfolio'));
+		add_theme_support( 'post-thumbnails', array( 'work'));
 			set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
-				
-				
-	function pica_theme_setup() {
-		// This theme styles the visual editor with editor-style.css to match the theme style.
-		add_editor_style();		
-				
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menu( 'primary', __( 'Primary Menu', 'pica' ) );
-		
-		//Custom post types
-		//creates PORTFOLIO post type
-		register_post_type( 'portfolio',
-			array(
-				'labels' => array(
-					'name' => __( 'Portfolio' ),
-					'singular_name' => __( 'Portfolio' )
-				),
-			'public' => true,
-			'supports' => array('title','editor','thumbnail')
-			//'has_archive' => true
-			)	
-		);
-		register_taxonomy('type', 'portfolio',
-			array(
-				'hierarchical' => true,
-				'label' => 'Portfolio Categories',	// the human-readable taxonomy name
-				'query_var' => true,	// enable taxonomy-specific querying
-				'rewrite' => array( 'slug' => 'portfolio-categories'),	// pretty permalinks for your taxonomy?
-			)
-		);
-	}
+			
+			
+		function pica_theme_setup() {
+			// This theme styles the visual editor with editor-style.css to match the theme style.
+			add_editor_style();		
+					
+			// This theme uses wp_nav_menu() in one location.
+			register_nav_menu( 'primary', __( 'Primary Menu', 'pica' ) );
+			
+			//Custom post types
+			//creates PORTFOLIO post type
+			register_post_type( 'work',
+				array(
+					'labels' => array(
+						'name' => __( 'Work' ),
+						'singular_name' => __( 'Work Item' ),
+						'add_new_item' => 'Add New Work Item',
+						'edit_item' => 'Edit Work Items',
+						'new_item' => 'New Work Item',
+						'search_items' => 'Search Work Items',
+						'not_found' => 'No Work Items found',
+						'not_found_in_trash' => 'No Work Items found in trash',
+				   ),
+					'public' => true,
+					'supports' => array('title','editor','thumbnail'),
+					'has_archive' => true//,
+					//'rewrite' => array('slug', 'work')
+				)	
+			);
+			register_taxonomy('type', 'work',
+				array(
+					'hierarchical' => true,
+					'label' => 'Work Categories',	// the human-readable taxonomy name
+					'query_var' => true,	// enable taxonomy-specific querying
+					'rewrite' => array( 'slug' => 'work-categories'),	// pretty permalinks for your taxonomy?
+				)
+			);
+		}
 	
 	
 	//Display a custom meta box on the cpt 'Portfolio' posts 
@@ -60,7 +96,15 @@
 						'Gallery Picker',
 						__( 'Attach a Gallery'),
 						array( &$this, 'render_gallery_meta_box_content'),
-						'portfolio',
+						'work',
+						'side',
+						'default'
+					);
+					add_meta_box(
+						'Gallery Picker',
+						__( 'Attach a Gallery'),
+						array( &$this, 'render_gallery_meta_box_content'),
+						'page',
 						'side',
 						'default'
 					);

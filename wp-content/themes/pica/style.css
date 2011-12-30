@@ -1,39 +1,35 @@
-	/*   
-		Theme Name: Pica Design
-		Description: Theme for PicaDesign LLC
-		Author: Pica Design, LLC
-		Author URI: http://www.picadesign.com
-		Tags: Blank, Pica, Theme
-	*/
-/* Color Pallett
-#FFF -- White
-
-*/		
+/*   
+	Theme Name: Pica Design
+	Description: Theme for PicaDesign LLC
+	Author: Pica Design, LLC
+	Author URI: http://www.picadesign.com
+	Tags: Blank, Pica, Theme
+*/
+	
 	/* ADMIN TEXT EDITOR STYLES ARE DECLARED WITHIN editor-style.css so they can be added to the WP WYSIWIG Editor */
-/* WordPress WYSIWYG Styles */
-@import "editor-style.css";
+	@import "editor-style.css";
 
 
 	/* HTML5 display-role reset for older browsers */
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
+		display: block ;
 	}
 	body {
-		line-height: 1;
+		line-height: 1 ;
 	}
 	ol, ul {
-		list-style: none;
+		list-style: none ;
 	}
 	blockquote, q {
-		quotes: none;
+		quotes: none ;
 	}
 	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
+		content: ' ';
+		content: none ;
 	}
 	table {
-		border-collapse: collapse;
-		border-spacing: 0;
+		border-collapse: collapse ;
+		border-spacing: 0 ;
 	}
 
 	/**********************************************
@@ -41,7 +37,7 @@
 		HTML DECLARATIONS 
 	*/
 	html {
-		height:100%;
+		height: 100% ;
 		margin: 0px ;
 		padding: 0px ;
 	}
@@ -49,8 +45,8 @@
 			margin: 0px ;
 			font-family: Arial, Helvetica, sans-serif ;
 			font-size: 14px ;
-			background-color:#fff;
-			height:100%;
+			background-color: #fff ;
+			height: 100% ;
 		}
 			
 			/*
@@ -58,9 +54,9 @@
 				LINK & HEADER STYLES ARE LOCATED IN editor-style.css
 			
 			*/
-				a img {
-					border: 0px ;
-				}
+			a img {
+				border: 0px ;
+			}
 		
 	
 	/**********************************************
@@ -68,82 +64,85 @@
 		ADD WEBSITE LAYOUT DECLARATIONS HERE
 	*/
 	
-	#wrapper{
-		width:100%;
-		position:relative;
-		margin:0 auto 0 auto;
-		overflow:visible;
-		background-color:white;
+	#wrapper {
+		width: 100% ;
+		position: relative ;
+		margin: 0 auto 0 auto ;
+		overflow: visible ;
+		background-color: white ;
 	}
-		header,footer,
-		contentblock,section,
-		hgroup,figure, nav{
-			display:block;
+
+		/*-------Navigation-------*/
+		nav {
+			background-color: #ccc ;
+			width: 100% ;	
+			min-height: 40px ;
+			color: white ;
 		}
-			
-/*-------Navigation-------*/
-		nav, nav a{
-			background-color:#ccc;
-			width:100%;	
-			min-height:40px;
-			color:white;
-		}
-			.navcontainer{
-				padding:10px 40px 10px 10px;
+			nav #menu-primary-navigation {
+				
 			}
-				.menu{
-						
+				nav #menu-primary-navigation li {
 				}
-			.hidden>div {display:none;}
- 			.visible>div {display:block;}
+					nav #menu-primary-navigation li a {
+
+					}
+					nav #menu-primary-navigation li.current-menu-item a {
+						backgrond-color: #58595B ;
+					}
+				
+				
+				.hidden > div { display: none; }
+				.visible > div { display: block; }
 			
 					/*.show{display: none; }
 					.hide:focus + .show {display: inline; }
 					.hide:focus { display: none; }
 					.hide:focus ~ #list { display:none; }
-/*-------Portfolio Page---*/
-				
-		#contentwrapper{
-			margin:28px;
-			height:1000px;
+					
+		/*-------Portfolio Page---*/		
+		#contentwrapper {
+			margin: 28px ;
+			height: 1000px ;
 		}
-			#portfoliowrapper{
-				width:1280px;
-				position:relative;			
+			#workwrapper {
+				width: 1280px ;
+				position: relative ;			
 			}
-				.contentblock{
-					float:left;
-					margin:28px 28px 0 0;
-					height:244px;
-					width:360px;
-					display:block;
-					position:relative;
+				.attachment-post-thumbnail {
+					float: left ;
+					margin: 28px 28px 0 0 ;
+					display: block ;
+					position: relative ;
 				}
-/*-------Pretty Styles---*/
-		.shadow{
-			box-shadow: 0px 0px 5px #999;
-			-moz-box-shadow: 0px 0px 5px #999;
-			-webkit-box-shadow: 0px 0px 5px #999;
-			border:1px solid #ccc;
+				
+		
+		/*-------Pretty Styles---*/
+		.shadow {
+			box-shadow: 0px 0px 5px #999 ;
+			-moz-box-shadow: 0px 0px 5px #999 ;
+			-webkit-box-shadow: 0px 0px 5px #999 ;
+			border: 1px solid #ccc ;
 		}
 
-/*-------Footer-------*/
-	footer{
-		position: relative;
-		margin-top: -45px; /* negative value of footer height */
-		height: 85px;
-		clear:both;
-		bottom:0;
-		text-align:left;
-		font-size:small;
-		background-color:#32379d;
+	
+	/*-------Footer-------*/
+	footer {
+		position: relative ;
+		/*margin-top: -45px ;*/ /* negative value of footer height */
+		height: 85px ;
+		clear: both ;
+		bottom: 0 ;
+		text-align: left ;
+		font-size: small ;
+		background-color: #32379d ;
 	}
-			#footer-text{
-				width:900px;
-				margin:0 auto 0 auto;
+			#footer-text {
+				width: 900px ;
+				margin: 0 auto 0 auto ;
 			}
-				footer p{ /*small text for footer sitemap*/
-					padding-top:25px;
-					font-size:12px;	
-					text-align:left;
+				footer p { /*small text for footer sitemap*/
+					padding-top: 25px ;
+					font-size: 12px ;	
+					text-align: left ;
 				}
