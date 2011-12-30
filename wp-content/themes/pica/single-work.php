@@ -1,7 +1,7 @@
 <?php 
 	//Include our theme header.php 
 	get_header() ;
-	
+	echo "FOO BAR YO!";
 	//Grab the gallery attached to this page
 	$gallery = getGallery(get_post_meta($post->ID, 'gallery', true)) ;
 ?>

@@ -1,6 +1,3 @@
-<?php
-	global $siteUrl; $siteUrl = "picadesign.ath.cx/pica_website_2/";
-?>
 <!DOCTYPE HTML> 
 <html>
     <head>    

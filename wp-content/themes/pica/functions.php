@@ -1,6 +1,6 @@
 <?php
 
-	/* Wordpress Hook / Function Overrides */	
+	/* Wordpress Hook / Function Overrides */
 	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
 	remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
 	remove_action( 'wp_head', 'rsd_link' ); // Display the link to the Really Simple Discovery service endpoint, EditURI link
@@ -11,7 +11,6 @@
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Display relational links for the posts adjacent to the current post.
 	remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
 	remove_action( 'wp_head', 'rel_canonical'); //Remove the wp canonical url
-	//wp_deregister_script('l10n'); //Remove the localization support for plugin scripts
 	add_filter( 'next_post_rel_link', 'disable_stuff' );
 	function disable_stuff( $data ) { return false; }
 	
@@ -25,9 +24,14 @@
 	function remove_ngg_style () { wp_dequeue_style('NextGEN'); }
 	define('NGG_SKIP_LOAD_SCRIPTS', true);
 	
-	if (!is_admin()) :
-		//wp_deregister_script('jquery');
-	endif ;
+	/*
+	add_action('wp_head', 'show_template');
+	function show_template() {
+		global $template;
+		print_r($template);
+	}
+	*/
+	 
 	
 	/* Pica Theme Setup Action */
 	add_action( 'init', 'pica_theme_setup' );
@@ -35,7 +39,6 @@
 		//Adding thumbnail images into Posts
 		add_theme_support( 'post-thumbnails', array( 'work'));
 			set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
-			
 			
 		function pica_theme_setup() {
 			// This theme styles the visual editor with editor-style.css to match the theme style.
@@ -59,9 +62,9 @@
 						'not_found_in_trash' => 'No Work Items found in trash',
 				   ),
 					'public' => true,
-					'supports' => array('title','editor','thumbnail'),
-					'has_archive' => true//,
-					//'rewrite' => array('slug', 'work')
+					'supports' => array('title','editor','thumbnail')//,
+					//'has_archive' => true,
+					//'rewrite' => array('slug', 'work-item')
 				)	
 			);
 			register_taxonomy('type', 'work',
@@ -158,6 +161,7 @@
 		$gallery = $gallery_res[0];
 		$images = $wpdb->get_results("SELECT * FROM " . $table_prefix . "ngg_pictures WHERE galleryid = $gallery_id", ARRAY_A);	
 		$key = 0;
+		$gallery_thumb = "";
 		foreach ($images as $image) {
 			//Make sure the image has not been excluded in NextGen
 			//Also make sure that the image is not the preview image (preview images are not added to the actual gallery - thats for albums only)
