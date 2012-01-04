@@ -13,7 +13,7 @@
                     <h2> <?php echo $post->post_title ?></h2>
                 </div>    
                 <div class="return">
-                    <h3> <-- back to work </h3>
+                    <a href="<?php bloginfo('url') ?>/work" title="Back to gallery"><img src="<?php  bloginfo('template_directory')?>/images/back-arrow.png" /> back to gallery </a>
                 </div>                
             </div>
 

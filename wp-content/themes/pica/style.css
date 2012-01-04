@@ -139,7 +139,7 @@
 	
 		#content-wrapper {
 			position: relative ;
-			padding: 40px 0 120px 72px ;
+			padding: 40px 0 10px 72px ;
 			height: 100% ;
 			overflow: visible ;
 		}
@@ -190,7 +190,6 @@
 				text-transform: lowercase;
 				display:block;
 				position:relative;
-				max-width:1400px;
 			}
 				.maintitle{
 					float:left;
@@ -199,12 +198,15 @@
 					display:block;
 					position:relative;
 				}
-				.return{
+				.return, .return a{
 					float:right;
-					margin:20px 10px 0 0;
 					overflow:auto;
 					display:block;
 					position:relative;
+					color:#333;
+					margin: 10px 80px 0px 0px ;
+					font-family: 'DINNextLTPro';
+					font-size:14px;
 				}
 				body.content-bleed .page-title {
 					margin-top: 40px ;
@@ -270,8 +272,10 @@
 				
 			/*-------Portfolio Page---*/		
 			.content-gallery {
-			}	
+				overflow:auto;
+				}	
 				.gallery {
+					
 				}
 					.gallery-item.in-grid {
 						width: 282px ; /* 346 - (32px padding * 2) = 282 */
@@ -352,12 +356,13 @@
 	
 	/*-------Footer-------*/
 	footer {
-		position: absolute ;
-		bottom: 0 ;
+		position: relative;
+		bottom: 20px ;
 		font-family:'DINNextLTPro';
 		font-size: 20px ;
 		margin: 0 0 20px 72px ;
 		color: #666666 ;
+		
 	}
 		footer a {
 			font-family:'DINNextLTPro';
@@ -370,9 +375,12 @@
 			}
 		footer .color-swatch {
 			float: left ;
+			position:relative;
+			display:block;
 		}
 		footer span {
 			float: left ;
 			display: block ;
 			margin-top: 4px ;
+			float:left;
 		}

@@ -14,7 +14,7 @@
 					<?php //the_post_thumbnail() ?>
                     <?php the_title() ?>
                 </a>
-            </div>
+            </div><!--end gallery-item in-grid-->
             <?php endwhile ?>      
-		</div>        
+		</div> <!--end content gallery-->       
 <?php get_footer(); ?>

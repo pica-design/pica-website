@@ -1,6 +1,7 @@
             </section><?php // END .content-wrapper // ?>
             
             <footer>
+            <br />
             	<div class="color-swatch gray"></div>
                 <span>
                 	&nbsp; &copy; <?php echo date('Y', time()) ?> Pica Design, LLC &#149; 
