@@ -36,17 +36,17 @@
 	
 		HTML DECLARATIONS 
 	*/
-	html {
+	html, body {
+		width: 100% ;
 		height: 100% ;
 		margin: 0px ;
 		padding: 0px ;
+		font-size: 1em ;
 	}
 		body {
-			margin: 0px ;
 			font-family: Arial, Helvetica, sans-serif ;
 			font-size: 14px ;
 			background-color: #dddddd ;
-			height: 100% ;
 		}
 			
 			/*
@@ -57,7 +57,19 @@
 			a img {
 				border: 0px ;
 			}
-		
+			
+			.link-fill-container {
+				display: block ;
+				width: 100% ;
+				height: 100% ;
+			}
+			.color-swatch {
+				width: 24px ;
+				height: 24px ;
+			}
+				.gray {
+					background-color: #404041 ;
+				}
 	
 	/**********************************************
 	
@@ -67,147 +79,268 @@
 		position: relative ;
 		min-height: 100% ;
 	}
-	
-	
 
 		/*-------Navigation-------*/
 		#site-controller {
-			background-color: #939598 ;
+			background-color: #999 ;
 			width: 100% ;	
+			overflow: auto ;
 		}
-			#site-controller-trigger-container {
+			.site-controller-trigger {
+				float: left ;
 				width: 72px ;
-				height: 50px ; /* 72 - 22 (padding-top) = 50 */
+				height: 50px ; /* 72 - 22px padding-top = 50 */
 				padding-top: 22px ;
+				background-repeat: no-repeat ;
+				background-position: center center ;
 			}
-				.site-controller-trigger {
-					width: 24px ;
-					height: 28px ;
-					margin: 0px auto 0 auto ;
+				.site-controller-trigger.active {
+					background-image: url(images/site-controller-trigger-active.png) ;				
 				}
-					.site-controller-trigger.inactive {
-						background-image: url(images/nav-trigger-inactive.png) ;
-					}
-					.site-controller-trigger.active {
-						background-image: url(images/nav-trigger-active.png) ;						
-					}
-					
-			nav {
-				display: none ;
-				padding: 0 24px 24px 24px ;
-				overflow: auto ;
-				width: 440px ;
-			}
-				/*
-				#menu-primary-navigation {
-					width: 440px ;
+				.site-controller-trigger.inactive {
+					background-image: url(images/site-controller-trigger-inactive.png) ;
 				}
-				*/
-					nav ul li {
-						width: 220px ;
-						float: left ;
-						height: 40px ;
-						margin: 0 0 9px 0 ;
-					}
-						nav ul li a {
-							display: block ;
-							height: 28px ; /* 9px padding * 2 = 18 - 40 = 28 */
-							padding: 9px ;
-							color: #ffffff ;
-							font-size: 32px ;
-							font-family: 'DINNextLTPro';
-						}
-						nav ul li a span {
-							padding: 5px ;
-						}
-							nav ul li.active a span {
-								background-color: #262626 ;
-							}
-		
-		#content-wrapper {
-			padding: 40px 0 0 0px ;
-			width: 1247px ; /* 1280 - 33 = 1247 */
-			height: 1000px ;
-			margin: 0 auto 0 auto ;
-		}
-			#wrapper.home {
-				padding: 0 ;
+			
+			.pica-mark {
+				width: 47px ;
+				height: 47px ;
+				float: left ;
+				margin-top: 13px ;
+				background-image: url(images/pica-mark.png) ;
 			}
 			
-			#page-title {
-				padding: 40px 0 14px 0 ;
-				width: 1247px ; /* 1280 - 33 = 1247 */
-				margin: 0 auto 24px auto ;
-				border-bottom: 2px dashed #999 ;
+			nav {
+				display: none ;
+				padding: 40px 0 0 0 ;
+				margin: 0 0 0 65px ;
+				width: 440px ;
+				clear: left ;
+			}
+				nav ul li {
+					display: block ;
+					width: 220px ;
+					float: left ;
+					height: 40px ;
+					margin: 0 0 9px 0 ;
+				}
+					nav ul li a {
+						display: block ;
+						height: 28px ; /* 9px padding * 2 = 18 - 40 = 28 */
+						color: #ffffff ;
+						font-size: 32px ;
+						font-family: 'DINNextLTPro';
+					}
+					nav ul li a span {
+						padding: 4px 12px 4px 12px ;
+					}
+						nav ul li.active a span, nav ul li:hover a span {
+							background-color: #262626 ;
+						}
+	
+		#content-wrapper {
+			position: relative ;
+			padding: 40px 0 120px 72px ;
+			height: 100% ;
+			overflow: visible ;
+		}
+			body.content-bleed #content-wrapper {
+				padding: 0 0 120px 0 ;
+			}
+			
+			.focal-point {
+				/*width: 100% ;*/
+				min-width: 850px ; /* Arbitrary atm - to be changed? */
+				/*background-color: #404041 ;*/
+			}
+				.focal-point-item{
+					overflow: visible ;
+					position: relative ;
+					float: left ;
+					margin: 0 15px 15px 0 ;
+				}
+					/* attachment-description is the new*/
+					.focal-point-text {
+						position: absolute ;
+						z-index: 2 ;
+						top: 72px ;
+						left: 72px ;
+					}
+						.focal-point-text div {
+							width: 100% ;
+							margin: 0 0 35px 0 ;
+						}
+							.focal-point-text div span {
+								padding: 7px 25px 7px 25px ;
+								font-size: 1.37em ;
+								color: #ffffff ;
+								background-color: rgba(0,0,0,0.7) ;
+								font-family: 'DINNextLTPro';
+							}
+					.focal-point-image {
+						position: relative ;
+						width: 100% ;
+						height: auto ;
+					}
+			
+			.page-title {
+				padding: 0 0 24px 0 ;
+				margin: 0 0 33px 0 ;
+				border-bottom: 1px dashed #999 ;
 				overflow:auto;
 				text-transform: lowercase;
 				display:block;
 				position:relative;
+				max-width:1400px;
 			}
-				#page-title h1 {
-					margin: 0 ;
-					padding: 0 ;
-					float: left ;
-				}
-				.subtitle{
-					color:#666;	
-				}
-				.titleimage{
-					top:22px;
-					margin:0 15px 0 15px;
+				.maintitle{
+					float:left;
+					margin:;
+					overflow:auto;
 					display:block;
 					position:relative;
-					float:left;
 				}
-			
-				
-		/*-------Portfolio Page---*/		
-
-			#workwrapper {
-				width: 1280px ;
-				position: relative ;			
-			}
-				.attachment-post-thumbnail {
+				.return{
+					float:right;
+					margin:20px 10px 0 0;
+					overflow:auto;
+					display:block;
+					position:relative;
+				}
+				body.content-bleed .page-title {
+					margin-top: 40px ;
+					margin-left: 72px ;
+				}
+				.page-title h1 {
 					float: left ;
-					margin: 28px 28px 0 0 ;
+					margin: 0px ;
+					padding: 0px ;
+				}
+					.page-title h1 a {
+						font-size: 48px ;
+						font-weight: normal ;
+						font-family: 'DINNextLTPro';
+						color:#000;
+					}
+						.page-title h1 a:hover {
+							text-decoration: underline ;
+						}
+				.page-title h2 {
+					font-size: 48px ;
+					color: #666 ;
+					margin: 0px ;
+					padding: 0px ;	
+				}
+				.dot-seperator {
+					width: 13px ;
+					height: 12px ;
+					top: 22px ;
+					margin: -5px 15px 0px 15px ;
 					display: block ;
 					position: relative ;
+					float: left ;
+					background-image: url(images/dot-seperator.png) ;
+					background-repeat: no-repeat ;
 				}
-				
-			.workgallery{
-				margin:10px;
-				width:1134px;
-				height:791px;
+			
+			.call-to-action {
+				position: relative ;
+				margin: 24px 0 0 72px ;
+				background-color: #666666 ;
+				padding: 24px ;
+				min-width: 360px ; /* 1100 - (24px padding * 2) = 1052 */
+				max-width: 1052px;
+				clear: left ;
+				overflow:auto;
 			}
-				.gallnav{
+				.call-to-action-column {
+					min-width:200px;
+					max-width:360px;
 					display:block;
 					float:left;
+					postition:relative;
+					overflow:auto;
+					/*font*/
+					color:white;
+					margin-bottom:25px;
 				}
-					#prev{
-						left:-22px;
-						bottom:425px;
-						position:relative;
-						z-index:1000;
+					.call-to-action-column p, .call-to-action-column p strong{
+						color:white;
+						font-size:24px;
 					}
-					#next{
-						left:1037px;
-						bottom:425px;
-						position:relative;
-						z-index:1000;
+				
+			/*-------Portfolio Page---*/		
+			.content-gallery {
+			}	
+				.gallery {
+				}
+					.gallery-item.in-grid {
+						width: 282px ; /* 346 - (32px padding * 2) = 282 */
+						height: 181px ; /* 245 - (32px padding *2) = 181 */
+						padding: 32px ;
+						background-color: #939598 ;
+						margin: 0 33px 33px 0 ;
+						float: left ;
 					}
-						#textslide{
-							width:988px !important;
-							height:645px !important;
-							position:realtive;
-							background-color:#64c234;
-							font-size:36px;
-							padding:73px;
-							overflow:visible;
+						.gallery-item.in-grid a.link-fill-container {
+							font-size: 42px ;
+							line-height: 130% ;
+							color: #ffffff ;
+							font-family: 'DINNextLTPro';
 						}
-						#textslide p{
-							color:#fff !important;
-							
+					.gallery-nav {
+					}
+						.gallery-prev, .gallery-next {
+							display: block ;
+							width: 67px ;
+							height: 82px ;
+							position: absolute ;
+							z-index: 1000 ;
+							top: 425px ;
 						}
+						.gallery-prev {
+							left: 40px ;
+							background-image: url(images/slide-arrow-left-inactive.png) ;
+						}
+							.gallery-prev:hover {
+								background-image: url(images/slide-arrow-left-active.png) ;
+							}
+						.gallery-next {
+							left: 1166px ;
+							background-image: url(images/slide-arrow-right-inactive.png) ;
+						}
+							.gallery-next:hover {
+								background-image: url(images/slide-arrow-right-active.png) ;
+							}
+							.gallery div {
+								width: 1130px ;
+								height: 650px ;
+								background-color: #222222 ;
+								display: block ;
+							}
+								.gallery div.gallery-description {
+									width: 1018px !important ; /* 1130 - (56 padding * 2) = 1018 */
+									height: 528px !important ; /* 650 - (56 padding * 2) = 528 */
+									padding: 56px ;
+									font-size: 1.2em ;
+									color: #ffffff ;
+									background-color: #666666 ;
+									font-family: 'DINNextLTPro';
+								}
+									.gallery div.gallery-description a {
+										font-size: 1.2em ;
+										color: #ffffff ;
+									}
+										.gallery div.gallery-description a:hover {
+											text-decoration: underline ;
+										}
+								.gallery div img {
+									margin: 0 auto 0 auto ;
+									height: 650px ;
+									display: block ;
+								}
+								.gallery div p {
+									color: #fff !important ;								
+								}
 		/*-------Pretty Styles---*/
 		.shadow {
 			box-shadow: 0px 0px 5px #999 ;
@@ -220,20 +353,26 @@
 	/*-------Footer-------*/
 	footer {
 		position: absolute ;
-		/*margin-top: -45px ;*/ /* negative value of footer height */
-		/*height: 85px ;
-		clear: both ;*/
 		bottom: 0 ;
-		text-align: left ;
-		/*font-size: small ;
-		background-color: #32379d ;*/
+		font-family:'DINNextLTPro';
+		font-size: 20px ;
+		margin: 0 0 20px 72px ;
+		color: #666666 ;
 	}
-			#footer-text {
-				width: 900px ;
-				margin: 0 auto 0 auto ;
+		footer a {
+			font-family:'DINNextLTPro';
+			font-size: 20px ;
+			color: #666666 ;
+			text-decoration: none ;
+		}
+			footer a:hover {
+				text-decoration: underline ;
 			}
-				footer p { /*small text for footer sitemap*/
-					padding-top: 25px ;
-					font-size: 12px ;	
-					text-align: left ;
-				}
+		footer .color-swatch {
+			float: left ;
+		}
+		footer span {
+			float: left ;
+			display: block ;
+			margin-top: 4px ;
+		}

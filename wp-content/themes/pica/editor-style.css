@@ -51,7 +51,7 @@ h1 strong, h2 strong, h3 strong, h4 strong {
 	font-family: 'DINNextLTProMedium';
 }
 	h1 {
-		font-size: 58px ;
+		font-size: 48px ;
 	}
 	h2 {
 		font-size: 22px ;
@@ -62,9 +62,16 @@ h1 strong, h2 strong, h3 strong, h4 strong {
 	h1 a, h2 a, h3 a {
 		font-size: 14px ;
 	}
-P {
+p {
 	margin-top: 0px ;
 	color: #333;
+	font-family:'DINNextLTPro';
+	line-height:1.2em;
+}
+p strong {
+	margin-top: 0px ;
+	color: #333;
+	font-family:'DINNextLTProMedium';
 }
 a {
 	color:#06C;

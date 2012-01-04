@@ -1,3 +1,11 @@
+<?php 
+	//Determine which page is being loaded and append a class to our html <body> tag for css styling
+	if (is_page('home') || is_page('contact')) : 
+		$body_class = ' class="content-bleed"' ; 
+	else: 
+		$body_class = "" ; 
+	endif ; 
+?>
 <!DOCTYPE HTML> 
 <html>
     <head>    
@@ -17,25 +25,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <title>Pica Design, LLC</title>
         <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/style.css" />
-        <!-- Internet Explorer HTML5 enabling code: -->        
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <style type="text/css">
-                .clear {
-                  zoom: 1;
-                  display: block;
-                }
-            </style>
-        <![endif]-->
-        <?php wp_head() ?>
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
-   
-    <body>
-    	<section id="site-wrapper">
+    <body<?php echo $body_class ?>>
+	<section id="site-wrapper">
             <section id="site-controller">
-                <div id="site-controller-trigger-container">
-                    <div class="site-controller-trigger inactive"></div>
-                </div>            
+                <a href="#" class="site-controller-trigger inactive" title="Display Page Menus"></a>
+                <a href="<?php bloginfo('url') ?>" class="pica-mark" title="Trust your developer"></a>
                 <nav>
                     <ul><?php 
                             //Grab our nav menu items
@@ -47,8 +43,10 @@
                                     $active = "";
                                 endif; ?>
     
-                <li<?php echo $active ?>><a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
+                	<li<?php echo $active ?>><a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
                                 
                     </ul>
                 </nav>
-            </section><!--end navigation bar-->
+            </section><?php //End navigation bar // ?>
+            
+	    <section id="content-wrapper">
