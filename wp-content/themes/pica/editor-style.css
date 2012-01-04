@@ -41,13 +41,13 @@
 
 /*Regular Styling*/
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-weight: normal ;
 	margin: 0px 0px 10px 0px ;
 	font-family: 'DINNextLTPro';
 	color:#000;
 }
-h1 strong, h2 strong, h3 strong, h4 strong {
+h1 strong, h2 strong, h3 strong{
 	font-family: 'DINNextLTProMedium';
 }
 	h1 {
@@ -61,6 +61,11 @@ h1 strong, h2 strong, h3 strong, h4 strong {
 	}
 	h1 a, h2 a, h3 a {
 		font-size: 14px ;
+	}
+	h4{
+		margin:0;
+		padding:0;
+		float:left;
 	}
 p {
 	margin-top: 0px ;

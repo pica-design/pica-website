@@ -32,6 +32,9 @@
             <section id="site-controller">
                 <a href="#" class="site-controller-trigger inactive" title="Display Page Menus"></a>
                 <a href="<?php bloginfo('url') ?>" class="pica-mark" title="Trust your developer"></a>
+                <div class="picamarketing">
+                	<h4 class="black">pica</h4><h4 class="white">design</h4><h4 class="black">+</h4><h4 class="white">marketing</h4>
+                </div> 
                 <nav>
                     <ul><?php 
                             //Grab our nav menu items
@@ -43,8 +46,8 @@
                                     $active = "";
                                 endif; ?>
     
-                	<li<?php echo $active ?>><a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
-                                
+                	<li<?php echo $active ?>> <a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
+                        
                     </ul>
                 </nav>
             </section><?php //End navigation bar // ?>

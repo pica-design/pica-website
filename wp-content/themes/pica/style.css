@@ -108,6 +108,19 @@
 				margin-top: 13px ;
 				background-image: url(images/pica-mark.png) ;
 			}
+				.picamarketing{
+					float:right;
+					display:none;
+					font-family:'DINNextLTProMedium';
+					font-size:30px;
+					margin:20px 20px 0 0;
+				}
+					.black{
+						color:#000;	
+					}
+					.white{
+						color:#FFF;	
+					}
 			
 			nav {
 				display: none ;
@@ -190,11 +203,13 @@
 				text-transform: lowercase;
 				display:block;
 				position:relative;
+				
 			}
 				.maintitle{
 					float:left;
 					margin:;
-					overflow:auto;
+					min-width:500px;
+					overflow:visible;
 					display:block;
 					position:relative;
 				}
@@ -205,8 +220,8 @@
 					position:relative;
 					color:#333;
 					margin: 10px 80px 0px 0px ;
-					font-family: 'DINNextLTPro';
-					font-size:14px;
+					font-family: 'DINNextLTProMedium';
+					font-size:16px !important;
 				}
 				body.content-bleed .page-title {
 					margin-top: 40px ;

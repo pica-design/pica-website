@@ -11,6 +11,7 @@
 			$(this).removeClass('inactive').addClass('active')
 			//Update the element title attribute to reflect the change
 			$(this).attr('title', 'Close Page Menus')
+			$('.picamarketing').fadeIn(300)
 		} else {
 			//The element is not inactive, so it must be active - go ahead and scroll the nav back up so it's hidden
 			$('nav').slideUp('slow')
@@ -18,8 +19,12 @@
 			$(this).removeClass('active').addClass('inactive')
 			//Update the element title attribute to reflect the change
 			$(this).attr('title', 'Display Page Menus')
+			$('.picamarketing').fadeOut(300)
 		}
+		
 	})//end click event
+	
+	
 	
 	//Make sure we slideup the site controller pane when clicking the nav links
 	$('nav ul li a, .pica-mark').click(function(e){
