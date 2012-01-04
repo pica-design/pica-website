@@ -37,7 +37,7 @@
                 	<p>
                     	<strong>phone:</strong> 207. 338.1740 <br />
                         <strong>fax:</strong> 207.338.0899 <br />
-                        <strong>email:</strong> info@picadesign.com
+                        <strong>email:</strong> <a href="mailto:info@picadesign.com">info@picadesign.com</a>
                     </p>
                 </div>
            </div>     

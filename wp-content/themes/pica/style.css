@@ -78,12 +78,13 @@
 	#site-wrapper {
 		position: relative ;
 		min-height: 100% ;
+		width:100%;
 	}
 
 		/*-------Navigation-------*/
 		#site-controller {
 			background-color: #999 ;
-			width: 100% ;	
+			width:100%;
 			overflow: auto ;
 		}
 			.site-controller-trigger {
@@ -113,7 +114,7 @@
 					display:none;
 					font-family:'DINNextLTProMedium';
 					font-size:30px;
-					margin:20px 20px 0 0;
+					padding:20px 20px 0 0;
 				}
 					.black{
 						color:#000;	
@@ -164,6 +165,7 @@
 				/*width: 100% ;*/
 				min-width: 850px ; /* Arbitrary atm - to be changed? */
 				/*background-color: #404041 ;*/
+				overflow:auto;
 			}
 				.focal-point-item{
 					overflow: visible ;
@@ -287,10 +289,11 @@
 				
 			/*-------Portfolio Page---*/		
 			.content-gallery {
-				overflow:auto;
+				overflow:visible;
+				position:relative;
 				}	
 				.gallery {
-					
+					overflow:visible;
 				}
 					.gallery-item.in-grid {
 						width: 282px ; /* 346 - (32px padding * 2) = 282 */
@@ -307,6 +310,7 @@
 							font-family: 'DINNextLTPro';
 						}
 					.gallery-nav {
+						
 					}
 						.gallery-prev, .gallery-next {
 							display: block ;
@@ -314,17 +318,17 @@
 							height: 82px ;
 							position: absolute ;
 							z-index: 1000 ;
-							top: 425px ;
+							top: 300px;
 						}
 						.gallery-prev {
-							left: 40px ;
+							left: -32px ;
 							background-image: url(images/slide-arrow-left-inactive.png) ;
 						}
 							.gallery-prev:hover {
 								background-image: url(images/slide-arrow-left-active.png) ;
 							}
 						.gallery-next {
-							left: 1166px ;
+							left: 1094px ;
 							background-image: url(images/slide-arrow-right-inactive.png) ;
 						}
 							.gallery-next:hover {
@@ -399,3 +403,6 @@
 			margin-top: 4px ;
 			float:left;
 		}
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+
+}

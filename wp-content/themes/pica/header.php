@@ -51,5 +51,4 @@
                     </ul>
                 </nav>
             </section><?php //End navigation bar // ?>
-            
 	    <section id="content-wrapper">
