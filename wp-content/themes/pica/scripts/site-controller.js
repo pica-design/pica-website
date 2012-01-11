@@ -6,6 +6,7 @@
 		//Once clicked, determine if the element has the class inactive or active
 		if ($(this).hasClass('inactive')) {
 			//If the current element is inactive, let's slide our menu down so it's visible
+			//$('nav').slideDown('slow')
 			$('nav').slideDown('slow')
 			//We also wanted to remove the inactive class and replace it with the active class (this changes the down arrow into an up arrow)
 			$(this).removeClass('inactive').addClass('active')

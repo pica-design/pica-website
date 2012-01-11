@@ -40,7 +40,7 @@
                                                 <?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())) : ?>
                                                     <?php the_post_thumbnail('blogroll');?>
                                                 <?php else :?>
-                                                <img src="<?php echo get_bloginfo('template_directory');?>/images/placeholder.png" /> 
+                                                <img src="<?php echo get_bloginfo('template_directory');?>/images/placeholder.png" alt=""/> 
         
                                                 <?php endif;?>
                                             </div><!--end blogrollthumbnail-->
@@ -67,7 +67,7 @@
                     </div><!--end social-->
                         
                 </div><!--end homfeaturedwrapper-->  
-                <div class="clear">     
+                <div class="clear"></div>   
 <?php 
 	//Include our theme footer.php
 	get_footer() 

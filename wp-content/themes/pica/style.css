@@ -23,7 +23,7 @@
 	blockquote, q {
 		quotes: none ;
 	}
-	blockquote: before, blockquote: after, q: before, q: after {
+	blockquote:before, blockquote:after, q:before, q:after {
 		content: ' ' ;
 		content: none ;
 	}
@@ -168,7 +168,7 @@
 					nav ul li a span {
 						padding: 4px 9px 3px 9px ;
 					}
-						nav ul li.active a span, nav ul li: hover a span {
+						nav ul li.active a span, nav ul li:hover a span {
 							background-color: #262626 ;
 						}
 	
@@ -322,7 +322,6 @@
 										padding: 0 24px 0 0 ;
 									}
 						.blog-roll-text{
-							display: block ;
 							position: relative ;
 							width: 800px ;
 							float: left ;
@@ -390,7 +389,7 @@
 						font-family: 'DINNextLTPro' ;
 						color: #000 ;
 					}
-						.page-title h1 a: hover {
+						.page-title h1 a:hover {
 							text-decoration: underline ;
 						}
 				.page-title h2 {
@@ -436,7 +435,7 @@
 						color: white ;
 						font-size: 24px ;
 					}
-						.call-to-action-column a: hover {
+						.call-to-action-column a:hover {
 							text-decoration: underline ;
 						}
 				
@@ -497,14 +496,14 @@
 							left: 40px ;
 							background-image: url(images/slide-arrow-left-inactive.png) ;
 						}
-							.gallery-prev: hover {
+							.gallery-prev:hover {
 								background-image: url(images/slide-arrow-left-active.png) ;
 							}
 						.gallery-next {
 							left: 1166px ;
 							background-image: url(images/slide-arrow-right-inactive.png) ;
 						}
-							.gallery-next: hover {
+							.gallery-next:hover {
 								background-image: url(images/slide-arrow-right-active.png) ;
 							}
 							.gallery div {
@@ -526,7 +525,7 @@
 										font-size: 33px ;
 										color: #ffffff ;
 									}
-										.gallery div.gallery-description a: hover {
+										.gallery div.gallery-description a:hover {
 											text-decoration: underline ;
 										}
 								.gallery div img {
@@ -585,7 +584,7 @@
 			color: #666666 ;
 			text-decoration: none ;
 		}
-			footer a: hover {
+			footer a:hover {
 				text-decoration: underline ;
 			}
 		footer .color-swatch {

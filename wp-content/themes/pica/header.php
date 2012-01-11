@@ -35,7 +35,7 @@
 	<section id="site-wrapper">
             <section id="site-controller">
                 <a href="#" class="site-controller-trigger inactive" title="Display Page Menus"></a>
-                <a href="<?php bloginfo('url') ?>" class="pica-mark" title="<?php echo $quotes[$random_quote_key] ?>"></a>
+                <a href="<?php bloginfo('url') ?>" class="pica-mark inactive" title="<?php echo $quotes[$random_quote_key] ?>"></a>
                 <div class="picamarketing">
                 	<h4 class="text-color-black">pica</h4>
                     <h4 class="text-color-white">design</h4>
@@ -53,7 +53,7 @@
                                     $active = "";
                                 endif; ?>
     
-                	<li<?php echo $active ?>> <a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
+                		<li<?php echo $active ?>> <a href="<?php echo $menu_item->url ?>" title="<?php echo $menu_item->title ?>"><span><?php echo $menu_item->title ?></span></a></li><?php endforeach; ?>
                         
                     </ul>
                 </nav>
