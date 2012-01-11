@@ -21,7 +21,7 @@
 			<div class="content-gallery">
 				<div class="gallery">
                 	<?php if (isset($post->post_content)) : ?>
-                	<div class="gallery-description scalable-text" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
+                	<div class="gallery-description" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
 						<?php echo $post->post_content ?>
                     </div><!--end .intro-slide-->
                     <?php endif ?>

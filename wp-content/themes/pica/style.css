@@ -2,12 +2,12 @@
 	Theme Name: Pica
 	Description: Theme for PicaDesign LLC
 	Author: Pica Design, LLC
-	Author URI: http://www.picadesign.com
+	Author URI: http: //www.picadesign.com
 	Tags: Blank, Pica, Theme
 */
 	
 	/* ADMIN TEXT EDITOR STYLES ARE DECLARED WITHIN editor-style.css so they can be added to the WP WYSIWIG Editor */
-	@import "editor-style.css";
+	@import "editor-style.css" ;
 
 
 	/* HTML5 display-role reset for older browsers */
@@ -23,15 +23,19 @@
 	blockquote, q {
 		quotes: none ;
 	}
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: ' ';
+	blockquote: before, blockquote: after, q: before, q: after {
+		content: ' ' ;
 		content: none ;
 	}
 	table {
 		border-collapse: collapse ;
 		border-spacing: 0 ;
 	}
-
+	.clear{
+		clear: both ;
+		margin: 0 ;
+		padding: 0 ;
+	}
 	/**********************************************
 	
 		HTML DECLARATIONS 
@@ -67,10 +71,31 @@
 				width: 24px ;
 				height: 24px ;
 			}
-				.gray {
+				/* Colors */
+				.bg-color-gray {
 					background-color: #404041 ;
 				}
-	
+				.text-color-lightgray {
+					color: #666 ;
+				}
+				.text-color-black {
+					color: #000 ;
+				}
+				.text-color-white {
+					color: #fff ;
+				}
+				.alignleft {
+					float: left ;
+				}
+				.alignright {
+					float: right ;
+				}
+					img.alignleft {
+						margin: 0 15px 15px 0 ;
+					}
+					img.alignright {
+						margin: 0 0 15px 15px ;
+					}
 	/**********************************************
 	
 		ADD WEBSITE LAYOUT DECLARATIONS HERE
@@ -78,13 +103,14 @@
 	#site-wrapper {
 		position: relative ;
 		min-height: 100% ;
-		width:100%;
+		width: 100% ;
+		min-width: 750px ; /* This is arbitrary atm - will be our < tablet cut off for this theme - lower resolutions will be served the mobile version of the website */
 	}
 
 		/*-------Navigation-------*/
 		#site-controller {
 			background-color: #999 ;
-			width:100%;
+			width: 100% ;
 			overflow: auto ;
 		}
 			.site-controller-trigger {
@@ -110,24 +136,19 @@
 				background-image: url(images/pica-mark.png) ;
 			}
 				.picamarketing{
-					float:right;
-					display:none;
-					font-family:'DINNextLTProMedium';
-					font-size:30px;
-					padding:20px 20px 0 0;
+					float: right ;
+					display: none ;
+					font-family: 'DINNextLTProMedium' ;
+					font-size: 26px ;
+					padding: 20px 20px 0 0 ;
 				}
-					.black{
-						color:#000;	
-					}
-					.white{
-						color:#FFF;	
-					}
 			
 			nav {
 				display: none ;
-				padding: 40px 0 0 0 ;
-				margin: 0 0 0 65px ;
+				padding: 35px 0 0 0 ;
+				margin: 0 0 0 63px ;
 				width: 440px ;
+				height: 165px ;
 				clear: left ;
 			}
 				nav ul li {
@@ -142,88 +163,217 @@
 						height: 28px ; /* 9px padding * 2 = 18 - 40 = 28 */
 						color: #ffffff ;
 						font-size: 32px ;
-						font-family: 'DINNextLTPro';
+						font-family: 'DINNextLTPro' ;
 					}
 					nav ul li a span {
-						padding: 4px 12px 4px 12px ;
+						padding: 4px 9px 3px 9px ;
 					}
-						nav ul li.active a span, nav ul li:hover a span {
+						nav ul li.active a span, nav ul li: hover a span {
 							background-color: #262626 ;
 						}
 	
 		#content-wrapper {
 			position: relative ;
-			padding: 40px 0 10px 72px ;
+			padding: 40px 0 100px 72px ;
 			height: 100% ;
 			overflow: visible ;
+			
 		}
 			body.content-bleed #content-wrapper {
 				padding: 0 0 120px 0 ;
 			}
-			
+	/*Home Page*/		
 			.focal-point {
-				/*width: 100% ;*/
-				min-width: 850px ; /* Arbitrary atm - to be changed? */
-				/*background-color: #404041 ;*/
-				overflow:auto;
+				width: 100% ;
+				background-color: #000000 ;
+				overflow: auto ;
 			}
-				.focal-point-item{
-					overflow: visible ;
+				.focal-point-item {
+					overflow: hidden ;
 					position: relative ;
 					float: left ;
-					margin: 0 15px 15px 0 ;
 				}
-					/* attachment-description is the new*/
+					.focal-point.single .focal-point-item {
+						margin: 0 ;
+					}
+					.focal-point.multiple .focal-point-item {
+						margin: 0 15px 15px 0 ;
+					}
 					.focal-point-text {
 						position: absolute ;
+						width: 100% ;
 						z-index: 2 ;
 						top: 72px ;
 						left: 72px ;
 					}
-						.focal-point-text div {
+						.focal-point-text h1 {
 							width: 100% ;
-							margin: 0 0 35px 0 ;
+							margin: 0 0 25px 0 ;
 						}
-							.focal-point-text div span {
-								padding: 7px 25px 7px 25px ;
-								font-size: 1.37em ;
+						.focal-point-text h1.bottom {
+							position: absolute ;
+							bottom: 0 ;
+						}
+							.focal-point-text h1 span {
+								padding: 0px 10px 0px 10px ;
 								color: #ffffff ;
-								background-color: rgba(0,0,0,0.7) ;
-								font-family: 'DINNextLTPro';
+								font: 1.1em/1 'DINNextLTPro' ;
+								background-color: rgba(0,0,0,0.6) ;
 							}
 					.focal-point-image {
 						position: relative ;
+						/* The following is SUPER ghetto! Do correctly with narrower images so the proportion isnt too wide */
 						width: 100% ;
 						height: auto ;
 					}
-			
+				/*blogroll*/
+					#home-featured-wrapper{
+						width: 100% ;
+						height: auto ;
+						padding: 45px 0 0 0 ;
+						position: relative ;
+						display: block ;
+					}
+						#home-featured-wrapper h5{
+							font-size: 33px ;
+							font-family: 'DINNextLTProMedium' ;
+							float: left ;
+							display: block ;
+						}
+							#home-featured-wrapper h5.intro {
+								margin-left: 72px ;
+							}
+					#renews{
+						display: block ;
+						float: left ;
+						max-width: 900px ;
+					}
+						.renews-title{
+							display: block ;
+							float: left ;
+							width: 100% ;
+						}
+					#resocial{
+						display: block ;
+						float: left ;
+						max-width: 900px ;
+					}
+						.resocial-title{
+							display: block ;
+							float: left ;
+							width: 100% ;
+						}
+						.blog-roll-container{
+							width: 847px ;
+							min-height: 125px ;
+							margin: 10px 0 10px 0 ;
+							display: block ;
+							position: relative ;
+							float: left ;
+						}
+							.blog-roll-preview{
+								float: left ;
+								margin-left: 72px ;
+							}
+								.blog-roll-thumbnail{
+									display: block ;
+									position: relative ;
+									float: left ;
+									margin-right: 20px ;
+									min-height: 125px ;
+									width: 355px ;
+								}
+								.blog-roll-excerpt{
+									display: block ;
+									position: relative ;
+									float: left ;
+									width: 400px ;
+								}
+									.blog-roll-excerpt h1{
+										font-size: 24px ;
+										font-family: 'DINNextLTProMedium' ;
+									}
+									
+										.blog-roll-excerpt h2{
+											font-size: 11px ;
+											font-family: 'DINNextLTPro' ;	
+											background-color: #999 ;
+											color: #FFF ;
+											padding: 4px 4px 4px 28px ;
+											width: 65px ;
+											float: left ;
+											display: block ;
+											position: relative ;
+											background-image: url(images/down-arrow-box-inactive.png) ;
+											background-repeat: no-repeat ;
+											background-position: left ;									
+										}
+											.blog-roll-excerpt h2: hover{
+												background-color: #666 ;
+												background-image: url(images/down-arrow-box-active.png) ;
+												background-repeat: no-repeat ;
+												background-position: left ;
+												color: #c2c2c2 ;
+											}
+									.blog-roll-excerpt p{
+										font-family: Georgia, "Times New Roman", Times, serif ;
+										font-size: 20px ;
+										color: #666 ;
+										padding: 0 24px 0 0 ;
+									}
+						.blog-roll-text{
+							display: block ;
+							position: relative ;
+							width: 800px ;
+							float: left ;
+							margin: 25px 0 0 72px ;
+							color: #333 ;
+							font-family: 'DINNextLTPro' ;
+							line-height: 1.2em ;
+							display: none ;
+							padding: 15px ;
+							border-bottom: 1px dashed #999 ;
+						}
+							.blog-roll-text img{
+								padding: 25px 25px 25px 0 ;
+							}
+						.twitter-container{
+							width: 900px ;
+							min-height: 125px ;
+							margin: 10px 0 10px 0 ;
+							display: block ;
+							position: relative ;
+							float: left ;
+							background-color: red ;
+						}
+						
 			.page-title {
 				padding: 0 0 24px 0 ;
 				margin: 0 0 33px 0 ;
 				border-bottom: 1px dashed #999 ;
-				overflow:auto;
-				text-transform: lowercase;
-				display:block;
-				position:relative;
-				
+				overflow: auto ;
+				text-transform: lowercase ;
+				display: block ;
+				position: relative ;
+				min-width: 800px ;
 			}
 				.maintitle{
-					float:left;
-					margin:;
-					min-width:500px;
-					overflow:visible;
-					display:block;
-					position:relative;
+					float: left ;
+					margin: 0 ;
+					min-width: 500px ;
+					overflow: visible ;
+					display: block ;
+					position: relative ;
 				}
 				.return, .return a{
-					float:right;
-					overflow:auto;
-					display:block;
-					position:relative;
-					color:#333;
+					float: right ;
+					overflow: auto ;
+					display: block ;
+					position: relative ;
+					color: #333 ;
 					margin: 10px 80px 0px 0px ;
-					font-family: 'DINNextLTProMedium';
-					font-size:16px !important;
+					font-family: 'DINNextLTProMedium' ;
+					font-size: 16px !important ;
 				}
 				body.content-bleed .page-title {
 					margin-top: 40px ;
@@ -237,10 +387,10 @@
 					.page-title h1 a {
 						font-size: 48px ;
 						font-weight: normal ;
-						font-family: 'DINNextLTPro';
-						color:#000;
+						font-family: 'DINNextLTPro' ;
+						color: #000 ;
 					}
-						.page-title h1 a:hover {
+						.page-title h1 a: hover {
 							text-decoration: underline ;
 						}
 				.page-title h2 {
@@ -267,38 +417,44 @@
 				background-color: #666666 ;
 				padding: 24px ;
 				min-width: 360px ; /* 1100 - (24px padding * 2) = 1052 */
-				max-width: 1052px;
+				max-width: 1052px ;
 				clear: left ;
-				overflow:auto;
+				overflow: auto ;
 			}
 				.call-to-action-column {
-					min-width:200px;
-					max-width:360px;
-					display:block;
-					float:left;
-					postition:relative;
-					overflow:auto;
+					min-width: 200px ;
+					max-width: 360px ;
+					display: block ;
+					float: left ;
+					position: relative ;
+					overflow: auto ;
 					/*font*/
-					color:white;
-					margin-bottom:25px;
+					color: white ;
+					margin-bottom: 25px ;
 				}
-					.call-to-action-column p, .call-to-action-column p strong{
-						color:white;
-						font-size:24px;
+					.call-to-action-column p, .call-to-action-column p strong, .call-to-action-column a {
+						color: white ;
+						font-size: 24px ;
 					}
+						.call-to-action-column a: hover {
+							text-decoration: underline ;
+						}
 				
-			/*-------Portfolio Page---*/		
+			/*-------Portfolio Page---*/
+			.attachment-post-thumbnail{
+				height: 245px ;
+				width: 346px ;
+			}
 			.content-gallery {
-				overflow:visible;
-				position:relative;
-				}	
+				overflow: visible ;
+			}	
 				.gallery {
-					overflow:visible;
+					overflow: visible ;
 				}
 					.gallery-item.in-grid {
-						width: 282px ; /* 346 - (32px padding * 2) = 282 */
-						height: 181px ; /* 245 - (32px padding *2) = 181 */
-						padding: 32px ;
+						width: 346px ; /* 346 - (32px padding * 2) = 282 */
+						height: 245px ; /* 245 - (32px padding *2) = 181 */
+						/*padding: 32px ;*/
 						background-color: #939598 ;
 						margin: 0 33px 33px 0 ;
 						float: left ;
@@ -307,8 +463,25 @@
 							font-size: 42px ;
 							line-height: 130% ;
 							color: #ffffff ;
-							font-family: 'DINNextLTPro';
+							font-family: 'DINNextLTPro' ;
+							position: relative ;
 						}
+						.gallery-item.in-grid .work-item-title{
+							margin: 32px ;
+							font-size: 42px ;
+							line-height: 130% ;
+							color: #ffffff ;
+							font-family: 'DINNextLTPro' ;
+							z-index: 1 ;
+							position: absolute ;
+							/*text-shadow: 3px 3px 2px #333333 ;*/
+						}
+						.gallery-item.in-grid img {
+							position: absolute ;
+							z-index: 5 ;
+							/*display: none ;*/
+						}
+
 					.gallery-nav {
 						
 					}
@@ -318,20 +491,20 @@
 							height: 82px ;
 							position: absolute ;
 							z-index: 1000 ;
-							top: 300px;
+							top: 400px ;
 						}
 						.gallery-prev {
-							left: -32px ;
+							left: 40px ;
 							background-image: url(images/slide-arrow-left-inactive.png) ;
 						}
-							.gallery-prev:hover {
+							.gallery-prev: hover {
 								background-image: url(images/slide-arrow-left-active.png) ;
 							}
 						.gallery-next {
-							left: 1094px ;
+							left: 1166px ;
 							background-image: url(images/slide-arrow-right-inactive.png) ;
 						}
-							.gallery-next:hover {
+							.gallery-next: hover {
 								background-image: url(images/slide-arrow-right-active.png) ;
 							}
 							.gallery div {
@@ -344,16 +517,16 @@
 									width: 1018px !important ; /* 1130 - (56 padding * 2) = 1018 */
 									height: 528px !important ; /* 650 - (56 padding * 2) = 528 */
 									padding: 56px ;
-									font-size: 1.2em ;
+									font-size: 33px ;
 									color: #ffffff ;
 									background-color: #666666 ;
-									font-family: 'DINNextLTPro';
+									font-family: 'DINNextLTPro' ;
 								}
 									.gallery div.gallery-description a {
-										font-size: 1.2em ;
+										font-size: 33px ;
 										color: #ffffff ;
 									}
-										.gallery div.gallery-description a:hover {
+										.gallery div.gallery-description a: hover {
 											text-decoration: underline ;
 										}
 								.gallery div img {
@@ -362,8 +535,28 @@
 									display: block ;
 								}
 								.gallery div p {
-									color: #fff !important ;								
+									color: #fff !important ;
 								}
+			/*-------Blog Page---*/
+			.blog-post{
+				width: 80% ;
+				background-color: #eee ;
+				padding: 25px ;
+				min-height: 500px ;
+				overflow: auto ;
+			}
+				#invisible{
+					color: #333 !important ;
+					font-family: 'DINNextLTPro' ;
+					line-height: 1.2em ;	
+				}
+				#invisible strong{
+					color: #333 !important ;
+					font-family: 'DINNextLTProMedium' !important ;
+					line-height: 1.2em ;	
+				}
+			
+								
 		/*-------Pretty Styles---*/
 		.shadow {
 			box-shadow: 0px 0px 5px #999 ;
@@ -375,34 +568,34 @@
 	
 	/*-------Footer-------*/
 	footer {
-		position: relative;
+		position: relative ;
+		display: block ;
+		float: left ;
 		bottom: 20px ;
-		font-family:'DINNextLTPro';
+		margin: 30px 0 0 72px ;
+		font-family: 'DINNextLTPro' ;
 		font-size: 20px ;
-		margin: 0 0 20px 72px ;
-		color: #666666 ;
-		
+		color: #666 ;
+		min-width: 600px ;
+		overflow: visible ;
 	}
 		footer a {
-			font-family:'DINNextLTPro';
+			font-family: 'DINNextLTPro' ;
 			font-size: 20px ;
 			color: #666666 ;
 			text-decoration: none ;
 		}
-			footer a:hover {
+			footer a: hover {
 				text-decoration: underline ;
 			}
 		footer .color-swatch {
+			position: relative ;
+			display: block ;
 			float: left ;
-			position:relative;
-			display:block;
 		}
 		footer span {
-			float: left ;
+			position: relative ;
 			display: block ;
+			float: left ;
 			margin-top: 4px ;
-			float:left;
 		}
-@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
-
-}

@@ -20,11 +20,32 @@
 			//Update the element title attribute to reflect the change
 			$(this).attr('title', 'Display Page Menus')
 			$('.picamarketing').fadeOut(300)
-		}
-		
+		}		
 	})//end click event
 	
-	
+////////Chloe is playing here.
+	//Attach a click event handler to the .nav-trigger element
+	$('.blog-roll-excerpt a').click(function(e){
+		e.preventDefault()
+		//Once clicked, determine if the element has the class inactive or active
+		if ($(this).hasClass('inactive')) {
+			//If the current element is inactive, let's slide our text down so it's visible
+			$(this).parent().parent().parent().find('.blog-roll-text').slideDown('slow')
+			//We also wanted to remove the inactive class and replace it with the active class (this changes the down arrow into an up arrow)
+			$(this).removeClass('inactive').addClass('active')
+			//Update the element title attribute to reflect the change
+			$(this).attr('title', 'Tell Me Less')
+		} else {
+			//The element is not inactive, so it must be active - go ahead and scroll the text back up so it's hidden
+			$(this).parent().parent().parent().find('.blog-roll-text').slideUp('slow')
+			//..and we want to remove the active class and set it back to inactive
+			$(this).removeClass('active').addClass('inactive')
+			//Update the element title attribute to reflect the change
+			$(this).attr('title', 'Tell Me More')
+		}		
+	})//end click event
+///////	Chloe is done playing now.
+
 	
 	//Make sure we slideup the site controller pane when clicking the nav links
 	$('nav ul li a, .pica-mark').click(function(e){
@@ -40,28 +61,17 @@
 		timeout: 0 
 	})//end cycle
 	
+	//Initiate our font scaling script 'fitText' for dynamically sizing certain typography elements
+	$(".scalable-text h1").fitText(1.55, { minFontSize: '10px', maxFontSize: '90px' });
 	
-	//Scale text with an em font size, for tailoring font size to various screen / browser sizes
-	var $body = $('.scalable-text'); //Cache this for performance
-
-	var setBodyScale = function() {	
-		var scaleSource = $body.width(),
-			scaleFactor = 0.35,                     
-			maxScale = 600,
-			minScale = 30; //Tweak these values to taste
-		var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
-		if (fontSize > maxScale) fontSize = maxScale;
-		if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
-		$body.css('font-size', fontSize + '%');
-	}
-
-	$(window).resize(function(){
-		//We dont want to go too small - to hold the design integrity
-		if ($body.width() > 850) {
-			setBodyScale();
-		}
-	});
-	
-	//Fire it when the page first loads:
-	setBodyScale();
+	//Add a toggle trigger to our work items
+	$('.gallery-item.in-grid').hover(function(){
+		//Over
+		$(this).find('img').fadeOut(300) ;
+	}, function() {
+		//Out
+		$(this).find('img').fadeIn(600) ;
+	})
 })(jQuery)	
+
+	
