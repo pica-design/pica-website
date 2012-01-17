@@ -62,7 +62,11 @@
                         <h5 class="text-color-black intro">re:</h5><h5 class="text-color-lightgray">social</h5>
                         <br />
                         <div class="twitter-container">
-                        
+<!--START TWITTERFEED-->
+			<ul id="twitter_update_list">
+
+			</ul>
+<!--END TWITTERFEED-->
                         </div>
                     </div><!--end social-->
                         

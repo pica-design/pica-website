@@ -3,7 +3,17 @@
       	<div class="page-title">
             <h1><?php echo $post->post_title ?></h1>
         </div>
-		
+<!--CHLOE IS PLAYING HERE!-->
+        <h4>browse by:</h4>
+			<?php
+echo wp_tag_cloud( array( 'taxonomy' => 'work-categories') );
+            ?>
+        
+        
+<!--CHLOE IS NOW DONE PLAYING. PROCEED.-->
+        
+        
+        
         <div class="content-gallery">
 			<?php 
                 $work_loop = new WP_Query( array( 'post_type' => 'work', 'type' => 'featured', 'orderby' => 'menu_order', 'order' => 'ASC') );

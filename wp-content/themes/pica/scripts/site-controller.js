@@ -53,14 +53,46 @@
 		$('nav').slideUp('medium')
 	})
 	
+	/*
 	//Use the jQuery Cycle Library to power our slideshow on the work page
 	$('.gallery').cycle({
 		fx: 'scrollHorz', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
 		speed:  'medium', 
 		prev:   '.gallery-prev', 
 		next:   '.gallery-next', 
-		timeout: 0 
+		timeout: 0,
+		containerResize: false,
+		slideResize: false,
+		fit: 1
 	})//end cycle
+	*/
+	function SetHeightToTallestChild(i) {
+	  var tallest = 0;
+	  $(i).children().each(function(){
+		var h = $(this).height();
+		if(h > tallest)
+		  tallest = h;
+	  });
+	  $(i).height(tallest);
+	}
+	
+
+	 SetHeightToTallestChild('.gallery');
+	  
+	//Use the jQuery Cycle Library to power our slideshow on the work page
+	$('.gallery').cycle({
+		fx: 'scrollHorz', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed:  'medium', 
+		prev:   '.gallery-prev', 
+		next:   '.gallery-next', 
+		timeout: 0
+	})
+	   
+	  $(window).resize(function() {
+		SetHeightToTallestChild('.gallery');
+	  });
+
+
 	
 	//Initiate our font scaling script 'fitText' for dynamically sizing certain typography elements
 	$(".scalable-text h1").fitText(1.55, { minFontSize: '10px', maxFontSize: '90px' });
@@ -74,5 +106,6 @@
 		$(this).find('img').fadeIn(600) ;
 	})
 })(jQuery)	
+
 
 	

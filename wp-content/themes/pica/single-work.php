@@ -18,30 +18,20 @@
             </div>
 
 
-			<div class="content-gallery">
+			<section class="content-gallery">
 				<div class="gallery">
                 	<?php if (isset($post->post_content)) : ?>
-                	<div class="gallery-description" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
-						<?php echo $post->post_content ?>
-                    </div><!--end .intro-slide-->
+                	<figure class="gallery-item large text-slide" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
+						<div><?php echo $post->post_content ?></div>
+                    </figure><!--end .intro-slide-->
                     <?php endif ?>
-					<?php 
-						//get_post_custom('full','0','0','full',"$post->ID",'0','attachment-image','div','small-thumb'); 
-						
-						//Iterate through each attachment in this post's gallery
-						foreach ($gallery->attachments as $attachment) :
-							
-							//print_r($attachment); 
-							
-							?>
-							
-                            <img src="<?php echo $attachment['guid'] ?>" alt="<?php echo $attachment['post_title'] ?>" height="650" width="1130"/>
-							
-							<?php
-							
-						endforeach;
-					?>
-				</div><!-- end gallery -->
+					<?php //Iterate through each attachment in this post's gallery ?>
+					<?php foreach ($gallery->attachments as $attachment) : ?>
+                    <figure class="gallery-item large image-slide">
+                        <img src="<?php echo $attachment['guid'] ?>" alt="<?php echo $attachment['post_title'] ?>" />
+                    </figure>
+					<?php endforeach ?>
+				</div><!-- end .gallery -->
                 <div class="gallery-nav">
                 	<a class="gallery-prev" href="#" title="Previous"></a> 
                     <a class="gallery-next" href="#" title="Next"></a>

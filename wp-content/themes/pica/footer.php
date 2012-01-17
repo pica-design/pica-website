@@ -16,6 +16,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/scripts/jquery.fittext.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/scripts/site-controller.js"></script>   
+	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/scripts/site-controller.js"></script>
+    <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/picadesign.json?callback=twitterCallback2&count=6"></script>
     </body>
 </html>
