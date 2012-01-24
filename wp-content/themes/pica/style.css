@@ -36,6 +36,7 @@
 		margin: 0 ;
 		padding: 0 ;
 	}
+	
 	/**********************************************
 	
 		HTML DECLARATIONS 
@@ -52,11 +53,8 @@
 			font-size: 14px ;
 			background-color: #dddddd ;
 		}
-			
 			/*
-			
 				LINK & HEADER STYLES ARE LOCATED IN editor-style.css
-			
 			*/
 			a img {
 				border: 0px ;
@@ -104,7 +102,7 @@
 		position: relative ;
 		min-height: 100% ;
 		width: 100% ;
-		min-width: 750px ; /* This is arbitrary atm - will be our < tablet cut off for this theme - lower resolutions will be served the mobile version of the website */
+		min-width: 1000px ; /* This is arbitrary atm - will be our < tablet cut off for this theme - lower resolutions will be served the mobile version of the website */
 	}
 
 		/*-------Navigation-------*/
@@ -174,31 +172,40 @@
 	
 		#content-wrapper {
 			position: relative ;
-			padding: 40px 0 100px 72px ;
-			height: 100% ;
-			overflow: visible ;
-			
+			width: 100% ;
+			padding: 0 0 200px 0 ;
+			overflow: auto ;
 		}
 			body.content-bleed #content-wrapper {
-				padding: 0 0 120px 0 ;
 			}
-	/*Home Page*/		
+			
+			/*Home Page*/		
 			.focal-point {
+				position: relative ;
 				width: 100% ;
-				background-color: #000000 ;
-				overflow: auto ;
+				overflow: hidden ;
 			}
+				.focal-point.single {
+					background-color: #000000 ;
+				}
 				.focal-point-item {
 					overflow: hidden ;
 					position: relative ;
 					float: left ;
 				}
 					.focal-point.single .focal-point-item {
-						margin: 0 ;
+						/* ghetto fix for some odd margins showing up around the focal-point-item img */
+						margin: -2px 0 -3px 0 ;
 					}
 					.focal-point.multiple .focal-point-item {
-						margin: 0 15px 15px 0 ;
+						margin: 0 2% 15px 0 ;
 					}
+					.focal-point.multiple .focal-point-item {
+						width: 48% ;
+					}
+						.focal-point.multiple .focal-point-item img {
+							width: 100% ;
+						}
 					.focal-point-text {
 						position: absolute ;
 						width: 100% ;
@@ -222,217 +229,313 @@
 							}
 					.focal-point-image {
 						position: relative ;
-						/* The following is SUPER ghetto! Do correctly with narrower images so the proportion isnt too wide */
 						width: 100% ;
 						height: auto ;
 					}
-				/*blogroll*/
-					#home-featured-wrapper{
-						width: 100% ;
-						height: auto ;
-						padding: 45px 0 0 0 ;
+					
+					
+			/*blogroll*/
+			.sub-content-wrapper {
+				width: 100% ;
+				height: auto ;
+				padding: 0 ;
+				position: relative ;
+				overflow: auto ;
+			}
+				.sub-content-wrapper h5 {
+					font-size: 33px ;
+					font-family: 'DINNextLTProMedium' ;
+					float: left ;
+					display: block ;
+				}
+					.sub-content-wrapper h5.intro {
+					}
+				#renews{
+					width: 50% ;
+					margin-left: 72px ;
+					float: left ;
+					overflow: auto ;
+				}
+					.renews-title{
 						position: relative ;
-						display: block ;
-					}
-						#home-featured-wrapper h5{
-							font-size: 33px ;
-							font-family: 'DINNextLTProMedium' ;
-							float: left ;
-							display: block ;
-						}
-							#home-featured-wrapper h5.intro {
-								margin-left: 72px ;
-							}
-					#renews{
-						display: block ;
+						width: 100% ;
 						float: left ;
-						max-width: 900px ;
 					}
-						.renews-title{
-							display: block ;
-							float: left ;
-							width: 100% ;
-						}
-					#resocial{
-						display: block ;
+					.blog-roll-container {
+						position: relative ;
+						width: 100% ;
+						margin: 10px 0 10px 0px ;
 						float: left ;
-						max-width: 900px ;
+						overflow: auto ;
 					}
-						.resocial-title{
-							display: block ;
-							float: left ;
-							width: 100% ;
-						}
-						.blog-roll-container{
-							width: 847px ;
-							min-height: 125px ;
-							margin: 10px 0 10px 0 ;
-							display: block ;
+						.blog-roll-preview {
 							position: relative ;
+							/*height: 127px ;		*/
+							width: 100% ;					
 							float: left ;
+							overflow: auto ;
 						}
-							.blog-roll-preview{
+							.blog-roll-thumbnail {
+								position: relative ;
+								width: 46% ;
 								float: left ;
-								margin-left: 72px ;
+								margin-right: 4% ;
 							}
-								.blog-roll-thumbnail{
-									display: block ;
-									position: relative ;
-									float: left ;
-									margin-right: 20px ;
-									min-height: 125px ;
-									width: 355px ;
+								.blog-roll-thumbnail img {
+									width: 100% ;
+									height: auto ;
 								}
-								.blog-roll-excerpt{
-									display: block ;
-									position: relative ;
-									float: left ;
-									width: 400px ;
+							.blog-roll-excerpt {
+								position: relative ;
+								width: 50% ;
+								/*	height: 125px ; */
+								float: left ;
+								margin: 0 0 20px 0 ;
+							}
+								.blog-roll-excerpt p {
+									font-family: Georgia, "Times New Roman", Times, serif ;
+									font-size: 20px ;
+									color: #666 ;
 								}
-									.blog-roll-excerpt h1{
-										font-size: 24px ;
-										font-family: 'DINNextLTProMedium' ;
+								.blog-roll-excerpt h1{
+									font-size: 24px ;
+									font-family: 'DINNextLTProMedium' ;
+								}
+								.blog-roll-toggle {
+									position: relative ;
+									overflow: auto ;
+									cursor: pointer ;
+								}
+									.blog-roll-toggle.inactive {
 									}
-									
-										.blog-roll-excerpt h2{
+									.blog-roll-toggle.active {
+									}
+										.blog-roll-toggle .arrow {
+											width: 10px ;
+											height: 10px ;
+											padding: 5px ;
+											float: left ;
+											background-repeat: no-repeat ;
+											background-position: center center ;
+											transition: all .2s linear ; 
+											-o-transition: all .2s linear ; 
+											-moz-transition: all .2s linear ; 
+											-webkit-transition: all .2s linear ;
+										}
+											.blog-roll-toggle.inactive .arrow {
+												background-color: #999999 ;
+												background-image: url(images/down-arrow-box-inactive.png) ;
+											}
+												.blog-roll-toggle.inactive:hover .arrow {
+													background-color: #666666 ;
+												}
+											.blog-roll-toggle.active .arrow {
+												background-color: #666666 ;
+												background-image: url(images/down-arrow-box-active.png) ;
+											}
+												.blog-roll-toggle.active:hover .arrow {	
+													background-color: #444444 ;														
+												}
+										
+										.blog-roll-toggle .text {
+											height: 10px;
+											padding: 5px ;
+											float: left ;
+											margin-left: 5px ;
 											font-size: 11px ;
 											font-family: 'DINNextLTPro' ;	
-											background-color: #999 ;
-											color: #FFF ;
-											padding: 4px 4px 4px 28px ;
-											width: 65px ;
-											float: left ;
-											display: block ;
-											position: relative ;
-											background-image: url(images/down-arrow-box-inactive.png) ;
-											background-repeat: no-repeat ;
-											background-position: left ;									
-										}
-											.blog-roll-excerpt h2:hover{
-												background-color: #666 ;
-												background-image: url(images/down-arrow-box-active.png) ;
-												background-repeat: no-repeat ;
-												background-position: left ;
-												color: #c2c2c2 ;
+											transition: all .2s linear ; 
+											-o-transition: all .2s linear ; 
+											-moz-transition: all .2s linear ; 
+											-webkit-transition: all .2s linear ;
+										}	
+											.blog-roll-toggle.inactive .text {
+												color: #ffffff ;
+												background-color: #999999 ;
 											}
-									.blog-roll-excerpt p{
-										font-family: Georgia, "Times New Roman", Times, serif ;
-										font-size: 20px ;
-										color: #666 ;
-										padding: 0 24px 0 0 ;
-									}
-						.blog-roll-text{
-							position: relative ;
-							width: 800px ;
-							float: left ;
-							margin: 25px 0 0 72px ;
-							color: #333 ;
-							font-family: 'DINNextLTPro' ;
-							line-height: 1.2em ;
-							display: none ;
-							padding: 15px ;
-							border-bottom: 1px dashed #999 ;
+												.blog-roll-toggle.inactive:hover .text {
+													color: #c2c2c2 ;
+													background-color: #666 ;
+												}	
+											.blog-roll-toggle.active .text {
+												color: #ffffff ;
+												background-color: #666666 ;
+											}
+											.blog-roll-toggle.active:hover .text {
+												color: #c2c2c2 ;
+											}		
+					.blog-roll-text {
+						position: relative ;
+						width: 100% ;
+						float: left ;
+						margin: 0 0 20px 0 ;
+						padding: 0 0 20px 0 ;
+						color: #333 ;
+						font-family: 'DINNextLTPro' ;
+						line-height: 1.2em ;
+						display: none ;
+						border-bottom: 1px dashed #999 ;
+					}
+						.blog-roll-text img{
+							padding: 25px 25px 25px 0 ;
 						}
-							.blog-roll-text img{
-								padding: 25px 25px 25px 0 ;
-							}
-						.twitter-container{
-							width: 900px ;
+								
+				/* RE:SOCIAL Column */
+				#resocial {
+					width: 35% ;
+					float: left ;
+					margin-left: 4% ;
+					margin-right: 5% ;
+					overflow: auto ;
+				}
+					.resocial-title {
+						width: 100% ;
+						margin: 10px 0 10px 0px ;
+						display: block ;
+						position: relative ;
+						float: left ;
+					}
+						.twitter-container {
+							width: 100% ;
 							min-height: 125px ;
-							margin: 10px 0 10px 72px ;
+							margin: 10px 0 10px 0px ;
 							display: block ;
 							position: relative ;
 							float: left ;
 						}
-							#twitter_update_list {
-								font-size: 18px;
-								line-height: 21px;
-								list-style: none;
-								width:450px;
+							.tweet, .query {
+								font-family: 'DINNextLTPro' ;
+								color: #000 ;
 							}
-							#twitter_update_list li {
-								background: url('images/twitter-divider.gif') bottom left repeat-x;
-								padding-bottom: 7px;
-								margin-bottom: 9px;
+							.tweet ul {
+								float:left;	
 							}
-
-							#twitter_update_list span{
-								color: #0084a8;
-								text-decoration: none;	
-							}
-							
-							#twitter_update_list span a {
-								color: #0084a8;
-								text-decoration: none;
-							}
-								#twitter_update_list a {
-									color: #999;
-
+								.tweet_list {
+									-webkit-border-radius: 0.5em ;
+									-moz-border-radius: 0.5em ;
+									border-radius: 0.5em ;
+									list-style: none ;
+									margin: 0 ;
+									padding: 0 ;
+									overflow-y: hidden ;
 								}
-						
-			.page-title {
+									.tweet_list .awesome,
+									.tweet_list .epic {
+										text-transform: uppercase ;
+									}
+									.tweet_list li {
+										overflow-y: auto ;
+										overflow-x: hidden ;
+										padding: 15px 0 15px 0 ;
+										list-style-type: none ;
+										border-bottom:solid 1px #bbb;
+										font-size:16px;
+									}
+										.tweet_list li a {
+											color: #0084a8 ;
+											font-size:16px;
+											font-family: 'DINNextLTProMedium' ;
+										}
+									
+									.tweet_list .tweet_even {
+										/*background-color: #f6f6f6 ;*/	
+									}									
+									.tweet_list .tweet_avatar {
+										padding-right: .5em ; 
+										float: left ;
+									}									
+										.tweet_list .tweet_avatar img {
+											vertical-align: middle ;
+											margin-right: 10px ;
+										}
+									.tweet_user, .tweet_user a{
+										color: #000 !important ;
+										text-decoration: none ;
+										font-size: 18px ;
+										font-family: 'DINNextLTPro' ;
+										font-weight: bold ;
+									}
+										.tweet_time, .tweet_time a{
+											color: #666 !important;
+											font-family: 'DINNextLTPro' !important;
+											font-size: 16px !important;
+											margin:-5px 0 5px 35px ;
+											position:absolute;
+											min-width:150px;
+										}
+			
+			
+			/* Page Masthead */
+			.page-masthead {
 				padding: 0 0 24px 0 ;
-				margin: 0 0 33px 0 ;
+				margin: 72px 0 33px 72px ;
 				border-bottom: 1px dashed #999 ;
 				overflow: auto ;
 				text-transform: lowercase ;
 				display: block ;
 				position: relative ;
-				min-width: 800px ;
 			}
-				.maintitle{
-					float: left ;
-					margin: 0 ;
-					min-width: 500px ;
-					overflow: visible ;
-					display: block ;
-					position: relative ;
+				.page-masthead-inner {
+					max-width: 1130px ;
+					margin-right: 72px ;
 				}
-				.return, .return a{
-					float: right ;
-					overflow: auto ;
-					display: block ;
-					position: relative ;
-					color: #333 ;
-					margin: 10px 80px 0px 0px ;
-					font-family: 'DINNextLTProMedium' ;
-					font-size: 16px !important ;
-				}
-				body.content-bleed .page-title {
-					margin-top: 40px ;
-					margin-left: 72px ;
-				}
-				.page-title h1 {
-					float: left ;
-					margin: 0px ;
-					padding: 0px ;
-				}
-					.page-title h1 a {
-						font-size: 48px ;
-						font-weight: normal ;
-						font-family: 'DINNextLTPro' ;
-						color: #000 ;
+					.page-title {
+						float: left ;
+						margin: 0 ;
+						/*min-width: 700px ;*/
+						/*overflow: visible ;*/
+						display: block ;
+						position: relative ;
+						width: 85% ;
 					}
-						.page-title h1 a:hover {
-							text-decoration: underline ;
+					/* Used on the contact page */
+					body.content-bleed .page-masthead {
+						margin-top: 40px ;
+						margin-left: 72px ;
+					}
+					.page-masthead h1 {
+						float: left ;
+						margin: 0px ;
+						padding: 0px ;
+					}
+						.page-masthead h1 a {
+							font-size: 48px ;
+							font-weight: normal ;
+							font-family: 'DINNextLTPro' ;
+							color: #000 ;
 						}
-				.page-title h2 {
-					font-size: 48px ;
-					color: #666 ;
-					margin: 0px ;
-					padding: 0px ;	
-				}
-				.dot-seperator {
-					width: 13px ;
-					height: 12px ;
-					top: 22px ;
-					margin: -5px 15px 0px 15px ;
-					display: block ;
-					position: relative ;
-					float: left ;
-					background-image: url(images/dot-seperator.png) ;
-					background-repeat: no-repeat ;
-				}
+							.page-masthead h1 a:hover {
+								text-decoration: underline ;
+							}
+					.page-masthead h2 {
+						font-size: 48px ;
+						color: #666 ;
+						margin: 0px ;
+						padding: 0px ;	
+					}
+					.dot-seperator {
+						width: 13px ;
+						height: 12px ;
+						top: 22px ;
+						margin: -5px 15px 0px 15px ;
+						display: block ;
+						position: relative ;
+						float: left ;
+						background-image: url(images/dot-seperator.png) ;
+						background-repeat: no-repeat ;
+					}
+					.page-controller {
+						width: 15% ;
+						float: right ;
+						overflow: auto ;
+						display: block ;
+						position: relative ;
+						color: #333 ;
+						margin: 10px 0px 0px 0px ;
+						font-family: 'DINNextLTProMedium' ;
+						font-size: 16px ;
+						text-align: right ;
+					}
 			
 			.call-to-action {
 				position: relative ;
@@ -462,28 +565,28 @@
 							text-decoration: underline ;
 						}
 				
-			/*-------Portfolio Page---*/
-			.attachment-post-thumbnail{
-				height: 245px ;
-				width: 346px ;
-			}
+				
+				
 			
+			/*-------Portfolio Page---*/
 			/* 
 				.gallery contains the gallery on the page
 				It has an overflow of visible to display the gallery controls 
 				They are absolutely positioned outside of the .gallery container
 			*/
 			.content-gallery {
+				position: relative ;
 				overflow: visible ;
-				width: 100% ;
-				height: 100% ;
+				margin: 0 72px 0 72px ;
 				max-width: 1130px !important ;
-				max-height: 650px !important;
+				max-height: 650px !important ;
 			}	
+				.content-gallery.grid {
+					max-width: 100% !important ;
+					max-height: auto !important ;
+				}
 				.gallery {
-					overflow: visible ;
-					width: 100% ;
-					height: 100% ;
+					position: relative ;
 				}	
 					/* 
 						Gallery items are displayed in varrying formats
@@ -491,29 +594,23 @@
 							1) is used to display multiple items in a singular format 
 					*/
 					.gallery-item.large {
-						width: 100% ;
-						height: 100% ;
-						/*width: 70.625% !important;*/ /* 1130 / 16px default font size = 70.625% of the screen width */
-						/*height: 40.625% !important ;*/ /* 650 / 16px default font size = 70.625% of the screen width */
-						background-color: #222222 ;
-						display: block ;
+						width: 100% !important ;
+						height: 100% !important ;
+						max-height: 650px !important ;
 					}
 						/* Gallery Items can be composed of text / html */
 						.gallery-item.large.text-slide  {
-							/* These are fallback values!! The real colors are set inline with php */
-							color: #ffffff ;
+							/* These are fallback values!! The real colors are set inline with php */6
 							background-color: #666666 ;
+							color: #ffffff ;
 						}
 							.gallery-item.large.text-slide div {
-								padding: 50px ;
+								height: 90% ;
+								width: 90% ;
+								margin: 5% ;
 								font-size: 33px ;
 								font-family: 'DINNextLTPro' ;
 							}
-							/*
-							.gallery-item.large.text-slide div p {
-								color: #fff !important ;
-							}
-							*/
 							.gallery-item.large.text-slide div a {
 								font-size: 33px ;
 								color: #ffffff ;
@@ -524,19 +621,22 @@
 						
 						/* Gallery items can be images */
 						.gallery-item.large img {
-							width: 100% ;
-							height: 100% ;
-							margin: 0 auto 0 auto ;
+							position: relative ;
 							display: block ;
+							width: 100% ;
+							max-height: 650px !important ;
 						}
+						
+						
 						
 						/* Gallery items can be displayed in a grid */
 						.gallery-item.in-grid {
-							width: 346px ; 
+							width: 340px ; 
 							height: 245px ;
 							background-color: #939598 ;
-							margin: 0 33px 33px 0 ;
+							margin: 0 30px 30px 0 ;
 							float: left ;
+							overflow: hidden ;
 						}
 							.gallery-item.in-grid a.link-fill-container {
 								position: relative ;
@@ -568,17 +668,17 @@
 							height: 82px ;
 							position: absolute ;
 							z-index: 1000 ;
-							top: 400px ;
+							top: 225px ;
 						}
 						.gallery-prev {
-							left: 40px ;
+							left: -32px ;
 							background-image: url(images/slide-arrow-left-inactive.png) ;
 						}
 							.gallery-prev:hover {
 								background-image: url(images/slide-arrow-left-active.png) ;
 							}
 						.gallery-next {
-							left: 1166px ;
+							right: -31px ;
 							background-image: url(images/slide-arrow-right-inactive.png) ;
 						}
 							.gallery-next:hover {
@@ -616,16 +716,15 @@
 	
 	/*-------Footer-------*/
 	footer {
-		position: relative ;
-		display: block ;
-		float: left ;
-		bottom: 20px ;
-		margin: 30px 0 0 72px ;
+		position: absolute ;
+		bottom: 0 ;
+		left: 72px ;
+		width: 90% ;
+		padding-bottom: 72px ;
 		font-family: 'DINNextLTPro' ;
 		font-size: 20px ;
-		color: #666 ;
-		min-width: 600px ;
-		overflow: visible ;
+		color: #666666 ;
+		overflow: auto ;
 	}
 		footer a {
 			font-family: 'DINNextLTPro' ;

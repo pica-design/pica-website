@@ -22,13 +22,9 @@
 		//Set our post thumbnail image dimensions
 		set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
 		//Add our extra-large image size for media uploads
-		add_image_size( 'extra-large', 1250, 500, true ); 
+		add_image_size( 'homepage', 1250, 500, true ); 
 		add_image_size( 'blogroll', 355, 125, true);
 		add_image_size( 'portfolio', 1130, 650, true);
-		
-		
-		
-		
 		
 		function custom_excerpt_length( $length ) {
 			return 15;

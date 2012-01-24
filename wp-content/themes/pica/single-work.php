@@ -4,23 +4,25 @@
 
 	//Gather this posts gallery items
 	$gallery = new Post_Gallery ;
+	
+	//print_r($_SERVER);
 ?>
-
-            <div class="page-title">
-                <div class="maintitle">
-                    <h1><a href="<?php bloginfo('url') ?>/work" title="Back to our work"><?php echo get_post_type() ?></a></h1>
-                    <figure class="dot-seperator"></figure>
-                    <h2> <?php echo $post->post_title ?></h2>
-                </div>    
-                <div class="return">
-                    <a href="<?php bloginfo('url') ?>/work" title="Back to gallery"><img src="<?php  bloginfo('template_directory')?>/images/back-arrow.png" /> back to gallery </a>
-                </div>                
+		<section class="sub-content-wrapper">
+            <div class="page-masthead">
+            	<div class="page-masthead-inner">
+                    <div class="page-title">
+                        <h1><a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" title="Back to our work">work</a></h1>
+                        <figure class="dot-seperator"></figure>
+                        <h2><?php echo $post->post_title ?></h2>
+                    </div>    
+                    <div class="page-controller">
+                        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" title="Back to gallery"><img src="<?php  bloginfo('template_directory')?>/images/back-arrow.png" alt="Back to the Gallery" /> back to gallery </a>
+                    </div>                
+                </div>
             </div>
-
-
 			<section class="content-gallery">
 				<div class="gallery">
-                	<?php if (isset($post->post_content)) : ?>
+					<?php if (isset($post->post_content)) : ?>
                 	<figure class="gallery-item large text-slide" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
 						<div><?php echo $post->post_content ?></div>
                     </figure><!--end .intro-slide-->
@@ -36,7 +38,8 @@
                 	<a class="gallery-prev" href="#" title="Previous"></a> 
                     <a class="gallery-next" href="#" title="Next"></a>
 				</div><!-- end .gallery-nav -->
-			</div><!-- end .content-gallery -->	
+			</section><!-- end .content-gallery -->	
+		</section><!-- end .sub-content-wrapper -->
 <?php 
 	//Include our theme footer.php
 	get_footer() 

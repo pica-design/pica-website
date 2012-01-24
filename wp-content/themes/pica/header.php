@@ -28,14 +28,14 @@
         -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <title>Pica Design, LLC</title>
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/style.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/style.css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
     <body<?php echo $body_class ?>>
 	<section id="site-wrapper">
             <section id="site-controller">
                 <a href="#" class="site-controller-trigger inactive" title="Display Page Menus"></a>
-                <a href="<?php bloginfo('url') ?>" class="pica-mark inactive" title="<?php echo $quotes[$random_quote_key] ?>"></a>
+                <a href="<?php bloginfo('url') ?>" class="pica-mark" title="<?php echo $quotes[$random_quote_key] ?>"></a>
                 <div class="picamarketing">
                 	<h4 class="text-color-black">pica</h4>
                     <h4 class="text-color-white">design</h4>
@@ -57,6 +57,6 @@
                         
                     </ul>
                 </nav>
-            </section><?php //End navigation bar // ?>
+            </section><?php //End #site-controller // ?>
             
 	    <section id="content-wrapper">
