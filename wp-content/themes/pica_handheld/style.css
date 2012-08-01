@@ -1,0 +1,289 @@
+	/*   
+		Theme Name: Pica Handheld
+		Description: The Pica Website Theme tailored for handheld devices
+		Author: Pica Design, LLC
+		Author URI: http://www.picadesign.com
+		Tags: Blank, Pica, Theme
+	*/
+	
+	/* Include our css equalizer to stabalize all browsers without just reseting */
+	@import "styles/browser-equalizer.css";
+	
+	/* ADMIN TEXT EDITOR STYLES ARE DECLARED WITHIN editor-style.css so they can be added to the WP WYSIWIG Editor */
+	@import "styles/global-styles.css";
+	
+	/**********************************************
+		BROWSER CORRECTIONS
+	***********************************************/	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	
+	/* Apply a natural box layout model to all elements */
+	* { 
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box; 
+	}
+			
+	/**********************************************
+	
+		HTML DECLARATIONS 
+	*/
+	html, body {
+		margin: 0 ;
+		padding: 0 ;
+		height: 100% ;
+	}
+		body {
+		}
+	
+		.link-fill-container {
+			display: block ;
+			width: 100% ;
+			height: 100% ;
+		}
+	
+	
+	
+	/*********************************
+		ALL PAGES
+	*********************************/
+	#website-wrapper {
+		position: relative ;
+		min-height: 100% ;
+		background-color: rgb(221,221,221) ;
+	}
+		#content-wrapper {
+			position: relative ;
+			padding-bottom: 100px ;
+		}
+			#masthead {
+			}
+				.site-slogan {
+					padding: 15px 0 10px 0 ;
+					width: 91% ;
+					margin: 0 auto 0 auto ;
+				}
+					.site-slogan h1 {
+						padding-bottom: 10px ;	
+						font: 2.0em/1.0em 'DINNextLTProMedium' ;			
+						color: rgb(86,161,213) ;
+						border-bottom: 1px dashed rgb(44,44,44) ;
+						text-align: center ;
+					}
+					
+				nav {
+				}
+					nav ul {
+						margin: 0 ;
+					}
+						nav ul li {
+						}
+							nav ul li a {
+								padding: 5px 10px 0 30px ;
+								font: 4.0em/1.3em 'DINNextLTPro' ;
+								color: rgb(255,255,255) ;
+								background-color: rgb(44,44,44) ;
+							}
+			
+			.sub-content-wrapper {
+				overflow: auto ;
+				padding: 0 20px 20px 20px ;
+			}
+				.back-controller {
+					display: inline-block ;
+					color: rgb(255,255,255) ;
+					background-color: rgb(44,44,44) ;
+					overflow: auto ;
+					padding: 10px 15px 10px 10px ;
+					margin-bottom: 28px ;
+				}
+					div.back-arrow {
+						background: url(images/back-arrow.png) rgb(109,109,109) center center no-repeat ;
+						width: 40px ;
+						height: 40px ;
+						float: left ;
+						display: block ;
+						margin: 0 0 0 20px ;
+					}
+					.back-controller span {
+						display: block ;
+						float: left ;
+						margin-left: 30px ;
+						font-size: 3em ;
+					}
+				
+				
+				/*********************************
+					WORK & SINGLE WORK PAGES
+				*********************************/
+				.content-gallery.in-list {
+					margin-bottom: 60px ;
+					overflow: auto ;
+				}
+					/* Gallery items can be displayed in a grid - used on the taxonomy-pica_work_type page */
+					.gallery-item.in-list {
+						position: relative ;
+						width: 100% ;
+						max-width: 360px ;
+						height: auto ;
+						max-height: 244px ;
+						margin: 0 auto 28px auto ;
+					}
+						.gallery-item.in-list.text-slide {
+							height: auto ;
+							max-height: none ;
+							font-size: 1.8em ;
+							padding: 20px ;
+						}
+						.gallery-item.in-list a.link-fill-container {
+							font-size: 42px ;
+							line-height: 130% ;
+							color: #ffffff ;
+						}
+						.gallery-item.in-list .work-item-title{
+							text-align: center ;
+							padding: 80px 20px 80px 20px;
+							font-size: 42px ;
+							line-height: 130% ;
+							color: #ffffff ;
+						}
+						.gallery-item.in-list img {
+							width: 100% ;
+							height: auto ;
+						}
+				
+				
+				/*********************************
+					CLIENTS PAGE
+				*********************************/
+				.client-grid {
+					display: block ;
+					overflow: auto ;
+					margin-bottom: 40px ;
+				}
+					.client {
+						float: left ;
+						width: 120px ;
+						margin: 0 10px 20px 10px ;
+					}
+						.client img {
+							width: 100% ;
+						}
+		
+		
+				/*********************************
+					ABOUT PAGE
+				*********************************/
+				.about-wrapper {
+					width: 100% ;
+					min-width: 200px ;
+					max-width: 360px ;
+					margin: 0 auto 60px auto ;
+					overflow: auto ;
+				}	
+					.about-content {
+						position: relative ;
+						display: block ;
+						width: 100% ;
+						min-width: 200px ;
+						height: auto ;
+						max-height: none ;
+						padding: 20px 20px 1px 20px ;
+						margin-bottom: 28px ;
+						background-color: rgb(255,255,255) ;
+					}
+						.about-content h1 {
+							font-size: 1.8em ;
+						}
+						.about-employee-profiles {
+							width: 100% ;
+							margin: 0 auto 0 auto ;
+						}
+							.employee-profile {
+								width: 100% ;
+								margin-bottom: 40px ;
+								font-size: 1.4em ;
+							}
+								.employee-profile small {
+									font-size: 0.8em ;
+								}
+								.employee-profile img {
+									width: 100% ;
+									margin-bottom: 10px ;
+								}
+				
+			
+			/*********************************
+				CONTACT PAGE
+			*********************************/	
+			.focal-point multiple {
+				width: 100% ;
+				min-width: 200px ;
+				max-width: 360px ;
+			}
+				.focal-point-item {
+				}
+					.focal-point-item img {
+						width: 100% ;
+					}
+			
+			/* Used on the contact page only currently */
+			.call-to-action {
+				position: relative ;
+				margin: 24px 0 0 0px ;
+				background-color: #666666 ;
+				padding: 24px 24px 0 24px ;
+				width: 100% ;
+				clear: left ;
+				overflow: auto ;
+			}
+				.call-to-action a {
+					display: block ;
+					color: rgb(255,255,255) ;
+					font-size: 2.0em ;
+					margin-bottom: 20px ;
+				}
+			
+			
+			/*********************************
+				BRANDNEW PAGE
+			*********************************/		
+			.brandnew {
+				width: 100% ;
+				min-width: 200px ;
+				max-width: 360px ;
+			}
+				.brandnew-post {
+				}
+					.brandnew-attachment {
+						margin: 0;
+					}
+						
+						.attachment-image {
+							width: 100% ;
+							margin: 5px 0 5px 0 ;
+						}
+						.brandnew-attachment p {
+							margin-bottom: 20px ;
+						}
+			
+		/*********************************
+			FOOTER
+		*********************************/	
+		footer {
+			position: absolute ;
+			bottom: 0 ;
+			width: 100% ;
+			/*padding: 0 ;*/
+		}
+			.view-full-website {
+				display: inline-block ;
+				margin: 0 0 0 30px ;
+				padding: 14px 10px 14px 10px ;
+				background-color: rgb(86,161,213) ;
+				color: rgb(255,255,255) ;
+				font-size: 1.2em ;
+			}

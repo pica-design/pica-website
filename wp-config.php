@@ -15,14 +15,19 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+
+//LIVE
+/*
+define('DB_NAME', 'pica_wordpress');
+define('DB_USER', 'pica_dbuser');
+define('DB_PASSWORD', '(0G6M#3*#Ot2');
+*/
+
+//LOCAL
 define('DB_NAME', 'pica_website');
-
-/** MySQL database username */
 define('DB_USER', 'root');
-
-/** MySQL database password */
 define('DB_PASSWORD', '1309piCa');
+
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -78,6 +83,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
+ini_set('display_errors', 0);
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
