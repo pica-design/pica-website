@@ -3,7 +3,7 @@
 	get_header() ;
 	
 	//Gather this posts gallery items
-	$gallery = new Post_Gallery ;
+	$gallery = new Post_Gallery($post->ID) ;
 
 	//Create a random number between 0 and the count of the attachments in our gallery
 	$random_number = rand(0, (count($gallery->attachments) - 1));
@@ -43,7 +43,7 @@
                                             if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())) : 
                                                 the_post_thumbnail('blogroll');
                                             else :
-                                        ?><img src="<?php bloginfo('template_directory') ?>/images/placeholder.png" alt="<?php echo $post->post_title ?>" /><?php endif ?>
+                                        ?><img src="<?php bloginfo('template_directory') ?>/images/content/blog-post-image-placeholder.png" alt="<?php echo $post->post_title ?>" /><?php endif ?>
                                     </a>
                                 </div><!--end blogrollthumbnail-->
                                 <div class="blog-roll-excerpt">
@@ -59,8 +59,8 @@
                                     </h1>
                                     <p>
 									<?php 
-										echo substr(get_the_excerpt($post->ID), 0, 60) ;
-										if (strlen(get_the_excerpt($post->ID)) > 60) :
+										echo substr(get_the_excerpt(), 0, 60) ;
+										if (strlen(get_the_excerpt()) > 60) :
 											echo "...";
 										endif; 
 									?>

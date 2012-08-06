@@ -1,0 +1,126 @@
+/* 
+	.gallery contains the gallery on the page
+	It has an overflow of visible to display the gallery controls 
+	They are absolutely positioned outside of the .gallery container
+*/
+.content-gallery {
+	position: relative ;
+	overflow: visible ;
+	max-width: 1130px !important ;
+	max-height: 650px !important ;
+}	
+	.content-gallery.grid {
+		max-width: 100% !important ;
+		max-height: auto !important ;
+	}
+	.gallery {
+		position: relative ;
+		padding: 0px !important ;
+	}	
+		/* 
+			Gallery items are displayed in varrying formats
+			The only binding characteristic is that a 'gallery':
+				1) is used to display multiple items in a singular format 
+		*/
+		.gallery-item.large {
+			width: 100% !important ;
+			height: 100% !important ;
+			max-height: 650px !important ;
+			margin: 0px ;
+		}
+		.gallery-item.small{
+			width: 100px !important ;
+			height: 100px !important ;
+			float:left;
+			padding:10px;
+		}
+			/* Gallery Items can be composed of text / html */
+			.gallery-item.large.text-slide  {
+				/* These are fallback values!! The real colors are set inline with php */
+				background-color: #666666 ;
+				color: #ffffff ;
+			}
+				.gallery-item.large.text-slide div {
+					height: 90% ;
+					width: 90% ;
+					margin: 50px ;
+					/*font-size: 48px ;*/
+					font-family: 'DINNextLTPro' ;
+					line-height: 1em ;
+				}
+				.gallery-item.large.text-slide div a {
+					font-size: inherit ;
+					color: inherit ;
+					text-decoration: underline ;
+				}
+			
+			/* Gallery items can be images */
+			.gallery-item.large {
+				display: none ;
+			}
+			.gallery-item.large img {
+				position: relative ;
+				display: block ;
+				width: 100% ;
+				max-height: 650px !important ;
+				margin: 0px ;
+			}
+			
+			/* Gallery navigation for large slide-based galleries */
+			.gallery-nav {						
+			}
+				.gallery-prev, .gallery-next {
+					display: none ; /* These will be activated via jQuery on page load to give a nice fadeIn effect */
+					width: 67px ;
+					height: 82px ;
+					position: absolute ;
+					z-index: 1000 ;
+					top: 225px ;
+				}
+				.gallery-prev {
+					left: -32px ;
+					background: sprite($assets-sprite, slide-arrow-left-inactive) no-repeat ;
+				}
+					.gallery-prev:hover {
+						background: sprite($assets-sprite, slide-arrow-left-active) no-repeat ;
+					}
+				.gallery-next {
+					right: -31px ;
+					background: sprite($assets-sprite, slide-arrow-right-inactive) no-repeat ;
+				}
+					.gallery-next:hover {
+						background: sprite($assets-sprite, slide-arrow-right-active) no-repeat ;
+					}
+			
+			
+			/* Gallery items can be displayed in a grid - used on the taxonomy-pica_work_type page */
+			.gallery-item.in-grid {
+				position: relative ;
+				width: 340px ; 
+				height: 244px ;
+				background-color: #939598 ;
+				margin: 0 28px 28px 0 ;
+				float: left ;
+				overflow: hidden ;
+			}
+				.gallery-item.in-grid a.link-fill-container {
+					position: absolute ;
+					font-size: 42px ;
+					line-height: 130% ;
+					color: #ffffff ;
+					font-family: 'DINNextLTPro' ;
+				}
+				.gallery-item.in-grid .work-item-title{
+					position: absolute ;
+					z-index: 1 ;
+					margin: 32px ;
+					font-size: 42px ;
+					line-height: 130% ;
+					color: #ffffff ;
+					font-family: 'DINNextLTPro' ;
+				}
+				.gallery-item.in-grid img {
+					display: none ;
+					position: absolute ;
+					z-index: 5 ;
+				}

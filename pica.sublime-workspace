@@ -11,22 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "wp-content/themes/pica/header.php",
-			"settings":
-			{
-				"buffer_size": 5103,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/pica/style.css",
-			"settings":
-			{
-				"buffer_size": 33583,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -68,10 +52,48 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/page-home.php",
 		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/scripts/jquery.pica.scripts.js",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/sftp-config.json",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-about.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/page-about.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-config.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/post-types.php",
 		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/functions.php",
 		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/header.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/single-pica_work.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/galleries-images.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/comments.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/twitter.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/users.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/meta-boxes.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/shortcodes.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_masthead.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/single.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_blog.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_portfolio.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_content.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-brand-new.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-clients.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-contact.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/style.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-home.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_footer.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_header.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/config.rb",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/404.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/index.php",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/__style.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_html-base.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/editor.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_common.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/styles/browser-equalizer.css",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_selection.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/styles/global-styles.css",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_fonts.scss",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/style.css",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/style.css",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/stylesheets/ie.css",
+		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/sftp-config.json",
 		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_selection.scss",
 		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_equalizer.scss",
 		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_corrections.scss",
@@ -118,68 +140,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "wp-content/themes/pica/header.php",
-					"settings":
-					{
-						"buffer_size": 5103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2403,
-								2403
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/pica/style.css",
-					"settings":
-					{
-						"buffer_size": 33583,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33007,
-								33007
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 20315.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -189,7 +151,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -238,7 +200,7 @@
 		[
 			[
 				"",
-				"/Volumes/Other Pica Shares-1/Websites/bluecrow/bluecrow.sublime-project"
+				"/Volumes/Other Pica Shares-1/Websites/nextstepmaine/nextstepmaine.sublime-project"
 			]
 		],
 		"width": 380.0

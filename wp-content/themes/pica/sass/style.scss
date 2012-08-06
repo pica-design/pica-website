@@ -1,0 +1,85 @@
+
+//////////// SASS INTERNALS //////////////////
+
+	//---------------------------
+	//	COMPASS CORE
+	//---------------------------
+	@import 'compass';
+	//---------------------------
+	//	SASS MIXINS
+	//---------------------------
+	@import 'mixins' ;
+	//---------------------------
+	//	SASS VARIABLES
+	//---------------------------
+	@import 'colors';
+
+
+
+//////////// THEME SETUP //////////////////
+
+	/**********************************************
+		BROWSER CORRECTIONS
+	***********************************************/	
+	@import 'normalize';
+
+	/**********************************************
+		FONTS
+	***********************************************/	
+	@import 'fonts';
+
+	/**********************************************
+		IMAGE SPRITES
+	***********************************************/
+	//The layout sprite is created with a reference to $layout-sprite, 
+	//so we can have more control with it, like calling the image with coordinates in a single declaration
+	//This is mostly so we can use sprite images in background() for laying backgrounds, like gradients + images
+	$assets-layout: vertical ;
+	$assets-sprite: sprite-map("assets/*.png") ;
+	
+	/**********************************************
+		HTML DECLARATIONS 
+	**********************************************/
+	@import 'html-base';
+
+	/****************************************** 	
+		CSS TEXT SELECTION
+	******************************************/
+	@import 'selection';
+
+	/**********************************************
+		COMMONLY USED DECLARATIONS 
+	**********************************************/
+	@import 'common';
+
+
+
+//////////// TEMPLATE STYLES //////////////////
+
+//This wrapper encompasses the entire website
+#site-wrapper {
+	position: relative ;
+	min-height: 100% ;
+	width: 100% ;
+	min-width: 1000px ; /* This is arbitrary atm - will be our < tablet cut off for this theme - lower resolutions will be served the mobile version of the website */
+}
+
+	/**********************************************
+		HEADER DECLARATIONS 
+	**********************************************/
+	@import 'header';
+
+	/**********************************************
+		CONTENT DECLARATIONS 
+	**********************************************/
+	@import 'content';
+	
+	/**********************************************
+		FOOTER DECLARATIONS 
+	**********************************************/
+	@import 'footer';
+
+	/**********************************************
+		SLIMBOX DECLARATIONS 
+	**********************************************/
+	@import 'slimbox';

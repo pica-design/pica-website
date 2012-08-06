@@ -11,7 +11,7 @@
 	$random_quote_key = rand(0, (count($quotes) - 1)) ;
 	
 	//We'll use a session variable to store the browsing preferences to make the experience amazinger.. 
-	session_start();
+	//session_start();
 	
 	//Grab the page seo settings
 	$metadesc = get_post_meta($post->ID, '_yoast_wpseo_metadesc', true);
@@ -41,7 +41,7 @@
 
         <?php if(!empty($metakeywords)) : ?><meta name="keywords" content="<?php echo $metakeywords ?>" /><?php endif ?>
         
-        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/style.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/stylesheets/style.css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!-- Add our favicon -->
         <link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/images/icons/pica-avatar-favicon.png" />

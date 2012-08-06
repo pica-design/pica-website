@@ -3,7 +3,7 @@
 	get_header() ;
 
 	//Gather this posts gallery items
-	$gallery = new Post_Gallery ;
+	$gallery = new Post_Gallery($post->ID) ;
 	
 	//Grab our testimonial if there is one
 	$work_testimonial = get_post_meta($post->ID, '_work_testimonial', true);
@@ -30,12 +30,12 @@
                        	<?php endif ?>
                         
                         <?php if(!empty($_SESSION)) : ?>
-						
+						<!--
                         <div class="back-to">
                         	<figure class="back-arrow"></figure>
                             <a href="<?php echo get_bloginfo('url') . "/work-categories/{$_SESSION['pica_work_category']->slug}" ?>" title="Back to <?php echo $_SESSION['pica_work_category']->name ?>" class="back-text">back to <?php echo strtolower($_SESSION['pica_work_category']->name) ?></a>
                         </div>
-                        
+                        -->
                         <?php endif ?>
                         
                     </div>                

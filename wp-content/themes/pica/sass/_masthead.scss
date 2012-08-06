@@ -1,0 +1,188 @@
+.page-masthead {
+	position: relative ;
+	padding: 72px 0 0 0 ;
+	width: 100% ;
+	height: 130px ;
+	text-transform: lowercase ;
+
+}
+	.page-masthead.pica-work-taxonomy {
+		width: 91% ;
+	}
+	.page-masthead.single-work {
+		width: 94% ;
+	}
+
+	/* Used on the contact page */
+	body.content-bleed .page-masthead {
+		margin-top: 40px ;
+		margin-left: 72px ;
+	}
+		.page-title {
+			float: left ;
+			padding: 20px 0 0 0 ;
+			margin: 0px ;
+			display: block ;
+			position: relative ;
+		}
+			.page-title h1 {
+				float: left ;
+				padding: 0px ;
+				display: inline ;
+				color: #666 ;
+			}
+				.page-title h1 a {
+					font-size: 48px ;
+					font-weight: normal ;
+					font-family: 'DINNextLTPro' ;
+					color: #000 ;
+				}
+					.page-title h1 a:hover {
+						text-decoration: underline ;
+					}
+			.dot-seperator {
+				width: 13px ;
+				height: 48px ;
+				margin: 8px 15px 0px 15px ;
+				display: block ;
+				position: relative ;
+				float: left ;
+			}
+				.dot-seperator .dot-image {
+					width: 13px ;
+					height: 12px ;
+					margin-top: 15px ;
+					background: sprite($assets-sprite, dot-separator) no-repeat ;
+				}
+			.page-title h2 {
+				float: left ;
+				font-size: 48px ;
+				color: #666 ;
+				padding: 0px ;	
+				display: inline ;
+			}
+			
+		.page-controller {
+			position: relative ;
+			float: right ;
+			color: #333 ;
+			padding: 20px 0 0 0 ;
+			margin: 5px 0 0 0 ;
+			font-family: 'DINNextLTProMedium' ;
+			font-size: 16px ;
+		}
+			
+			
+			.sub-content-wrapper.blog-header.single .page-controller {
+				margin-top: 20px ;
+			}
+			
+			/* WORK TAXONOMY */
+			.work-category-wrapper {
+				float: left ;
+				margin-left: 10px ;
+				width: 25px ;
+				height: 25px ;
+				overflow: hidden ;
+			}
+				.work-category-wrapper.active {
+					width: auto ;
+				}
+				.work-category-inner-wrapper {
+					/* The width for this container is set via jQuery on page load - ugly but works crossbrowser */
+				}
+				.work-category-trigger {
+					float: left ;
+					/*display: inline-block ;*/
+					width: 25px ;
+					height: 25px ;
+					background-color: rgb(51,51,51) ;
+					padding-top: 5px ;
+					-o-border-radius: 25px;
+					-webkit-border-radius: 25px;
+					-moz-border-radius: 25px;
+					border-radius: 25px;
+					color: rgb(255,255,255) ;
+					text-align: center ;
+				}
+				.work-category-link {
+					margin: 6px ;
+					float: left ;
+				}
+					.work-category-link a {
+						display: block ;
+					}
+				
+					
+			/* SINGLE WORK */
+			#work-testimonial {
+				float: left ;
+				position: relative ;
+				overflow: visible ;
+				margin: 5px 0 0 0 ;
+			}
+				#work-testimonial-trigger {
+					width: 25px ;
+					height: 25px ;
+					padding-top: 5px ;
+					background-color: rgb(102,102,102) ;
+					-o-transition: all .2s linear ; 
+					-moz-transition: all .2s linear ; 
+					-webkit-transition: all .2s linear ;
+					transition: all .2s linear ; 
+				}
+					#work-testimonial-trigger:hover {
+						background-color: rgb(122,122,122) ;
+					}
+					#work-testimonial-trigger.active {
+						background-color: rgb(102,102,102) ;
+					}
+					
+					#work-testimonial-trigger a {
+						color: rgb(255,255,255) ;
+						text-align: center ;								
+					}
+				#work-testimonial-copy {
+					position: absolute ;
+					width: 650px ;
+					top: 0 ;
+					right: 33px ;
+					z-index: 999999999 ;
+					background-color: rgb(102,102,102) ;
+					padding: 20px ;
+					color: rgb(255,255,255) ;
+					text-transform: none ;
+					text-align: left ;
+					display: none ;
+					box-shadow: 7px 7px 0px rgba(102,102,102, 0.7);
+					outline: none ;
+				}
+					#work-testimonial-copy p {
+						color: rgb(255,255,255) ;
+						text-transform: none ;									
+						text-align:left ;
+					}
+					#work-testimonial-copy em {
+						font-style: normal ;
+					}
+			
+			
+			
+			.page-controller .back-to {
+				float: left ;
+			}
+				.page-controller .back-arrow {
+					position: relative ;
+					float: left ;
+					display: block ;
+					width: 13px ;
+					height: 11px ;
+					margin: 1px 10px 0 0 ;
+					background: sprite($assets-sprite, back-arrow) no-repeat ;
+				}
+				.page-controller .back-text {
+					position: relative ;	
+					float: left ;
+					display: block ;
+				}
+				

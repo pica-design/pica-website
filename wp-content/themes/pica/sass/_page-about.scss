@@ -1,0 +1,32 @@
+.about-wrapper {
+	overflow: auto ;
+}
+	.about-content {
+	}
+		.about-content h1 {
+			font-size: 1.8em ;
+		}
+		.about-content table {
+			margin-top: 50px ;
+			width: 86% ;
+		}
+			.about-content td {
+				padding-right: 25px ;
+				line-height: 1.3em ;
+				/*width: 180px ;*/
+			}
+	
+	.about-employee-profiles {
+		overflow: auto ;
+		margin: 50px 0 50px 0 ;
+	}
+		.employee-profile {
+			float: left ;
+			width: 16% ;
+			margin: 0 25px 0 0 ;
+		}
+			.employee-profile .avatar {
+				margin: 0 0 5px 0 ;
+				width: 100% ;
+				height: auto ;
+			}

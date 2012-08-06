@@ -1,0 +1,77 @@
+//---------------------------
+//	SASS VARIABLES
+//---------------------------
+@import 'colors';
+
+html, body {
+	width: 100% ;
+	min-height: 100% ;
+	margin: 0px ;
+	padding: 0px ;
+	font: 1.0em/1.0em 'DINNextLTPro', Arial, Helvetica, sans-serif ;
+	background-color: #dddddd ;
+}
+	body {
+		position: relative ;
+	}
+		
+		a img {
+			border: 0px ;
+		}
+
+		h1, h2, h3, h4, h5 {
+			font-weight: normal ;
+			margin: 5px 0px 10px 0px ;
+			font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif ;
+			color: #000 ;
+			line-height: 1em ;
+		}
+		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong {
+			font-family: 'DINNextLTProMedium' ;
+			font-weight: normal ;
+		}
+			h1 {
+				font-size: 48px ;
+			}
+			h2 {
+				font-size: 22px ;
+			}
+			h3 {
+				font-size: 18px ;
+			}
+			h1 a, h2 a, h3 a, h4 a, h5 a {
+				font-size: inherit ;
+			}
+		p {
+			margin-top: 0px ;
+			color: #333 ;
+			font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif ;
+			line-height: 1.2em ;
+		}
+		p strong {
+			margin-top: 0px ;
+			color: #333 ;
+			font-family: 'DINNextLTProMedium', Arial, Geneva, Helvetica, sans-serif ;
+			font-weight: normal ;
+		}
+		a {
+			color: #666 ;
+			text-decoration: none ;
+			outline: none ;
+			font-size: inherit ;
+		}
+		hr {
+			border: 1px dashed #999 ;
+			height: 0 ;
+		}
+		strong {
+			font-family: 'DINNextLTProMedium', Arial, Geneva, Helvetica, sans-serif ;
+			font-weight: normal ;
+		}
+		table {
+			border: none ;
+		}
+			table td {
+				border: none ;
+				padding: 0px ;
+			}

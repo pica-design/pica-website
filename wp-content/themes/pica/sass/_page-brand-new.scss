@@ -1,0 +1,43 @@
+.brandnew-post {
+	border-bottom: 2px dashed #999 ;
+	padding-bottom: 25px ;
+	margin-bottom: 25px ;
+}
+	.sub-content-wrapper .brandnew-post:last-child {
+		border-bottom: 0px ;
+	}
+	.brandnew-attachment {
+		margin: 0px ;
+		margin: 0 0 20px 0 ;
+	}
+		.attachment-image {
+			float: left ;
+			width: 70% ;
+			max-width: 747px ;
+			margin: 0 20px 0 0 ;
+		}				
+		.attachment-description {
+			float: left ;
+			width: 27.5% ;
+		}
+			.attachment-description h1 {
+				font-size: 1.5em ;
+				line-height: 1.1em ;
+				margin: 2px 0 0 0 ;
+			}
+				.attachment-description h1 strong {
+					font-family: 'DINNextLTProMedium' ;
+				}
+
+			.attachment-description > strong {
+				color: rgb(0,0,0) ;
+				display: block ;
+				font-family: 'DINNextLTPro' ;
+				font-weight: normal ;
+				margin: 10px 0 10px 0 ;
+				font-size: 1.3em ;
+			}
+			.attachment-description p {
+				color: rgb(102,102,102) ;
+				font: 1.1em/1.1em Georgia, "Times New Roman", Times, serif ;
+			}

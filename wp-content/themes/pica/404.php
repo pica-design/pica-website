@@ -19,7 +19,7 @@
             
         <section class="sub-content-wrapper">
             
-            <img src="<?php bloginfo('template_directory') ?>/images/American-Pika-Call.jpg" alt="American Pika" />
+            <img src="<?php bloginfo('template_directory') ?>/images/content/American-Pika-Call.jpg" alt="American Pika" />
             <br />
             The pika (PY-ka) is a small mammal, with short limbs, rounded ears, and short tail. 
             <br /><br />

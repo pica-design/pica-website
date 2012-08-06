@@ -1,0 +1,28 @@
+.call-to-action {
+	position: relative ;
+	margin: 24px 0 0 0px ;
+	background-color: #666666 ;
+	padding: 24px ;
+	min-width: 360px ; 
+	max-width: 1052px ; /* 1100 - (24px padding * 2) = 1052 */
+	clear: left ;
+	overflow: auto ;
+}
+	.call-to-action-column {
+		min-width: 200px ;
+		max-width: 360px ;
+		display: block ;
+		float: left ;
+		position: relative ;
+		color: white ;
+		margin: 0 50px 25px 0 ;
+	}
+		.call-to-action-column, .call-to-action-column a {
+			color: white ;
+			font-size: 1.1em ;
+			line-height: 1.1em ;
+			font-weight: normal ;
+		}
+			.call-to-action-column a:hover {
+				text-decoration: underline ;
+			}

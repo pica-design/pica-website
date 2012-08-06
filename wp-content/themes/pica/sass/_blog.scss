@@ -1,0 +1,146 @@
+.sub-content-wrapper.blog-header .page-masthead {
+	text-transform: none ;
+	line-height: 1em ;
+	padding-right: 72px ;
+}
+	.sub-content-wrapper.single .page-masthead h1 {
+		width: 600px ;
+		line-height: 1em ;
+		float: left ;
+	}
+.sub-content-wrapper .blog-wrapper {
+	overflow: auto ;
+	padding: 25px ;
+	background-color: #eee ;
+}
+	
+	.single .blog-wrapper {
+		/*width: 70% ;*/
+		width: 825px ;
+	}
+	.blog-posts {
+		width: 75% ;
+		float: left ;
+	}
+		.single .blog-posts {
+			width: 100% ;
+		}
+		.blog-post {
+			overflow: auto ;
+			margin-bottom: 50px ;
+			padding-top: 3px ;
+		}
+			.single .blog-post {
+				margin-bottom: 0px ;
+			}	
+				.single .blog-post .post-thumbnail {
+					float: left ;
+					margin: 0 10px 10px 0 ;
+				}
+			.blog-post-date {
+				width: 50px ;
+				height: 50px ;
+				float: left ;
+				padding: 4px ;
+				margin-right: 10px ;
+				background-color: #dddddd ;
+				text-align: center ;
+			}
+				.blog-post-date .month {
+					font-size: 15px ;
+					display: block ;
+					margin-top: 4px ;
+				}
+				.blog-post-date .year {
+					font-size: 18px ;
+					display: block ;
+					margin-top: 4px ;
+				}
+			
+			.single .blog-post-date {
+				background-color: #eee ;
+			}
+			
+			.blog-post-title a {
+				font-size: 18px ;
+				line-height: 1.3em ;
+				color: rgb(50,50,50) ;
+			}
+			.blog-post p {
+				font-size: 14px ;
+			}
+				.blog-post p a {
+					text-decoration: underline ;
+				}
+			
+			.blog-post-gallery {
+			}
+				.blog-post-gallery img {
+					margin: 0 10px 10px 0 ;
+				}
+			
+			
+			#comments {
+			}
+				ol.commentlist {
+					margin: 0 ;
+					padding: 0 ;
+				}
+					ol.commentlist li {
+						list-style: none ;
+						margin: 0 0 30px 0 ;
+						overflow: auto ;
+						border-bottom: 2px dashed #c5c5c5 ;
+					}
+						.comment-author {
+							float: left ;
+							width: 200px ;
+							overflow: auto ;
+						}
+							.comment-author-left-column {
+								float: left ;
+							}
+								.comment-author .avatar {
+									margin: 0 15px 0 0 ;
+								}
+							.comment-author-right-column {
+								float: left ;
+							}
+						
+						.comment-body {
+							float: left ;
+							width: 575px ;
+						}
+			
+			
+	.blog-sidebar {
+		width: 22% ;
+		float: right ;
+	}
+		.blog-sidebar ul {
+			margin: 0 ;
+			padding: 0 ;
+		}
+			.blog-sidebar ul li {
+				list-style: none ;
+				margin: 0 ;
+				padding: 0 ;
+			}
+				.blog-sidebar ul li a {
+				}
+					.blog-sidebar ul li:hover a, li.current-cat a {
+						text-decoration: underline ;
+					}
+	
+	.older-posts-link {
+		float: left ;
+	}
+		.older-posts-link a:hover {
+			text-decoration: underline ;
+		}
+	.newer-posts-link {
+		float: right ;
+	}
+		.newer-posts-link a:hover {
+			text-decoration: underline ;
+		}

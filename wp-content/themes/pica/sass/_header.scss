@@ -1,0 +1,101 @@
+#site-controller {
+	background-color: #999 ;
+	width: 100% ;
+	overflow: auto ;
+
+	//SITE CONTROLLER TRIGGER (ARROW)
+	.site-controller-trigger {
+		float: left ;
+		width: 72px ;
+		height: 72px ;
+		padding: 22px 0 0 22px ;
+		-o-transition: all .2s linear ; 
+		-moz-transition: all .2s linear ; 
+		-webkit-transition: all .2s linear ;
+		transition: all .2s linear ; 
+
+		.site-controller-trigger-arrow {
+			width: 25px ;
+			height: 28px ;
+		}
+		&.active .site-controller-trigger-arrow {
+			background: sprite($assets-sprite, site-controller-trigger-inactive) no-repeat ;
+		}
+		&.inactive .site-controller-trigger-arrow {
+			background: sprite($assets-sprite, site-controller-trigger-active) no-repeat ;
+		}
+		&:hover {
+			-o-opacity: 0.7 ;
+			-webkit-opacity: 0.7 ;
+			-moz-opacity: 0.7 ;
+			opacity: 0.7 ;
+		}
+	}//.site-controller-trigger
+
+	//PICA MARK
+	.pica-mark {
+		width: 47px ;
+		height: 47px ;
+		float: left ;
+		margin-top: 13px ;
+		background: sprite($assets-sprite, pica-mark) no-repeat ;
+		-o-transition: all .2s linear ; 
+		-moz-transition: all .2s linear ; 
+		-webkit-transition: all .2s linear ;
+		transition: all .2s linear ; 
+		
+		&:hover {
+			opacity: 0.8 ;
+		}
+	}//.pica-mark
+
+	//SITE SLOGAN
+	.site-slogan {
+		float: right ;
+		margin: 30px 72px 0 0 ;
+		
+		h1 {
+			display: inline ;
+			font-family: 'DINNextLTProMedium' ;
+			font-size: 26px ;
+			color: rgb(40,40,40) ;
+		}
+	}//.site-slogan
+
+	//NAVIGATION
+	nav {
+		display: none ;
+		padding: 0 0 0 40px ;
+		width: 440px ;
+		height: 190px ;
+		clear: left ;
+		overflow: auto ;
+
+		ul {
+			margin-top: 40px ;
+
+			li {
+				display: block ;
+				width: 170px ;
+				float: left ;
+				height: 40px ;
+				margin: 0 0 9px 0 ;
+
+				a {
+					display: block ;
+					height: 28px ; 
+					color: #ffffff ;
+					font-size: 32px ;
+					font-family: 'DINNextLTPro' ;
+					
+					span {
+						padding: 4px 9px 3px 9px ;
+					}
+				}
+				&.active a span, &:hover a span {
+					background-color: #262626 ;
+				}
+			}//li
+		}//ul
+	}//nav
+}//#site-controller

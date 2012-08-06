@@ -1,0 +1,24 @@
+/**********************************************
+	FONTS
+***********************************************/	
+@import 'fonts';
+
+/**********************************************
+	HTML DECLARATIONS 
+**********************************************/
+@import 'html-base';
+
+/**********************************************
+	EDITOR OVERRIDES 
+		- These overrides ONLY show in the wp editor
+**********************************************/
+html {
+	padding: 15px ;
+
+	body {
+		min-width: 0 ;
+		background-color: #dddddd ;
+		font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif ;
+		color: #666666 ;
+	}
+}
