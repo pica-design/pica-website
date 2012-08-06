@@ -83,7 +83,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-//ini_set('display_errors', 0);
+ini_set('display_errors', 0);
 define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
