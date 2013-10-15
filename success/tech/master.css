@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* 
+
+	Master CSS for the Pica Success Series of Websites
+		+ Child classes are defined in the child css files, i.e. tech/eNews.css, to define color / varying layouts
+
+*/
+
+Body {
+		margin: 0px ;
+		padding: 0px ;
+	}
+	A {
+		outline: none ;
+		text-decoration: none ;
+	}
+		A Img {
+			border: 0px ;
+		}
+	H1 {
+		display: inline ;
+		color: #4689c6 ;
+		font-size: 24px ;
+		font-family: Georgia, "Times New Roman", Times, serif ;
+	}
+	H2 {
+		display: inline ;
+		color: #4689c6 ;
+		font-size: 18px ;
+		font-family: Georgia, "Times New Roman", Times, serif ;		
+	}
+	H3 {
+		display: inline ;
+		color: #4689c6 ;
+		font-size: 16px ;
+		font-family: Georgia, "Times New Roman", Times, serif ;		
+	}
+	EM {
+		color: #797c80 ;
+	}
+		#Wrapper {
+			width: 100% ;
+			height: 100% ;
+		}
+			.Center {
+				width: 870px ;
+				height: 100% ;
+				display: block ;
+				margin: 0 auto 0 auto ;
+				padding: 0 50px 0 50px ;
+			}
+				.Center .Copy {
+					padding-left: 35px ;
+					font-family: Georgia, "Times New Roman", Times, serif ;
+				}
+				.Third {
+					float: left ;
+					width: 30% ;
+					margin: 5px ;
+					padding: 5px ;
+				}
+					.Third.One {
+						border-right: 1px solid rgb(200,200,200) ;
+					}
+					.Third.Two {
+						border-right: 1px solid rgb(200,200,200) ;
+					}
+				#TopRow {
+					height: 369px ;
+				
+				/*
+				
+					The TopRow Background color is defined with this selector in the child css files
+					i.e. /Pica Success/tech/eNews.css
+					i.e. eNews is blue
+					i.e. packaged sites is green
+				
+				*/
+			}
+				#TopRow .Center {
+					/*
+					
+						The Masthead background image is defined with this selector in the child css files
+						i.e. /Pica Success/tech/eNews.css
+					
+					*/
+				}
+					#TopRow .Center Img, #TopRow .Center #SiteNavigation {
+						float: left ;
+					}
+						.Logo {
+							margin-top: 15px ;
+							margin-left: 40px ;
+						}
+						#SiteNavigation {
+							margin-top: 35px ;
+							margin-right: 50px ;
+							float: right !important ;
+							color: #ffffff ;
+						}
+							#SiteNavigation a {
+								color: #ffffff ;
+								text-decoration: none ;
+								font-family: Arial, Helvetica, sans-serif ;
+								font-size: 16px ;
+							}
+								#SiteNavigation a:hover {
+									color: #102250 ;
+								}
+						#TopRow .Center .Button {
+							margin-top: -5px ;
+							margin-left: 10px ;
+							margin-bottom: -11px ;
+							float: right !important ;
+						}
+						#Step1, #Step2, #Step3 {
+							/* Commented Values reflect the original widths / heights prior to adding padding */
+							/* height: 87px ; */
+							height: 62px ;
+							float: left ;
+							padding: 25px 5px 0 90px ;
+							color: #ffffff ;
+							font-family: Arial, Helvetica, sans-serif ;
+							font-size: 14px ;
+						}
+						#Step1 {
+							/* width: 228px ; */
+							width: 133px ;
+							margin-left: 30px ;
+							background: url(../media/Step1.png) no-repeat ;
+						}
+							#Step1.Active {
+								color: #12508b ;
+								background: url(../media/Step1_Active.png) no-repeat ;
+							}
+						#Step2 {
+							/* width: 237px ; */
+							width: 142px ;
+							margin-left: 40px ;
+							background: url(../media/Step2.png) no-repeat ;									
+						}
+							#Step2.Active {
+								color: #12508b ;
+								background: url(../media/Step2_Active.png) no-repeat ;
+							}
+						#Step3 {
+							/* width: 242px ; */
+							width: 147px ;
+							margin-left: 40px ;
+							background: url(../media/Step3.png) no-repeat ;									
+						}
+							#Step3.Active {
+								color: #12508b ;
+								background: url(../media/Step3_Active.png) no-repeat ;
+							}
+			#MiddleRow {
+				height: 53px ;
+				background: url(../media/MiddleRow.jpg) repeat-x  ;
+			}
+				#MiddleRow .Center {
+					padding-top: 5px ;
+				}
+					#MiddleRow .Center .Copy {
+						padding-top: 8px ;
+					}
+						#MiddleRow .Center .Copy div {
+							display: inline ;
+							padding-bottom: 10px ;
+						}
+					#MiddleRow .Center .Third {
+						width: 27.20% ;
+						margin-left: 35px ;
+						color: #478ac8 ;
+						font-family: Arial, Helvetica, sans-serif ;
+						font-size: 20px ;
+					}
+			#BottomRow {
+				background-color: #ffffff ;
+			}
+				#BottomRow .Center #Screenshots {
+					/*
+					
+						The Screenshots Images are defined in the child css files
+						i.e. /Pica Success/tech/eNews.css
+					
+					*/
+				}
+				#BottomRow .Center .Third {
+					margin-top: 10px ;
+					color: rgb(70,70,70) ;
+					padding: 0 35px 0 35px ;
+					width: 23.8% ;
+				}
+					#BottomRow A {
+						color: #4689c6 ;
+						font-weight: bold ;
+					}
+					#BottomRow .Center .Third .Button {
+						margin-top: 10px ;
+					}	
+			#Footer {
+				margin-top: 30px ;
+				border-top: 1px solid #478ac8 ;
+				padding: 15px 0 0 0 ;
+				font-family: Arial, Helvetica, sans-serif ;
+				color: #4689c6 ;
+				font-size: 11px ;
+			}
+				#Footer .Center {
+				}
+					#Footer .Center Img {
+						float: right ;
+						margin-top: -8px ;
+						margin-right: 50px ;
+					}
+					#Footer .Center A {
+						color: #4689c6 ;
+						font-weight: bold ;
+					}
+	
+			
+			/* BUTTONS */
+			.Button {
+				color: #ffffff ;
+				font-family: Arial, Helvetica, sans-serif ;
+				font-weight: normal ;
+				text-align: center ;
+			}
+				.Button A {
+					color: #ffffff !important ;
+					font-weight: normal !important ;
+				}
+			.Blue_Btn {
+				padding-top: 5px ;
+				width: 147px ;
+				height: 30px ;
+				background: url(../media/Btn_Blue.png) no-repeat  ;
+			}
+				.Blue_Btn:hover {
+					background: url(../media/Btn_Blue_On.png) no-repeat  ;		
+				}
+			.Green_Btn {
+				padding-top: 5px ;
+				width: 120px ;
+				height: 31px ;
+				background: url(../media/Btn_Green.png) no-repeat  ;
+			}
+				.Green_Btn:hover {
+					background: url(../media/Btn_Green_On.png) no-repeat  ;
+				}
+			
+			/* ERRORS */
+			#Error {
+				width: 750px ;
+				margin-top: 10px ;
+				background-color: rgb(230,230,230) ;
+				border: 1px solid rgb(140,140,140) ;
+				color: #F33 ;
+				font-family: Arial, Helvetica, sans-serif ;
+				font-size: 18px ;
+				display: none ;
+			}

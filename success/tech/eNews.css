@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+	
+	#TopRow {
+		background-color: #12508b ;
+	}
+		#TopRow .Center {
+			background: url(../media/eNews/eNews_Masthead.jpg) no-repeat ;
+		}
+			
+	#BottomRow .Center #Screenshots {
+		margin-top: 15px ;
+		margin-left: -25px ;
+	}

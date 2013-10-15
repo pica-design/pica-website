@@ -1,0 +1,286 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Template 5 - Single Column</title>
+   <style type="text/css" media="screen">
+      body {
+      	margin: 0;
+      	padding: 0;
+      }
+
+      td.permission {
+      	font-family: Arial;
+      	font-size: 11px;
+      	font-weight: normal;
+      	color: #151515;
+      	text-align: center;
+      	padding: 20px 0 10px 0;
+      }
+
+      td.permission a {
+      	font-family: Arial;
+      	font-size: 11px;
+      	font-weight: normal;
+      	color: #151515;
+      }
+
+      td.header {
+      	background-color: #888888;
+      	height: 119px;
+      }
+
+      td.header h1 {
+      	font-family: 'Arial Black', Arial, sans-serif;
+      	font-size: 28px;
+      	font-weight: normal;
+      	color: #ffffff;
+      	line-height: 26px;
+      	display: inline;
+      }
+
+      td.header h1 span {
+      	color: #000000;
+      }
+
+      table.sidebar td {
+      	background-color: #ededed;
+      	padding: 0 8px 0 15px;
+      }
+
+      table.sidebar td.sideheader {
+      	background-image: url('sidebar-bg-header.gif');
+      	background-repeat: no-repeat;
+      	background-position: top center;
+      }
+
+      table.sidebar td.midheader {
+      	background-image: url('sidebar-bg.gif');
+      	background-repeat: no-repeat;
+      	background-position: top center;
+      }
+
+      table.sidebar td.other {
+      	padding: 8px 8px 0 15px;
+      }
+
+      table.sidebar h3 {
+      	margin: 0;
+      	padding: 0;
+      	display: inline;
+      	text-transform: uppercase;
+      	font-family: Arial;
+      	font-size: 20px;
+      	font-weight: bold;
+      	color: #242424;
+      }
+
+      table.sidebar h4 {
+      	margin: 0 0 8px 0;
+      	padding: 0;
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #44a0df;
+      }
+
+      table.sidebar td ul {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #44a0df;
+      	margin: 10px 0 0 24px;
+      	padding: 0;
+      }
+
+      table.sidebar td ul li a {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #44a0df;
+      	text-decoration: none;
+      }
+
+      table.sidebar p {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 11px;
+      	font-weight: normal;
+      	color: #313131;
+      	margin: 0 0 14px 0;
+      	padding: 0;
+      }
+
+      table.sidebar td.actions {
+      	background-color: #cacaca;
+      	height: 76px;
+      }
+
+      table.sidebar td.first {
+      	background-image: url('sidebar-actions-bg.gif');
+      	background-repeat: no-repeat;
+      	background-position: top center;
+      	background-color: #cacaca;
+      }
+
+      table.sidebar td.actions h3 {
+      	margin: 0;
+      	padding: 0;
+      }
+
+      table.sidebar td.actions h3 a {
+      	font-family: Arial;
+      	font-size: 20px;
+      	font-weight: bold;
+      	color: #ffffff;
+      	text-decoration: none;
+      	text-transform: none;
+      }
+
+      table.sidebar td.actions p {
+      	font-family: Arial;
+      	font-size: 13px;
+      	font-weight: normal;
+      	color: #7a7a7a;
+      	margin: 0;
+      	padding: 0;
+      }
+
+      table.sidebar td.end {
+      	background-image: url('sidebar-end-bg.gif');
+      	background-repeat: no-repeat;
+      	background-position: top center;
+      	background-color: #ededed;
+      	height: 94px;
+      }
+
+      td.mainbar {
+      	border-bottom: 8px solid #ed5d9a;
+      }
+
+      td.mainbar h2 {
+      	font-family: Arial;
+      	font-size: 20px;
+      	font-weight: bold;
+      	color: #ed5d9a;
+      	margin: 0 0 10px 0;
+      	padding: 10px 0 0 0;
+      	border-top: 8px solid #ed5d9a;
+      }
+
+      td.mainbar p.date {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #333333;
+      	text-align: right;
+      	margin: 0 0 4px 0;
+      	padding: 0;
+      }
+
+      td.mainbar p {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #666666;
+      	margin: 0 0 12px 0;
+      	padding: 0;
+      }
+
+      td.mainbar a {
+      	font-family: 'Lucida Grande', Arial, sans-serif;
+      	font-size: 12px;
+      	font-weight: normal;
+      	color: #44a0df;
+      	text-decoration: none;
+      }
+
+      td.mainbar p.top {
+      	text-align: right;
+      }
+
+      td.mainbar p.top a {
+      	font-family: Arial;
+      	font-size: 10px;
+      	font-weight: normal;
+      	color: #ed5d9a;
+      }
+
+      td.footer {
+      	font-family: Arial;
+      	font-size: 11px;
+      	font-weight: normal;
+      	color: #999999;
+      	padding: 0 0 20px 0;
+      }
+
+      td.footer span {
+      	color: #ed5d9a;
+      }
+   </style>
+
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: rgb(255,255,255);">
+   <tr>
+      <td align="center">
+         
+         <table width="580" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td class="permission" align="center">
+                  <p>You're receiving this newsletter because you bought widgets from us.</p>
+                  <p>Not interested anymore? <unsubscribe>Unsubscribe</unsubscribe>. Having trouble viewing this email? <webversion>View it in your browser</webversion>.</p>
+               </td>
+            </tr>
+            <tr>
+               <td height="119" align="right" valign="bottom">
+                  
+                  <table width="580" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td width="580" height="119" style="background-color: rgb(50,50,50);">
+                        	<table width="100%">
+                            	<tr>
+                                	<td style="font-size: 36px; padding-left: 20px ;color: rgb(170,170,170);font-family: Arial, Helvetica, sans-serif ;" align="right">ABC Widgets<br />Corporation</td>
+                                </tr>
+                            </table>
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <table width="580" border="0" cellspacing="14" cellpadding="0">
+            <tr>
+               <td align="left" valign="top" width="100%" class="mainbar">
+                  <p class="date">friday may 20th, 2008</p>
+                  
+                  <h2>Lorem ipsum dolor sit amet conse ct etuer adipiscing elit</h2>
+                  
+                  <p>Donec imperdiet, nibh sit amet pharetra placerat, tortor purus <a href="#">condimentum lectus</a>, at dignissim nibh velit vitae sem. Nunc condimentum blandit tortorphasellus facilisis neque vitae purus.</p>
+                  
+                  <p>Aliquam facilisis nisl in nisi. Ut ultricies massa eget est. Donec eget orci eget <a href="#">urna aliquam</a> egestas. Nulla vitae felis. Maecenas bibendum, nunc eu aliquet ultricies, massa  eget lectus. <a href="#">Read More</a></p>
+                  
+                  <p class="top"><a href="#top">Back to top</a></p>
+                  
+                  <h2>Fermentum quam-donec imperde lorem ipsum dolar amet consect</h2>
+                  
+                  <p><img src="main-content-inline-small.jpg" width="161" height="151" alt="Main Content Inline Small" align="right" hspace="10" vspace="10"> Cras purus. Nunc rhoncus.Pellentesque semper. Donec imperdiet accumsan felis. Proin eget mi. Sed at est. Nunc a purus eu sapien–lacinia fermentum. Donec iaculis Sed at est. Nunc a purus eu sapien–lacinia fermentum quam. Donec imperdiet, nibh sit amet pharetra placerat, tortors condimentum. <a href="#">Read More</a></p>
+                  
+                  <p class="top"><a href="#top">Back to top</a></p>
+               </td>
+            </tr>
+         </table>
+         
+         <table width="580" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td class="footer" align="center" valign="top">abcWidgets and the abcWidgets Logo are registered trademarks of <span>abcWidgets Corp</span>.<br />ABCWidgets Corp - 123 Some Street, City, ST 99999. ph +1 4 1477 89 745</td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>
