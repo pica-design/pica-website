@@ -1,6 +1,25 @@
+/*********** BACK TO TOP ******************/
+.back-to-top {
+	position: fixed ;
+	z-index: 10 ;
+	bottom: 0px ;
+	right: 30px ;
+	padding: 5px ;
+	background-color: #666666 ;
+	color: rgb(255,255,255) ;
+	font-size: 14px ;
+	display: none ;
+	cursor: pointer ;
+}
+	.back-to-top.active {
+		display: block ;
+	}
+
+/*********** Footer ******************/
 footer {
 	position: absolute ;
 	bottom: 0 ;
+	z-index: 7 ;
 	left: 72px ;
 	width: 90% ;
 	padding-bottom: 72px ;
@@ -51,7 +70,7 @@ footer {
 		display: block ;
 		float: left ;
 		margin-top: 6px ;
-		width: 620px ;
+		width: 700px ;
 		height: 24px ;
 	}
 }//footer

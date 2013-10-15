@@ -1,9 +1,10 @@
 <?php 
 	get_header();
+
+    global $site_url, $template_directory;
 ?>
-		
+
         <section class="sub-content-wrapper">
-        
             <!-- Display page header --> 
             <div class="page-masthead">
             	<div class="page-masthead-inner">
@@ -14,17 +15,12 @@
             	</div>
             </div>
         </section><!-- end .sub-content-wrapper -->
-            
         <div class="page-horizontal-divider"><div class="inner-page-horizontal-divider"></div></div>
-            
         <section class="sub-content-wrapper">
-            
-            <img src="<?php bloginfo('template_directory') ?>/images/content/American-Pika-Call.jpg" alt="American Pika" />
+            <img src="http://images.<?php echo $template_directory ?>/images/content/american-pika.jpg" alt="American Pika" />
             <br />
             The pika (PY-ka) is a small mammal, with short limbs, rounded ears, and short tail. 
             <br /><br />
             <strong>He is unafraid when faced with missing web pages.</strong>
-               
-   
 		</section><!-- end .sub-content-wrapper -->
 <?php get_footer(); ?>

@@ -1,7 +1,9 @@
 <?php 
 	get_header();
 	
-	$gallery = new Post_Gallery ;
+	//$gallery = new Post_Gallery($post->ID) ;
+
+    the_post();
 ?>
 		
         <section class="sub-content-wrapper">
@@ -11,7 +13,7 @@
             	<div class="page-masthead-inner">
                     <!-- Display page title and sub title ex 'work . featured' -->
                     <div class="page-title">
-                        <h2>clients</h2>
+                        <h1>clients</h1>
                     </div>      
             	</div>
             </div>
@@ -21,7 +23,7 @@
             
         <section class="sub-content-wrapper">
             <div class="client-grid">
-                <?php foreach ($gallery->attachments as $attachment) : ?>
+                <?php foreach ($post->attachments as $attachment) : ?>
                     <figure class="client">
                     	<?php if (!empty($attachment->meta_data['_attachment-exlink'][0])) : ?>
 	                        <a href="<?php echo $attachment->meta_data['_attachment-exlink'][0] ?>" title="<?php echo $attachment->post_title ?>" target="_blank">

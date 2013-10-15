@@ -9,7 +9,7 @@
             <div class="page-masthead-inner">
                 <!-- Display page title and sub title ex 'work . featured' -->
                 <div class="page-title">
-                    <h2>contact</h2>
+                    <h1>contact</h1>
                 </div>      
             </div>
         </div>
@@ -18,7 +18,7 @@
     <section class="sub-content-wrapper">
         <div class="focal-point multiple">
             <div class="focal-point-item">
-                <img src="http://www.pica.is/wp-content/uploads/Contact_Building.jpg" alt="Old Tyme Photo of the Belfast Opera House" />
+                <img src="<?php echo $cdn->images_url ?>wp-content/uploads/Contact_Building.jpg" alt="Old Tyme Photo of the Belfast Opera House" />
             </div>
             <div class="focal-point-item">
                 <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=111+Church+St+Belfast+Maine+04915&ie=UTF8&hq=&hnear=111+Church+St+Belfast+Maine+04915&t=h&z=16" title="View full Map" target="_blank">

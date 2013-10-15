@@ -11,17 +11,12 @@
             <section class="sub-content-wrapper">
                 <div class="page-masthead pica-work-taxonomy">
                     <div class="page-title"><?php if (strtolower($term->name) != "featured") : ?><h1><a href="<?php bloginfo('url') ?>/work-categories/featured/" title="Back to our featured work">work</a></h1><?php else : ?><h1>work</h1><?php endif ?></div>    
-    
                     <div class="page-controller"><?php
                             $categories = get_categories(array('taxonomy' => 'pica_work_type', 'orderby' => 'name', 'show_count' => 1, 'exclude' => 8));
                             foreach ($categories as $category) :
-                            
-                                if ($category->name == $term->name) :
-                                    $active_category = "active";
-                                else :
-                                    $active_category = "";
-                                endif; ?>
-                                
+                                if ($category->name == $term->name) : $active_category = "active";
+                                else : $active_category = ""; endif; ?>
+                               
                         <div class="work-category-wrapper <?php echo $active_category ?>">
                             <div class="work-category-inner-wrapper">
                                 <div class="work-category-trigger"><?php echo $category->name[0] ?></div>
@@ -30,7 +25,7 @@
                                 </div>
                             </div>
                         </div><?php endforeach ?>
-                        
+
                     </div>                
                 </div>
             </section><!-- end .sub-content-wrapper -->
@@ -65,13 +60,10 @@
                             <div class="work-item-title" style="color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?> !important;"><?php the_title() ?></div>
                             <?php 
                                 if (has_post_thumbnail()) :
-                                    $args = array(
-                                        'alt'	=> "Our Partner " . $post->post_title, 
-                                        'title' => "Learn about our work with " . $post->post_title,
-                                        'class' => "work-item-image",
-										'id' 	=> $post->post_name
-                                    );
-                                    the_post_thumbnail('post-thumbnail', $args);
+                                    $image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'post-thumbnail' );
+                                    ?>
+                                        <img src="<?php echo $image_attributes[0] ?>" alt="Our Partner <?php echo $post->post_title ?>" class="work-item-image" id="<?php echo $post->post_name ?>"  />
+                                    <?php 
                                 endif;
                             ?>
                             

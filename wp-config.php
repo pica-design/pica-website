@@ -25,12 +25,12 @@ define('DB_PASSWORD', '(0G6M#3*#Ot2');
 
 //LOCAL
 define('DB_NAME', 'pica_website');
-define('DB_USER', 'root');
+define('DB_USER', 'root_remote');
 define('DB_PASSWORD', '1309piCa');
 
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.picadesign.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -84,7 +84,7 @@ define('WPLANG', '');
  * in their development environments.
  */
 ini_set('display_errors', 0);
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 

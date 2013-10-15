@@ -18,10 +18,10 @@
 			width: 25px ;
 			height: 28px ;
 		}
-		&.active .site-controller-trigger-arrow {
+		&.inactive .site-controller-trigger-arrow {
 			background: sprite($assets-sprite, site-controller-trigger-inactive) no-repeat ;
 		}
-		&.inactive .site-controller-trigger-arrow {
+		&.active .site-controller-trigger-arrow {
 			background: sprite($assets-sprite, site-controller-trigger-active) no-repeat ;
 		}
 		&:hover {
@@ -64,12 +64,14 @@
 
 	//NAVIGATION
 	nav {
+		position: relative ;
 		display: none ;
 		padding: 0 0 0 40px ;
 		width: 440px ;
 		height: 190px ;
 		clear: left ;
 		overflow: auto ;
+		z-index: 5 ;
 
 		ul {
 			margin-top: 40px ;

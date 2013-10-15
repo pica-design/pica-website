@@ -4,8 +4,8 @@
 /* DINNextLTPro - Regular */
 @font-face {
   font-family: 'DINNextLTPro';
-  src: url("../fonts/DINNextLTPro-Regular.eot");
-  src: url("../fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINNextLTPro-Regular.woff") format("woff"), url("../fonts/DINNextLTPro-Regular.ttf") format("truetype"), url("../fonts/DINNextLTPro-Regular.svg#DINNextLTPro") format("svg");
+  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
+  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,8 +13,8 @@
 /* DINNextLTPro - Medium */
 @font-face {
   font-family: 'DINNextLTProMedium';
-  src: url("../fonts/DINNextLTPro-Medium.eot");
-  src: url("../fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINNextLTPro-Medium.woff") format("woff"), url("../fonts/DINNextLTPro-Medium.ttf") format("truetype"), url("../fonts/DINNextLTPro-Medium.svg#DINNextLTProMedium") format("svg");
+  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
+  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,16 +33,21 @@ html, body {
 }
 
 /* line 14, ../sass/_html-base.scss */
+* {
+  outline: none;
+}
+
+/* line 17, ../sass/_html-base.scss */
 body {
   position: relative;
 }
 
-/* line 18, ../sass/_html-base.scss */
+/* line 20, ../sass/_html-base.scss */
 a img {
   border: 0px;
 }
 
-/* line 22, ../sass/_html-base.scss */
+/* line 23, ../sass/_html-base.scss */
 h1, h2, h3, h4, h5 {
   font-weight: normal;
   margin: 5px 0px 10px 0px;
@@ -51,33 +56,33 @@ h1, h2, h3, h4, h5 {
   line-height: 1em;
 }
 
-/* line 29, ../sass/_html-base.scss */
+/* line 30, ../sass/_html-base.scss */
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong {
   font-family: 'DINNextLTProMedium';
   font-weight: normal;
 }
 
-/* line 33, ../sass/_html-base.scss */
+/* line 34, ../sass/_html-base.scss */
 h1 {
   font-size: 48px;
 }
 
-/* line 36, ../sass/_html-base.scss */
+/* line 37, ../sass/_html-base.scss */
 h2 {
   font-size: 22px;
 }
 
-/* line 39, ../sass/_html-base.scss */
+/* line 40, ../sass/_html-base.scss */
 h3 {
   font-size: 18px;
 }
 
-/* line 42, ../sass/_html-base.scss */
+/* line 43, ../sass/_html-base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a {
   font-size: inherit;
 }
 
-/* line 45, ../sass/_html-base.scss */
+/* line 46, ../sass/_html-base.scss */
 p {
   margin-top: 0px;
   color: #333;
@@ -85,7 +90,7 @@ p {
   line-height: 1.2em;
 }
 
-/* line 51, ../sass/_html-base.scss */
+/* line 52, ../sass/_html-base.scss */
 p strong {
   margin-top: 0px;
   color: #333;
@@ -93,7 +98,7 @@ p strong {
   font-weight: normal;
 }
 
-/* line 57, ../sass/_html-base.scss */
+/* line 58, ../sass/_html-base.scss */
 a {
   color: #666;
   text-decoration: none;
@@ -101,24 +106,24 @@ a {
   font-size: inherit;
 }
 
-/* line 63, ../sass/_html-base.scss */
+/* line 64, ../sass/_html-base.scss */
 hr {
   border: 1px dashed #999;
   height: 0;
 }
 
-/* line 67, ../sass/_html-base.scss */
+/* line 68, ../sass/_html-base.scss */
 strong {
   font-family: 'DINNextLTProMedium', Arial, Geneva, Helvetica, sans-serif;
   font-weight: normal;
 }
 
-/* line 71, ../sass/_html-base.scss */
+/* line 72, ../sass/_html-base.scss */
 table {
   border: none;
 }
 
-/* line 74, ../sass/_html-base.scss */
+/* line 75, ../sass/_html-base.scss */
 table td {
   border: none;
   padding: 0px;
