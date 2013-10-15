@@ -6,7 +6,7 @@
                 <div class="page-title">
                     <h1><a href="<?php bloginfo('url') ?>/blog" title="View the full blog">Pica Blog</a></h1>
                     <?php if (is_category()) : ?>
-                    	<figure class="dot-seperator"></figure>
+                    	<figure class="dot-seperator"><div class="dot-image"></div></figure>
                         <h2><?php echo single_cat_title("",false) ?></h2>
 					<?php endif ?>
                 </div>    

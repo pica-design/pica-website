@@ -30,8 +30,6 @@
 								endforeach;
 							endif;
 						endif;
-					endif;
-					if (isset($tweet->entities)) :
 						if (isset($tweet->entities->media)) :
 							if (is_array($tweet->entities->media)) :
 								foreach ($tweet->entities->media as $tweeted_media) :

@@ -71,8 +71,7 @@
 			font-family: 'DINNextLTProMedium' ;
 			font-size: 16px ;
 		}
-			
-			
+			//Used on single blog posts	
 			.sub-content-wrapper.blog-header.single .page-controller {
 				margin-top: 20px ;
 			}
@@ -80,15 +79,18 @@
 			/* WORK TAXONOMY */
 			.work-category-wrapper {
 				float: left ;
+				margin-top: 10px ;
 				margin-left: 10px ;
 				width: 25px ;
 				height: 25px ;
+				position: relative ;
 				overflow: hidden ;
 			}
 				.work-category-wrapper.active {
 					width: auto ;
 				}
 				.work-category-inner-wrapper {
+					height: 25px ;
 					/* The width for this container is set via jQuery on page load - ugly but works crossbrowser */
 				}
 				.work-category-trigger {
@@ -104,6 +106,7 @@
 					border-radius: 25px;
 					color: rgb(255,255,255) ;
 					text-align: center ;
+					font-family: 'DINNextLTProMedium' !important ;
 				}
 				.work-category-link {
 					margin: 6px ;
@@ -111,6 +114,7 @@
 				}
 					.work-category-link a {
 						display: block ;
+						font-family: 'DINNextLTProMedium' !important ;
 					}
 				
 					

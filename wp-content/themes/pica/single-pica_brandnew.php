@@ -19,8 +19,8 @@
             
         <section class="sub-content-wrapper">
         	<?php
-				$gallery = new Post_Gallery;
-				foreach ($gallery->attachments as $key => $attachment) : ?>
+				//$gallery = new Post_Gallery;
+				foreach ($post->attachments as $key => $attachment) : ?>
 					<figure class="brandnew-attachment">
 						<img class="attachment-image" src="<?php echo $attachment->guid ?>" alt="<?php echo $attachment->post_title ?>" />
                         <figcaption class="attachment-description">

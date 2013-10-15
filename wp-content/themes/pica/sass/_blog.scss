@@ -8,12 +8,12 @@
 		line-height: 1em ;
 		float: left ;
 	}
+
 .sub-content-wrapper .blog-wrapper {
 	overflow: auto ;
 	padding: 25px ;
 	background-color: #eee ;
 }
-	
 	.single .blog-wrapper {
 		/*width: 70% ;*/
 		width: 825px ;
@@ -26,14 +26,13 @@
 			width: 100% ;
 		}
 		.blog-post {
-			overflow: auto ;
 			margin-bottom: 50px ;
 			padding-top: 3px ;
 		}
 			.single .blog-post {
 				margin-bottom: 0px ;
 			}	
-				.single .blog-post .post-thumbnail {
+				.blog-post .post-thumbnail {
 					float: left ;
 					margin: 0 10px 10px 0 ;
 				}

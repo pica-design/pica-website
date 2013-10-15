@@ -17,16 +17,17 @@
                     </span>
                  </div>
             </footer>
-        </section><!-- .site-wrapper -->
+        </section><!-- .site-wrapper --><?php global $cdn ?>
         <figure class="back-to-top inactive">Back to top</figure>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    	<script src="http://malsup.github.com/jquery.cycle.all.js"></script>
-    	<script type="text/javascript">
-			var post_type = "<?php echo $post->post_type ?>"
-			var page_title = "<?php echo $post->post_title ?>"
-			var single = <?php echo is_single() ? 1 : 0 ?>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="//malsup.github.com/jquery.cycle.all.js"></script>
+        <script type="text/javascript">
+		var post_type = "<?php echo $post->post_type ?>"
+		var page_title = "<?php echo $post->post_title ?>"
+		var single = <?php echo is_single() ? 1 : 0 ?>
 		
-        </script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/scripts/jquery.pica.scripts.js"></script>
+        </script><?php //global $template_directory ?>
+
+	<script type="text/javascript" src="<?php echo $cdn->template_scripts_url ?>jquery.pica.scripts.js"></script>
     </body>
 </html>

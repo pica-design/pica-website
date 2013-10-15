@@ -3,6 +3,7 @@
 	width: 100% ;
 	padding: 0 0 200px 0 ;
 	overflow: auto ;
+	z-index: 6 ;
 }
 	body.content-bleed #content-wrapper {
 	}
@@ -30,3 +31,6 @@
 
 	/* Blog Pages */
 	@import 'blog';
+
+	/* Widgets */
+	@import 'widgets';

@@ -8,6 +8,17 @@
 	overflow: visible ;
 	max-width: 1130px !important ;
 	max-height: 650px !important ;
+
+	.loading-bar {
+		max-width: 1130px ;
+		background-color: $light-gray ;
+		.loaded {
+			background-color: $dark-gray ;
+			height: 5px ;
+			width: 0px ;
+			max-width: 100% ;
+		}
+	}
 }	
 	.content-gallery.grid {
 		max-width: 100% !important ;
@@ -16,6 +27,13 @@
 	.gallery {
 		position: relative ;
 		padding: 0px !important ;
+		overflow: visible ;
+		
+		//The following at default values, so the space can occupay a loading animation
+		/*
+		width: 1106px ;
+		height: 650px ;
+		*/
 	}	
 		/* 
 			Gallery items are displayed in varrying formats
@@ -44,12 +62,13 @@
 					height: 90% ;
 					width: 90% ;
 					margin: 50px ;
+					z-index: 1 ;
 					/*font-size: 48px ;*/
 					font-family: 'DINNextLTPro' ;
 					line-height: 1em ;
 				}
 				.gallery-item.large.text-slide div a {
-					font-size: inherit ;
+					font: inherit ;
 					color: inherit ;
 					text-decoration: underline ;
 				}
@@ -64,6 +83,7 @@
 				width: 100% ;
 				max-height: 650px !important ;
 				margin: 0px ;
+				z-index: 1 ;
 			}
 			
 			/* Gallery navigation for large slide-based galleries */

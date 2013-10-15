@@ -3,6 +3,11 @@
  * @package Admin
  */
 
+if ( !defined('WPSEO_VERSION') ) {
+	header('HTTP/1.0 403 Forbidden');
+	die;
+}
+
 /**
  * This class adds the Social tab to the WP SEO metabox and makes sure the settings are saved.
  */
@@ -38,9 +43,11 @@ class WPSEO_Social_Admin extends WPSEO_Metabox {
 	/**
 	 * Define the meta boxes for the Social tab
 	 *
+	 * @param string $post_type
+	 *
 	 * @return array Array containing the meta boxes
 	 */
-	public function get_meta_boxes() {
+	public function get_meta_boxes( $post_type = 'post' ) {
 		$mbs                              = array();
 		$mbs[ 'opengraph-description' ]   = array(
 			"name"        => "opengraph-description",

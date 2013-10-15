@@ -1,59 +1,63 @@
 <?php
+	/*
+		 ____                            ____                                          
+		/\  _`\   __                    /\  _`\                  __                    
+		\ \ \L\ \/\_\    ___     __     \ \ \/\ \     __    ____/\_\     __     ___    
+		 \ \ ,__/\/\ \  /'___\ /'__`\    \ \ \ \ \  /'__`\ /',__\/\ \  /'_ `\ /' _ `\  
+		  \ \ \/  \ \ \/\ \__//\ \L\.\_   \ \ \_\ \/\  __//\__, `\ \ \/\ \L\ \/\ \/\ \ 
+		   \ \_\   \ \_\ \____\ \__/.\_\   \ \____/\ \____\/\____/\ \_\ \____ \ \_\ \_\
+			\/_/    \/_/\/____/\/__/\/_/    \/___/  \/____/\/___/  \/_/\/___L\ \/_/\/_/
+																		 /\____/       
+																		 \_/__/
+																																					 
+		Design + Marketing | www.picadesign.com
+	*/
 
 	/*********************************************************
-	WORDPRESS CORE MODIFICATIONS
+		Pica Design Theme Setup
 	*********************************************************/
-	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
-	remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
-	remove_action( 'wp_head', 'rsd_link' ); // Display the link to the Really Simple Discovery service endpoint, EditURI link
-	remove_action( 'wp_head', 'wlwmanifest_link' ); // Display the link to the Windows Live Writer manifest file.
-	remove_action( 'wp_head', 'index_rel_link' ); // index link
-	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 ); // prev link
-	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 ); // start link
-	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Display relational links for the posts adjacent to the current post.
-	remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
-	remove_action( 'wp_head', 'rel_canonical'); //Remove the wp canonical url
-	add_filter( 'next_post_rel_link', 'disable_stuff' );
-	add_filter( 'excerpt_length', 'excerpt_length', 140 );	
-	add_filter('excerpt_more', 'excerpt_more');
-	function disable_stuff( $data ) { return false; }
-	function excerpt_length( $length ) { return 140; }
-	function excerpt_more($more) { return '...'; }
-	
-	/*********************************************************
-	THEME SETUP
-	*********************************************************/
-	
-	/* Pica Theme Setup Action */
+	//Load in our WordPress core overrides
+	include('inc/overrides.php');
+	//Load in our Post Types
+	include('inc/post-types.php');
+	//Load in our Post Attachments
+	include('inc/post-attachments.php');
+	//Load in our Post Attachments
+	include('inc/menus.php');
+	//Load in our Meta Boxes
+	include('inc/meta-boxes.php');
+	//Load in our Shortcodes
+	include('inc/shortcodes.php');
+	//Load in our Users
+	include('inc/users.php');
+	//Load in our Comments
+	include('inc/comments.php');
+	//Load in our Sidebars 
+	include('inc/sidebars.php');
+	//Load in our Widgets
+	include('inc/widgets.php');
+	//Load in our Twitter
+	include('inc/twitter.php');
+
+	//Theme Setup
 	add_action( 'init', 'pica_theme_setup' );
-	
 	function pica_theme_setup() {
+		//The theme namespace is used for menu of the operations below. 
+		//The namespace NEEDS to mirror the name of the theme folder
+		//And the primary js script file should also use this same namespace
+		global $theme_namespace; $theme_namespace = 'pica';
+		
+		//Load our psuedo-cdn/subdomain url generation
+		include('inc/cdn-url-generation.php');
+		//Instantiate our CDN url class
+		//This variable with be used throughout the theme to point to website assets
+		global $cdn;
+		$cdn = new CDN(0) ;		
+
 		// This theme styles the visual editor with editor-style.css to match the theme style.
 		add_editor_style('stylesheets/editor.css');	
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menu( 'primary', __( 'Primary Menu', 'pica' ) );
-		
-		//POST TYPES
-		include('inc/post-types.php');
-		
+		//Load the website styles and scripts 
+		//include('inc/styles-and-scripts.php');
 	}//end function pica_theme_setup
-
-	//META BOXES
-	include('inc/meta-boxes.php');
-	
-	//SHORTCODES
-	include('inc/shortcodes.php');
-
-	//USERS
-	include('inc/users.php');
-
-	//GALLERIES & IMAGES
-	include('inc/galleries-images.php');
-
-	//TWITTER
-	include('inc/twitter.php');
-	
-	//COMMENTS
-	include('inc/comments.php');
 ?>

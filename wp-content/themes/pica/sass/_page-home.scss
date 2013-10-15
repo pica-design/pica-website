@@ -14,6 +14,7 @@
 		overflow: visible ;
 		position: relative ;
 		float: left ;
+		width: 100% ;
 	}
 		.focal-point.single .focal-point-item {
 			/* ghetto fix for some odd margins showing up around the focal-point-item img */
@@ -34,21 +35,9 @@
 			z-index: 2 ;
 			padding: 72px ;
 		}
-			.focal-point-text.top {
-				/*
-				top: 72px ;
-				left: 72px ;
-				*/
-			}
 			.focal-point-text.bottom {
-				/*
-				bottom: 50px ;
-				left: 72px ;
-				*/
+				bottom: -20px ;
 			}
-				.focal-point-text.bottom {
-					bottom: -20px ;
-				}
 			.focal-point-text h1 {
 				width: 100% ;
 				margin: 0 0 25px 0 ;
@@ -67,15 +56,18 @@
 					}
 		.focal-point-image {
 			position: relative ;
-			width: 100% ;
-			height: auto ;
+			/*width: 100% ;*/
+			width: auto ;
+			height: 500px ;
+			/*min-height: 500px ;
+			max-height: 500px ;*/
 		}
 		
 		
 /*blogroll*/
 .sub-content-wrapper {
 	width: 100% ;
-	max-width: 1250px ;
+	//max-width: 1250px ;
 	padding: 0 0 0 72px ; /* The right padding should be 72 when below a certain screen width - media_query  - also needed for the single work */
 	position: relative ;
 }
@@ -114,7 +106,7 @@
 	}
 		#renews {
 			width: 680px ;
-			margin-right: 30px ;
+			margin-right: 20px ;
 		}
 			.renews-title {
 				position: relative ;
@@ -136,6 +128,11 @@
 						float: left ;
 					}
 						.blog-roll-thumbnail img {
+							@include opacity(0.7);
+							@include single-transition(all, 0.2s, linear, 0);
+						}
+						.blog-roll-container:hover img {
+							@include opacity(1.0);
 						}
 					.blog-roll-excerpt {
 						width: 300px ;
@@ -173,10 +170,7 @@
 									padding: 0 ;
 									float: left ;
 									background-color: #999999 ;
-									transition: all .2s linear ; 
-									-o-transition: all .2s linear ; 
-									-moz-transition: all .2s linear ; 
-									-webkit-transition: all .2s linear ;
+									@include single-transition(all, 0.2s, linear, 0);
 								}
 									.blog-roll-toggle .arrow div {
 										width: 18px ;
@@ -201,15 +195,12 @@
 								
 								.blog-roll-toggle .text {
 									height: 18px ;
-									padding: 1px 5px 0 5px ;
+									padding: 2px 5px 0 5px ;
 									float: left ;
 									margin-left: 5px ;
 									font-size: 11px ;
 									font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif ;
-									transition: all .2s linear ; 
-									-o-transition: all .2s linear ; 
-									-moz-transition: all .2s linear ; 
-									-webkit-transition: all .2s linear ;
+									@include single-transition(all, 0.2s, linear, 0);
 								}	
 									.blog-roll-toggle.inactive .text {
 										color: #ffffff ;
@@ -244,21 +235,30 @@
 			width: 360px ;
 			float: left ;
 			margin-bottom: 35px ;
+			margin-right: 20px ;
 		}
 			#brandnew-callout img {
-				
+				width: 359px ;
+				height: auto ;
+				@include opacity(0.7);
+				@include single-transition(all, 0.2s, linear, 0);
 			}
+				#brandnew-callout:hover img {
+					@include opacity(1.0);
+				}
 			
 		
 		
 	/* RE:SOCIAL Column */
 	#resocial {
-		width: 40% ;
-		min-width: 520px ;
-		max-width: 600px ;
+		//width: 40% ;
+		//min-width: 520px ;
+		//max-width: 600px ;
+		width: 520px ;
 		float: left ;
 		margin-top: 0px ;
-		margin-right: 5% ;
+		//margin-right: 5% ;
+		margin-right: 20px ;
 		overflow: auto ;
 	}
 		.resocial-title {
@@ -267,7 +267,7 @@
 		}
 			.twitter-tweets {
 				width: 100% ;
-				margin: 10px 0 10px 0px ;
+				margin: 0px 0 10px 0px ;
 			}
 				.tweet {
 					width: 100% ;
@@ -281,6 +281,10 @@
 						width: 15px ;
 						height: 14px ;
 						background: sprite($assets-sprite, twitter-twitpic-icon) no-repeat ;
+
+						a {
+							@extend .link-fill-container ;
+						}
 					}
 					.retweet {
 						float: right ;

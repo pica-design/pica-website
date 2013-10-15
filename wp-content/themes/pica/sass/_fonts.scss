@@ -1,11 +1,13 @@
+//$font_url: 'http://fonts.picadesign.ath.cx/pica_website/wp-content/themes/pica/fonts/' ;
+$font_url: 'http://fonts.picadesign.com/wp-content/themes/pica/fonts/' ;
+
 /* DINNextLTPro - Regular */
 @font-face {
     font-family: 'DINNextLTPro' ;
-    src: url('../fonts/DINNextLTPro-Regular.eot') ;
-    src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DINNextLTPro-Regular.woff') format('woff'),
-         url('../fonts/DINNextLTPro-Regular.ttf') format('truetype'),
-         url('../fonts/DINNextLTPro-Regular.svg#DINNextLTPro') format('svg') ;
+    src: url($font_url + 'DINNextLTPro-Regular.eot') ;
+    src: url($font_url + 'DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url($font_url + 'DINNextLTPro-Regular.woff') format('woff'),
+         url($font_url + 'DINNextLTPro-Regular.ttf') format('truetype') ;
     font-weight: normal ;
     font-style: normal ;
 }
@@ -13,11 +15,10 @@
 /* DINNextLTPro - Medium */
 @font-face {
     font-family: 'DINNextLTProMedium' ;
-    src: url('../fonts/DINNextLTPro-Medium.eot') ;
-    src: url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DINNextLTPro-Medium.woff') format('woff'),
-         url('../fonts/DINNextLTPro-Medium.ttf') format('truetype'),
-         url('../fonts/DINNextLTPro-Medium.svg#DINNextLTProMedium') format('svg') ;
+    src: url($font_url + 'DINNextLTPro-Medium.eot') ;
+    src: url($font_url + 'DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
+         url($font_url + 'DINNextLTPro-Medium.woff') format('woff'),
+         url($font_url + 'DINNextLTPro-Medium.ttf') format('truetype') ;
     font-weight: normal ;
     font-style: normal ;
 }
