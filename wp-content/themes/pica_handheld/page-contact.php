@@ -10,7 +10,7 @@
         <section class="sub-content-wrapper">
             <div class="focal-point multiple">
                 <div class="focal-point-item">
-                    <img src="http://www.picadesign.com/wp-content/uploads/Contact_Building.jpg" alt="Old Tyme Photo of the Belfast Opera House" />
+                    <img src="http://www.pica.is/wp-content/uploads/Contact_Building.jpg" alt="Old Tyme Photo of the Belfast Opera House" />
                     We are located directly across from the Belfast Police Station on Church street, in the 3rd floor of the Opera House building.
                 </div>
             </div> 
