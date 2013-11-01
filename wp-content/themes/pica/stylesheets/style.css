@@ -223,7 +223,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -373,7 +373,7 @@ form {
  */
 /* line 373, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -535,8 +535,8 @@ table {
 /* DINNextLTPro - Regular */
 @font-face {
   font-family: "DINNextLTPro";
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -544,8 +544,8 @@ table {
 /* DINNextLTPro - Medium */
 @font-face {
   font-family: "DINNextLTProMedium";
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -2223,7 +2223,7 @@ WP & JQUERY PLUGINS
 /* line 5, ../sass/_slimbox.scss */
 #lbOverlay {
   position: fixed;
-  z-index: 8888 !important;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -2235,7 +2235,7 @@ WP & JQUERY PLUGINS
 /* line 16, ../sass/_slimbox.scss */
 #lbCenter, #lbBottomContainer {
   position: absolute;
-  z-index: 9999 !important;
+  z-index: 9999;
   overflow: hidden;
   background-color: #fff;
 }
@@ -2250,7 +2250,7 @@ WP & JQUERY PLUGINS
   position: absolute;
   left: 0;
   top: 0;
-  border: 10px solid white;
+  border: 10px solid #fff;
   background-repeat: no-repeat;
 }
 
@@ -2290,7 +2290,7 @@ WP & JQUERY PLUGINS
   color: #666;
   line-height: 1.4em;
   text-align: left;
-  border: 10px solid white;
+  border: 10px solid #fff;
   border-top-style: none;
 }
 

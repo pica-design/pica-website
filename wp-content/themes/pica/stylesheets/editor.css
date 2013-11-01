@@ -3,18 +3,18 @@
 ***********************************************/
 /* DINNextLTPro - Regular */
 @font-face {
-  font-family: 'DINNextLTPro';
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
+  font-family: "DINNextLTPro";
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 /* DINNextLTPro - Medium */
 @font-face {
-  font-family: 'DINNextLTProMedium';
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
+  font-family: "DINNextLTProMedium";
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
+  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -51,14 +51,14 @@ a img {
 h1, h2, h3, h4, h5 {
   font-weight: normal;
   margin: 5px 0px 10px 0px;
-  font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif;
-  color: #000;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  color: black;
   line-height: 1em;
 }
 
 /* line 30, ../sass/_html-base.scss */
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong {
-  font-family: 'DINNextLTProMedium';
+  font-family: "DINNextLTProMedium";
   font-weight: normal;
 }
 
@@ -85,22 +85,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 /* line 46, ../sass/_html-base.scss */
 p {
   margin-top: 0px;
-  color: #333;
-  font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif;
+  color: #333333;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
   line-height: 1.2em;
 }
 
 /* line 52, ../sass/_html-base.scss */
 p strong {
   margin-top: 0px;
-  color: #333;
-  font-family: 'DINNextLTProMedium', Arial, Geneva, Helvetica, sans-serif;
+  color: #333333;
+  font-family: "DINNextLTProMedium", Arial, Geneva, Helvetica, sans-serif;
   font-weight: normal;
 }
 
 /* line 58, ../sass/_html-base.scss */
 a {
-  color: #666;
+  color: #666666;
   text-decoration: none;
   outline: none;
   font-size: inherit;
@@ -108,13 +108,13 @@ a {
 
 /* line 64, ../sass/_html-base.scss */
 hr {
-  border: 1px dashed #999;
+  border: 1px dashed #999999;
   height: 0;
 }
 
 /* line 68, ../sass/_html-base.scss */
 strong {
-  font-family: 'DINNextLTProMedium', Arial, Geneva, Helvetica, sans-serif;
+  font-family: "DINNextLTProMedium", Arial, Geneva, Helvetica, sans-serif;
   font-weight: normal;
 }
 
@@ -141,6 +141,6 @@ html {
 html body {
   min-width: 0;
   background-color: #dddddd;
-  font-family: 'DINNextLTPro', Arial, Geneva, Helvetica, sans-serif;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
   color: #666666;
 }
