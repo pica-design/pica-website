@@ -7,6 +7,39 @@
 						<?php the_content() ?>
                     <?php endwhile ?>
                 <?php endif; ?>
+                <div class="employees grid">
+                    <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => '',
+                        'meta_key'     => '',
+                        'meta_value'   => '',
+                        'meta_compare' => '',
+                        'meta_query'   => array(),
+                        'include'      => array(),
+                        'exclude'      => array(),
+                        'orderby'      => 'login',
+                        'order'        => 'ASC',
+                        'offset'       => '',
+                        'search'       => '',
+                        'number'       => '',
+                        'count_total'  => false,
+                        'fields'       => 'all',
+                        'who'          => ''
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee">
+                                <div class="user-image">
+                                    
+                                </div>
+                                <p><?php //print_r($user_meta['first_name')]?></p>
+                            </div>
+
+                     <?php endforeach; ?>
+                
+                </div>
                 <table>
                     <tbody>
                         <tr>

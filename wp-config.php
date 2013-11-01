@@ -17,20 +17,15 @@
 // ** MySQL settings - You can get this info from your web host ** //
 
 //LIVE
-/*
-define('DB_NAME', 'pica_wordpress');
-define('DB_USER', 'pica_dbuser');
-define('DB_PASSWORD', '(0G6M#3*#Ot2');
-*/
 
-//LOCAL
-define('DB_NAME', 'pica_website');
-define('DB_USER', 'root_remote');
-define('DB_PASSWORD', '1309piCa');
+define('DB_NAME', 'picais_wordpress');
+define('DB_USER', 'picais_dbuser');
+define('DB_PASSWORD', '(0G6M#3*#Ot2');
+
 
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.picadesign.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
