@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "http://images.picadesign.com/wp-content/themes/pica/"
+http_path = "http://pica.is/wp-content/themes/pica/"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"

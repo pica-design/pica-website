@@ -4,8 +4,8 @@
 /* DINNextLTPro - Regular */
 @font-face {
   font-family: "DINNextLTPro";
-  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
-  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,8 +13,8 @@
 /* DINNextLTPro - Medium */
 @font-face {
   font-family: "DINNextLTProMedium";
-  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
-  src: url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
