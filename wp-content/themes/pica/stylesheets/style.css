@@ -223,7 +223,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -373,7 +373,7 @@ form {
  */
 /* line 373, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -535,8 +535,8 @@ table {
 /* DINNextLTPro - Regular */
 @font-face {
   font-family: "DINNextLTPro";
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.woff") format("woff"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -544,8 +544,8 @@ table {
 /* DINNextLTPro - Medium */
 @font-face {
   font-family: "DINNextLTProMedium";
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
-  src: url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://fonts.picadesign.com/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot");
+  src: url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.woff") format("woff"), url("http://pica.is/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -813,11 +813,11 @@ img.alignright {
 }
 /* line 21, ../sass/_header.scss */
 #site-controller .site-controller-trigger.inactive .site-controller-trigger-arrow {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 0 no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 0 no-repeat;
 }
 /* line 24, ../sass/_header.scss */
 #site-controller .site-controller-trigger.active .site-controller-trigger-arrow {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -443px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -443px no-repeat;
 }
 /* line 27, ../sass/_header.scss */
 #site-controller .site-controller-trigger:hover {
@@ -832,7 +832,7 @@ img.alignright {
   height: 47px;
   float: left;
   margin-top: 13px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -112px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -112px no-repeat;
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -1159,7 +1159,7 @@ img.alignright {
 
 /* line 179, ../sass/_page-home.scss */
 .blog-roll-toggle.inactive .arrow div {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -508px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -508px no-repeat;
 }
 
 /* line 182, ../sass/_page-home.scss */
@@ -1169,7 +1169,7 @@ img.alignright {
 
 /* line 186, ../sass/_page-home.scss */
 .blog-roll-toggle.active .arrow div {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -541px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -541px no-repeat;
 }
 
 /* line 189, ../sass/_page-home.scss */
@@ -1301,7 +1301,7 @@ img.alignright {
   float: right;
   width: 15px;
   height: 14px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -429px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -429px no-repeat;
 }
 
 /* line 289, ../sass/_page-home.scss */
@@ -1309,7 +1309,7 @@ img.alignright {
   float: right;
   width: 18px;
   height: 14px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -527px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -527px no-repeat;
 }
 
 /* line 295, ../sass/_page-home.scss */
@@ -1420,7 +1420,7 @@ body.content-bleed .page-masthead {
   width: 13px;
   height: 12px;
   margin-top: 15px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -496px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -496px no-repeat;
 }
 
 /* line 57, ../sass/_masthead.scss */
@@ -1579,7 +1579,7 @@ body.content-bleed .page-masthead {
   width: 13px;
   height: 11px;
   margin: 1px 10px 0 0;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -485px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -485px no-repeat;
 }
 
 /* line 187, ../sass/_masthead.scss */
@@ -1748,23 +1748,23 @@ body.content-bleed .page-masthead {
 /* line 100, ../sass/_portfolio.scss */
 .gallery-prev {
   left: -32px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -241px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -241px no-repeat;
 }
 
 /* line 104, ../sass/_portfolio.scss */
 .gallery-prev:hover {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -30px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -30px no-repeat;
 }
 
 /* line 107, ../sass/_portfolio.scss */
 .gallery-next {
   right: -31px;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -323px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -323px no-repeat;
 }
 
 /* line 111, ../sass/_portfolio.scss */
 .gallery-next:hover {
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -159px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -159px no-repeat;
 }
 
 /* Gallery items can be displayed in a grid - used on the taxonomy-pica_work_type page */
@@ -2179,7 +2179,7 @@ footer .pica-mark-small {
   position: relative;
   display: block;
   float: left;
-  background: url('http://images.picadesign.com/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -405px no-repeat;
+  background: url('http://pica.is/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -405px no-repeat;
   width: 24px;
   height: 24px;
   -o-transition: all 0.2s linear;
@@ -2223,7 +2223,7 @@ WP & JQUERY PLUGINS
 /* line 5, ../sass/_slimbox.scss */
 #lbOverlay {
   position: fixed;
-  z-index: 8888 !important;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -2235,14 +2235,14 @@ WP & JQUERY PLUGINS
 /* line 16, ../sass/_slimbox.scss */
 #lbCenter, #lbBottomContainer {
   position: absolute;
-  z-index: 9999 !important;
+  z-index: 9999;
   overflow: hidden;
   background-color: #fff;
 }
 
 /* line 23, ../sass/_slimbox.scss */
 .lbLoading {
-  background: white url(http://images.picadesign.com/wp-content/themes/pica/images/slimbox/loading.gif) no-repeat center;
+  background: white url(http://pica.is/wp-content/themes/pica/images/slimbox/loading.gif) no-repeat center;
 }
 
 /* line 27, ../sass/_slimbox.scss */
@@ -2250,7 +2250,7 @@ WP & JQUERY PLUGINS
   position: absolute;
   left: 0;
   top: 0;
-  border: 10px solid white;
+  border: 10px solid #fff;
   background-repeat: no-repeat;
 }
 
@@ -2270,7 +2270,7 @@ WP & JQUERY PLUGINS
 
 /* line 47, ../sass/_slimbox.scss */
 #lbPrevLink:hover {
-  background: transparent url(http://images.picadesign.com/wp-content/themes/pica/images/slimbox/prevlabel.gif) no-repeat 0 15%;
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/prevlabel.gif) no-repeat 0 15%;
 }
 
 /* line 51, ../sass/_slimbox.scss */
@@ -2280,7 +2280,7 @@ WP & JQUERY PLUGINS
 
 /* line 55, ../sass/_slimbox.scss */
 #lbNextLink:hover {
-  background: transparent url(http://images.picadesign.com/wp-content/themes/pica/images/slimbox/nextlabel.gif) no-repeat 100% 15%;
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/nextlabel.gif) no-repeat 100% 15%;
 }
 
 /* line 59, ../sass/_slimbox.scss */
@@ -2290,7 +2290,7 @@ WP & JQUERY PLUGINS
   color: #666;
   line-height: 1.4em;
   text-align: left;
-  border: 10px solid white;
+  border: 10px solid #fff;
   border-top-style: none;
 }
 
@@ -2300,7 +2300,7 @@ WP & JQUERY PLUGINS
   float: right;
   width: 66px;
   height: 22px;
-  background: transparent url(http://images.picadesign.com/wp-content/themes/pica/images/slimbox/closelabel.gif) no-repeat center;
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/closelabel.gif) no-repeat center;
   margin: 5px 0;
   outline: none;
 }
