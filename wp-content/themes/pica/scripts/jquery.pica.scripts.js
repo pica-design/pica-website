@@ -61,71 +61,7 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 		$('html, body').animate({scrollTop: 0 }, 800);
 	})
 
-	/**************************************************
-		HEADER SCRIPTS
-	**************************************************/
 	
-	//Determine if the website is being viewed with an iOS device (we need to do some things a little differently in this case)
-	var ua = navigator.userAgent,
-    event = (ua.match(/iPad/i)) ? "touch" : "click";
-	
-	//This will not be needed once the mobile website is catching these devices
-	//if (event == "click") { event = (ua.match(/iPhone/i)) ? "touch" : "click"; }
-	
-	if (event == "click") {
-		//Attach a click event handler to the .nav-trigger element
-		$('#site-controller').data('state', 'enabled').hoverIntent(function(e) {
-			if ($(this).data('state') == 'enabled') {
-				//Disable any further hover events while the controller is open
-				$(this).data('state') == 'disabled'
-				//If the current element is inactive, let's slide our menu down so it's visible
-				$('nav').slideDown('slow').css('display', 'block')
-				//We also wanted to remove the inactive class and replace it with the active class (this changes the down arrow into an up arrow)
-				$(this).find('.site-controller-trigger').removeClass('inactive').addClass('active')
-				//Update the element title attribute to reflect the change
-				$(this).find('.site-controller-trigger').attr('title', 'Close Page Menu')
-			}
-		}, function() {
-			//The element is not inactive, so it must be active - go ahead and scroll the nav back up so it's hidden
-			$('nav').slideUp('normal')
-			//..and we want to remove the active class and set it back to inactive
-			$(this).find('.site-controller-trigger').removeClass('active').addClass('inactive')
-			//Update the element title attribute to reflect the change
-			$(this).find('.site-controller-trigger').attr('title', 'Open Page Menu')
-			//Allow the controller to be opened again
-			$(this).data('state', 'enabled')
-		})//end click event
-	} else {
-		//Attach a click event handler to the .nav-trigger element
-		$('.site-controller-trigger').click(function(e) {
-			e.preventDefault()
-			//Once clicked, determine if the element has the class inactive or active
-			if ($(this).hasClass('inactive')) {
-				//If the current element is inactive, let's slide our menu down so it's visible
-				$('nav').slideDown('slow').css('display', 'block')
-				//We also wanted to remove the inactive class and replace it with the active class (this changes the down arrow into an up arrow)
-				$(this).removeClass('inactive').addClass('active')
-				//Update the element title attribute to reflect the change
-				$(this).attr('title', 'Close Page Menu')
-				//If an iOS device is viewing the website we need to display the site slogan upon opening the control panel
-				//if (event == "touch") { $('.site-slogan').fadeIn(500) }
-			} else {
-				//The element is not inactive, so it must be active - go ahead and scroll the nav back up so it's hidden
-				$('nav').slideUp('normal')
-				//..and we want to remove the active class and set it back to inactive
-				$(this).removeClass('active').addClass('inactive')
-				//Update the element title attribute to reflect the change
-				$(this).attr('title', 'Open Page Menu')
-				//If an iOS device is viewing the website we need to display the site slogan upon closing the control panel
-				//if (event == "touch") { $('.site-slogan').fadeOut(700) }
-			}		
-		})//end click event
-	}
-	
-	//Make sure we slideup the site controller pane when clicking the nav links
-	$('nav ul li a, .pica-mark').click(function(e){
-		$('nav').slideUp('normal')
-	})
 	
 	/**************************************************
 		FOOTER SCRIPTS

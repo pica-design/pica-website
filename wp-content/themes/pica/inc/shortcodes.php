@@ -6,23 +6,117 @@
 	function employee_bio_shortcode () {
 		global $post;
 
-		if (count($post->attachments) > 1) :
-			$html_str  = "<div class='clear'></div>"; 
-			$html_str .= "<div class='about-employee-profiles'>\n";
-			foreach ($post->attachments as $attachment) :
-				$html_str .= "<div class='employee-profile'>\n";
-				$html_str .= "<img src='$attachment->guid' alt='$attachment->post_title' class='employee-photo' />\n";
-				$html_str .= "<strong>$attachment->post_title</strong>\n";
-				$html_str .= "<br />\n";
-				$html_str .= "<small>{$attachment->meta_data['_wp_attachment_image_alt'][0]}</small>\n";
-				$html_str .= "<br /><br />\n";
-				$html_str .= $attachment->post_content;
-				$html_str .= "</div>\n";                           
-			endforeach ;
-			$html_str .= "</div>\n";
-			$html_str .= "<div class='clear'></div>"; 
-			return $html_str ;
-		 endif ;
+
+			?>
+			<div class='clear'></div>
+			<div class="about-employee-profile">
+                    <!--//For the owner-->
+                    <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => 'principal'
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee-profile">
+                                <?php echo get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                    <strong><?php echo $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?></strong>
+                                    <br>
+                                    <small>Principal & Creative Director</small>
+                                    <br>
+                                    <br>
+                                    <?php echo $user_meta['description'][0] ?>
+                            </div>
+                     <?php endforeach; ?>
+                     <?php wp_reset_query(); ?>
+                    
+                    <!--//For the art director-->
+                     <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => 'art_director'
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee-profile">
+                                <?php echo get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                    <strong><?php echo $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?></strong>
+                                    <br>
+                                    <small>Art Director</small>
+                                    <br>
+                                    <br>
+                                    <?php echo $user_meta['description'][0] ?>
+                            </div>
+                     <?php endforeach; ?>
+                     <?php wp_reset_query() ?>
+
+                     <!--//For the art director-->
+                     <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => 'senior_web'
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee-profile">
+                                <?php echo get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                    <strong><?php echo $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?></strong>
+                                    <br>
+                                    <small>Senior Web Developer</small>
+                                    <br>
+                                    <br>
+                                    <?php echo $user_meta['description'][0] ?>
+                            </div>
+                     <?php endforeach; ?>
+                     <?php wp_reset_query() ?>
+
+                     <!--//For the art director-->
+                     <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => 'junior_web'
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee-profile">
+                                <?php echo get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                    <strong><?php echo $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?></strong>
+                                    <br>
+                                    <small>Junior Web Developer</small>
+                                    <br>
+                                    <br>
+                                    <?php echo $user_meta['description'][0] ?>
+                            </div>
+                     <?php endforeach; ?>
+                     <?php wp_reset_query() ?>
+
+                     <!--//For the art director-->
+                     <?php $args = array(
+                        'blog_id'      => $GLOBALS['blog_id'],
+                        'role'         => 'impact_architect'
+                     ); ?>
+
+                     <?php $employees = get_users( $args ); ?> 
+                     <?php foreach ($employees as $employee) : ?>
+                            <?php $user_meta = get_user_meta($employee->ID); ?>
+                            <div class="employee-profile">
+                                <?php echo get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                    <strong><?php echo $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?></strong>
+                                    <br>
+                                    <small>Impact Architect</small>
+                                    <br>
+                                    <br>
+                                    <?php echo $user_meta['description'][0] ?>
+                            </div>
+                     <?php endforeach; ?>
+                     <?php wp_reset_query() ?>
+                
+                </div>
+                <?php
 	}
 
 ?>

@@ -857,7 +857,6 @@ img.alignright {
 /* line 66, ../sass/_header.scss */
 #site-controller nav {
   position: relative;
-  display: none;
   padding: 0 0 0 40px;
   width: 440px;
   height: 190px;

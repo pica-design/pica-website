@@ -4,8 +4,224 @@
 		"selected_items":
 		[
 			[
+				"the_post",
+				"the_post_thumbnail"
+			],
+			[
+				"event",
+				"event_args"
+			],
+			[
+				"the_t",
+				"the_title"
+			],
+			[
+				"root",
+				"root_pages"
+			],
+			[
 				"background",
-				"background-color"
+				"background-size"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"page",
+				"page_ancestors"
+			],
+			[
+				"register",
+				"register_widget"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"po",
+				"post_type"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"nav",
+				"navLiWrapperHeight"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"first",
+				"first_top"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"user",
+				"user_nicename"
+			],
+			[
+				"wp_list",
+				"wp_list_authors"
+			],
+			[
+				"user_",
+				"user_nickname"
+			],
+			[
+				"next",
+				"next_event"
+			],
+			[
+				"previous",
+				"previous_event"
+			],
+			[
+				"topic",
+				"topic_id"
+			],
+			[
+				"bbp_t",
+				"bbp_topic_reply_count"
+			],
+			[
+				"bbp_reply",
+				"bbp_reply_author_id"
+			],
+			[
+				"bbp_repl",
+				"bbp_get_reply_author_id"
+			],
+			[
+				"light",
+				"lightest-gray"
+			],
+			[
+				"bbp_get",
+				"bbp_get_topic_title"
+			],
+			[
+				"the_p",
+				"the_post"
+			],
+			[
+				"get_h",
+				"get_header"
+			],
+			[
+				"update_user",
+				"update_user_function"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"new",
+				"new_pass1"
+			],
+			[
+				"wp_inset",
+				"wp_insert_user"
+			],
+			[
+				"wp_update_",
+				"wp_update_user"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"bp_displayed",
+				"bp_displayed_user_id"
+			],
+			[
+				"post_",
+				"post_mime_type"
+			],
+			[
+				"event_venue",
+				"event_venue_object"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"parent",
+				"parent_page"
+			],
+			[
+				"event_",
+				"event_venue"
+			],
+			[
+				"event_cate",
+				"event_category_terms"
+			],
+			[
+				"get_templ",
+				"get_template_part"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"requ",
+				"requestedIndex"
+			],
+			[
+				"jwplay",
+				"jwplayer_playlist"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"pdf",
+				"pdf_filename"
+			],
+			[
+				"approvals",
+				"approval_send_date"
+			],
+			[
+				"send-appro",
+				"send-approval-preview"
+			],
+			[
+				"medium",
+				"medium-gray"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"program",
+				"program_type"
 			]
 		]
 	},
@@ -15,9 +231,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 287.0,
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -35,7 +259,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -52,59 +276,134 @@
 	},
 	"file_history":
 	[
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/page-home.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/scripts/jquery.pica.scripts.js",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-about.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/page-about.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-config.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/post-types.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/functions.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/header.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/single-pica_work.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/galleries-images.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/comments.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/twitter.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/users.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/meta-boxes.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/inc/shortcodes.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_masthead.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/single.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_blog.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_portfolio.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_content.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-brand-new.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-clients.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-contact.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/style.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_page-home.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_footer.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_header.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/config.rb",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/404.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/index.php",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/__style.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_html-base.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/editor.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_common.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/styles/browser-equalizer.css",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_selection.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/styles/global-styles.css",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/_fonts.scss",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/sass/style.css",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/style.css",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/wp-content/themes/pica/stylesheets/ie.css",
-		"/Volumes/Other Pica Shares-1/Websites/pica_website_2/sftp-config.json",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_selection.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_equalizer.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_corrections.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_fonts.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/_common.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/sass/style.scss",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/footer.php",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/header.php",
-		"/Volumes/Other Pica Shares-1/Websites/bluecrow/wp-content/themes/bluecrow/page.php",
-		"/Users/JM/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/JM/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/meta-boxes.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/scripts/knox-scripts.js",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/footer.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/functions.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/widgets.php",
+		"/Applications/MAMP/htdocs/knox/wp-config.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/widgets/root-pages-widget.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/post-attachments.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/layout/_layout-masthead.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page-home.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/header.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-common.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page-upcoming-events.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/layout/_layout-content.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/layout/_layout-html-base.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/layout/_layout-footer.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/sidebars.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page-events.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/taxonomy-event-category.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/widgets/post-archives-widget.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/loop-events.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/menu.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/shortcodes.php",
+		"/Applications/MAMP/htdocs/pica_website/.gitignore",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page-recent-events.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/widgets/post-categories-widget.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/widgets/child-sibling-pages-widget.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/page-get-directions.php",
+		"/Applications/MAMP/htdocs/knox/wp-config-sample.php",
+		"/Applications/MAMP/htdocs/knox/.htaccess-sample",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/single-event.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/post-archives-widget.php",
+		"/Applications/MAMP/htdocs/knox/wp-includes/nav-menu-template.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/styles-scripts.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/style.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sidebar.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/event.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/inc/walker.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sidebars.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/overlay.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/sass/layout/_layout-content.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/inc/walker.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/scripts/knox-scripts.js",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/sidebar.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/header.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/footer.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/sass/layout/_layout-footer.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/sass/layout/_layout-masthead.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/_knox/sass/style.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-dimensions.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-fonts.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/editor.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/index.php",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-colors.scss",
+		"/Applications/MAMP/htdocs/knox/.gitignore",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-selection.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/assets/_asset-normalize.scss",
+		"/Applications/MAMP/htdocs/knox/wp-content/themes/knox/sass/_layout-content.scss",
+		"/Applications/MAMP/htdocs/nauticals/wp-content/themes/nauticals/inc/shortcodes.php",
+		"/Users/picadesign/Downloads/ssl.conf",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/scripts/jquery.acs-theme-framework.js",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/humans.txt",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/layout/content/_post-styles.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/template-newsletter.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/inc/widgets/news-widget.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-region/single-acs_ref_garden.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-region/inc/meta-boxes/acs-ref-garden-meta.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/inc/post-types/attachment.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/assets/_normalize.scss",
+		"/Applications/MAMP/htdocs/nauticals/wp-content/themes/nauticals/template-page-controls.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/inc/helper-functions.php",
+		"/Users/picadesign/Desktop/support.txt",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/page-members.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/layout/_header.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/layout/_content.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/inc/shortcodes.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/assets/_common.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/inc/overrides.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass/layout/content/_buddypress-profile.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/buddypress/members/single/member-header.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/page.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/stylesheets/layout/_html-base.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/single-event.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/page-events.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/inc/widgets/events-widget.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass/layout/content/_forums.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/loop-topics.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/functions.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/loop-replies.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass/layout/content/_author-profile.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/buddypress/members/members-loop.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/inc/widgets/video-widget.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/page-conifer-videos.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/page-member.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass/layout/content/_forum-style.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-single-forum.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-topic.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/scripts/jquery.acs-theme-primary.js",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-reply.php",
+		"/Applications/MAMP/htdocs/acs/wp-config.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-archive-topic.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/loop-single-reply.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/pagination-replies.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/pagination-topics.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/inc/bbpress.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/page-news.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/forum.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/loop-forums.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-single-topic.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/loop-single-topic.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/inc/comment-functions.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/inc/ajax.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/functions.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-framework/header.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-topic-merge.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-topic-split.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-reply-move.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/form-forum.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-topic-tag-edit.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-single-reply.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-single-view.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress/content-search.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass/style.scss",
+		"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress/templates/default/bbpress/content-single-reply.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress/templates/default/bbpress/loop-single-reply.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress/templates/default/bbpress/loop-replies.php",
+		"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress/templates/default/bbpress/content-single-forum.php"
 	],
 	"find":
 	{
@@ -115,6 +414,21 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"<project>",
+			"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass",
+			"<project>",
+			"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress/includes",
+			"/Applications/MAMP/htdocs/acs/wp-content/plugins/bbpress",
+			"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/bbpress",
+			"<project>",
+			"/Applications/MAMP/htdocs/acs/wp-content/plugins/wp-user-frontend/admin",
+			"/Applications/MAMP/htdocs/acs",
+			"<open files>",
+			"index.html",
+			"index.php",
+			"<current file>",
+			"<all files>",
+			"<open files>"
 		]
 	},
 	"find_state":
@@ -122,20 +436,169 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"files"
+			"picadesign",
+			"echo wp_get_attachment_image_src",
+			"left",
+			"<?",
+			"inde",
+			"ts/",
+			"h5",
+			"div",
+			"class=\"rooms\"",
+			"title=\"\"",
+			">\n",
+			"469",
+			"href",
+			"\"\"",
+			"<a href=\"",
+			"472",
+			"hre",
+			"href",
+			"35px",
+			".",
+			"href=\"\"",
+			"el=\"gallery_basement\"",
+			"<div",
+			"div",
+			"50",
+			"news-events/",
+			"div",
+			"Child_Sibling",
+			"quote",
+			"box",
+			"inner",
+			";\n",
+			"=\"",
+			"$page_ancestors[0]",
+			"  \n",
+			"acs",
+			"<a href",
+			"<?php\n\nadd_action( 'add_meta_boxes', 'event_meta_boxes' );\n\nfunction event_meta_boxes(){\n  add_meta_box(\n      'call-to-action',\n      'Call To Action',\n      'render_event_call_to_action_meta_box',\n      'event',\n      'side',\n      'low'\n  );\n}//event_meta_boxes\n\nfunction render_event_call_to_action_meta_box(){ \n  global $post;\n\n  $saved_call_to_action = get_post_meta($post->ID, '_event_call_to_action', true);\n  $saved_call_to_action_url = get_post_meta($post->ID, '_event_call_to_action-url', true);\n\n  ?>\n\n  <input type=\"radio\" value=\"none\" name=\"event-call-to-action\" <?php checked( 'none', $saved_call_to_action ); ?>/> None<br />\n  <input type=\"radio\" value=\"buy-ticket\" name=\"event-call-to-action\" <?php checked( 'buy-ticket', $saved_call_to_action ); ?>/> Buy Ticket<br />\n  <input type=\"radio\" value=\"register-now\" name=\"event-call-to-action\" <?php checked( 'register-now', $saved_call_to_action ); ?>/> Register Now\n  <input type=\"text\" value=\"<?php echo $saved_call_to_action_url ?>\" name=\"event-call-to-action-url\"/>\n  <br />Call To Action URL\n\n<?php }//render_event_call_to_action_meta_box\n\n\nadd_action('save_post', 'save_event_call_to_action_meta_box');\nfunction save_event_call_to_action_meta_box($post_id){\n  update_post_meta( $post_id, '_event_call_to_action', $_POST['event-call-to-action'] );\n  update_post_meta( $post_id, '_event_call_to_action-url', $_POST['event-call-to-action-url'] );\n}\n\n?>",
+			"h1",
+			"h3",
+			"h2",
+			"h1",
+			"h2",
+			"<?php if(eo_is_all_day($post->ID) != true){\n						                			echo eo_get_the_start('g:ia', $post->ID, null, $event->occurrence_id); \n						                		}\n						                	?>\n										<?php eo_the_start('M', $post->ID, null, $post->occurrence_id) ?> \n										<span><?php eo_the_start('j', $post->ID, null, $post->occurrence_id) ?></span>\n										<?php if ($start_date != $end_date) : ?>\n					                	<span>-<?php eo_the_end('j', $post->ID, null, $post->occurrence_id) ?></span>\n					                	<?php endif ?>\n					                	<?php eo_the_start('Y', $post->ID, null, $post->occurrence_id) ?>\n									</h5>",
+			"organization/publications/conifer-quarterly",
+			"widgets/",
+			"gologic",
+			"register_my_widget",
+			"Post_Archives",
+			"acs",
+			"ACS",
+			"acs",
+			"'quote'",
+			"quote",
+			"    if(isset($_POST['quote'])){\n",
+			"$meta_box",
+			"meta_box",
+			"meta-box",
+			"start_lvl",
+			"35px",
+			"> a{\n							@extend .type.impregnable;\n						}",
+			"Custom_Walker",
+			"first_top",
+			"image",
+			"attachment",
+			"attachments",
+			"h1",
+			"h2",
+			"slide",
+			"z-index",
+			"3",
+			"none",
+			"20px",
+			"a{",
+			"a",
+			"impregnable",
+			"  ",
+			"left",
+			"social-link",
+			"								",
+			"							",
+			"<br>",
+			"									",
+			"	",
+			"quarter",
+			"h3",
+			"10px",
+			".four",
+			".three",
+			"class=\"left\"",
+			"<div id=",
+			" + 75",
+			"inline",
+			"//@include transition(all 0.3s ease-in-out);",
+			"regular",
+			"'), '",
+			"truetype),",
+			"font-files",
+			"font-face ",
+			"font-files(",
+			"    font-weight: normal;\n    font-style: normal;",
+			") format(",
+			"url('",
+			"font-files(",
+			"eot?#iefix') format('embedded-opentype'),",
+			"src: url('",
+			"@include font-face (",
+			"@",
+			"$fonts_url + ",
+			"paragraph",
+			"url(",
+			";\n",
+			"z-index",
+			"2000",
+			"third",
+			"three",
+			"second",
+			"two",
+			"first",
+			"one",
+			"first",
+			"		    	",
+			"\">",
+			"css",
+			"hidde",
+			"show",
+			"menu_toggle",
+			"$(this)"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"font-size: 12px",
+			"8px",
+			"$approval_id",
+			"approval_files",
+			"$this->approval_send_date",
+			"client_data",
+			"$_REQUEST['approval_id']",
+			"?approval_id=",
+			"approval_description",
+			"approval_title",
+			"html_message",
+			"client_id",
+			"approval_sender_email",
+			"approval_contact_email",
+			"approval_job",
+			"approval_contact_name",
+			"approval_client_name",
+			"approval_data",
+			"",
+			"lighter-than",
+			"'"
 		],
-		"reverse": false,
-		"show_context": true,
-		"use_buffer2": true,
+		"reverse": true,
+		"show_context": false,
+		"use_buffer2": false,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
@@ -176,13 +639,17 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
 	"output.sftp":
 	{
 		"height": 100.0
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -190,6 +657,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"",
+				"wp-content/themes/knox/sass/layout/_layout-masthead.scss"
+			]
 		],
 		"width": 0.0
 	},
@@ -199,16 +670,24 @@
 		"selected_items":
 		[
 			[
+				"bcc",
+				"/Applications/MAMP/htdocs/bcc/bcc.sublime-project"
+			],
+			[
+				"te",
+				"/Volumes/Other Pica Shares-1/Websites/testing/testing.sublime-project"
+			],
+			[
 				"",
-				"/Volumes/Other Pica Shares-1/Websites/nextstepmaine/nextstepmaine.sublime-project"
+				"/Volumes/Other Pica Shares-1/Websites/pica_website_2/pica.sublime-project"
 			]
 		],
 		"width": 380.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 242.0,
+	"side_bar_width": 320.0,
 	"status_bar_visible": true
 }
