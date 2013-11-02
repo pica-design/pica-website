@@ -18,14 +18,14 @@
 
 //LIVE
 
-define('DB_NAME', 'picais_wordpress');
-define('DB_USER', 'picais_dbuser');
-define('DB_PASSWORD', '(0G6M#3*#Ot2');
+define('DB_NAME', 'pica_website');
+define('DB_USER', 'root_remote');
+define('DB_PASSWORD', '1309piCa');
 
 
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.picadesign.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
