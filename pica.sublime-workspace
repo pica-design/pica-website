@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"reset_",
+				"wp_reset_query"
+			],
+			[
+				"user",
+				"user_meta"
+			],
+			[
 				"the_post",
 				"the_post_thumbnail"
 			],
@@ -66,10 +74,6 @@
 			[
 				"remove",
 				"removeClass"
-			],
-			[
-				"user",
-				"user_nicename"
 			],
 			[
 				"wp_list",
@@ -227,6 +231,57 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "wp-content/themes/pica/scripts/jquery.pica.scripts.js",
+			"settings":
+			{
+				"buffer_size": 17300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/pica/sass/_header.scss",
+			"settings":
+			{
+				"buffer_size": 2030,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php get_header() ?>\n        <section class=\"sub-content-wrapper about\">\n            <div class=\"about-wrapper\">\n				<article class=\"about-content\">\n				<?php if ( have_posts() ) : ?> \n                    <?php while ( have_posts() ) : the_post(); ?>    \n						<?php the_content() ?>\n                    <?php endwhile ?>\n                <?php endif; ?>\n                \n                <table>\n                    <tbody>\n                        <tr>\n							<?php\n                            /* Grab the top-level (parent) terms in the pica_work_type taxonomy */\n                            $work_parent_categories = get_terms('pica_work_type', array('exclude' => 8, 'hide_empty' => 0, 'parent' => 0, 'orderby' => 'term_order', 'order' => 'ASC'));\n\n                            foreach ($work_parent_categories as $work_parent_category) : ?>\n                                <td valign=\"top\">\n                                    <strong><a href=\"<?php bloginfo('url') ?>/work-categories/<?php echo $work_parent_category->slug ?>\" title=\"View our <?php echo $work_parent_category->name ?> work\"><?php echo $work_parent_category->name ?></a></strong>\n                                    <br />\n                                    <?php\n                                        \n                                        $work_child_categories = get_terms('pica_work_type', array('parent' => $work_parent_category->term_id, 'hide_empty' => 0, 'orderby' => 'term_order', 'order' => 'ASC')) ;\n                                        foreach ($work_child_categories as $work_child_category) :					\n                                            echo $work_child_category->name . \"<br />\";\n                                        endforeach ;\n                                    ?>\n                                </td>\n                            <?php endforeach ?>\n                        </tr>\n                    </tbody>\n                </table>\n                </article>\n			</div>   \n		</section><!-- end .sub-content-wrapper -->\n<?php get_footer(); ?>",
+			"file": "wp-content/themes/pica/page-about.php",
+			"file_size": 2030,
+			"file_write_time": 1383418277000000,
+			"settings":
+			{
+				"buffer_size": 2047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/pica/inc/shortcodes.php",
+			"settings":
+			{
+				"buffer_size": 1791,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/pica/sass/_page-about.scss",
+			"settings":
+			{
+				"buffer_size": 541,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/plugins/user-role-editor/includes/class-ure-lib.php",
+			"settings":
+			{
+				"buffer_size": 79464,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -414,6 +469,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Applications/MAMP/htdocs/pica_website/wp-content/plugins/user-role-editor",
 			"<project>",
 			"/Applications/MAMP/htdocs/acs/wp-content/themes/acs-theme-primary/sass",
 			"<project>",
@@ -436,6 +492,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<select",
 			"picadesign",
 			"echo wp_get_attachment_image_src",
 			"left",
@@ -562,8 +619,7 @@
 			"css",
 			"hidde",
 			"show",
-			"menu_toggle",
-			"$(this)"
+			"menu_toggle"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -603,8 +659,472 @@
 	"groups":
 	[
 		{
+			"selected": 5,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/pica/scripts/jquery.pica.scripts.js",
+					"settings":
+					{
+						"buffer_size": 17300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7211,
+								7211
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 945.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/pica/sass/_header.scss",
+					"settings":
+					{
+						"buffer_size": 2030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1789,
+								1789
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/pica/page-about.php",
+					"settings":
+					{
+						"buffer_size": 2047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 112.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/pica/inc/shortcodes.php",
+					"settings":
+					{
+						"buffer_size": 1791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/pica/sass/_page-about.scss",
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/plugins/user-role-editor/includes/class-ure-lib.php",
+					"settings":
+					{
+						"buffer_size": 79464,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										36813,
+										36845
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								77246,
+								77246
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 31546.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

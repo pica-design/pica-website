@@ -7,6 +7,7 @@
 						<?php the_content() ?>
                     <?php endwhile ?>
                 <?php endif; ?>
+                
                 <table>
                     <tbody>
                         <tr>
