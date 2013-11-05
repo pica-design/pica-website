@@ -2,6 +2,7 @@
 	background-color: #999 ;
 	width: 100% ;
 	overflow: auto ;
+	min-width:1150px;  
 
 	//SITE CONTROLLER TRIGGER (ARROW)
 	.site-controller-trigger {
@@ -66,19 +67,20 @@
 	nav {
 		position: relative ;
 		//display: none ;
-		padding: 0 0 0 40px ;
-		width: 440px ;
-		height: 190px ;
-		clear: left ;
+		padding: 0 0 0 0px ;
+		width: 675px ;
+		//height: 190px ;
+		//clear: left ;
 		overflow: auto ;
 		z-index: 5 ;
+		margin-top:-8px;
 
 		ul {
 			margin-top: 40px ;
 
 			li {
 				display: block ;
-				width: 170px ;
+				//width: 170px ;
 				float: left ;
 				height: 40px ;
 				margin: 0 0 9px 0 ;
@@ -87,7 +89,7 @@
 					display: block ;
 					height: 28px ; 
 					color: #ffffff ;
-					font-size: 32px ;
+					font-size: 26px ;
 					font-family: 'DINNextLTPro' ;
 					
 					span {

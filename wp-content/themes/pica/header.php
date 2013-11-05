@@ -82,7 +82,7 @@
 	<section id="site-wrapper"><?php if (class_exists('Device_Theme_Switcher')) : Device_Theme_Switcher::generate_link_back_to_mobile(); endif; ?>
         
             <section id="site-controller">
-                <a href="#" class="site-controller-trigger inactive" title="Open Page Menu"><div class="site-controller-trigger-arrow"></div></a>
+                <a href="#" class="site-controller-trigger inactive" title="Open Page Menu"></a>
                 <a href="<?php bloginfo('url') ?>" class="pica-mark" title="<?php echo $quotes[$random_quote_key] ?>"></a>
                 <div class="site-slogan"><h1 class="text-color-black">Pica Design + Marketing</h1></div>
                 <nav>
