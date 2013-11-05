@@ -1,4 +1,5 @@
-Redirect 301 / http://pica.is/
+#The following SHOULD ONLY be present on the OLD website / OLD picadesign.com domain
+#Redirect 301 / http://pica.is/
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
