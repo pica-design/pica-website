@@ -1,9 +1,0 @@
-#LOCAL
-#AuthUserFile /Other Pica Shares/Websites/pica_approval/.htpasswd
-
-#LIVE
-AuthUserFile /home/pica/public_html/approval/.htpasswd
-
-AuthType Basic
-AuthName "Pica Design Project Approval: Please log in"
-require user picadesign

@@ -6,4 +6,4 @@ wp-config.php
 *.sublime-workspace
 config.rb
 .sass-cache
-wp-content/themes/knox/stylesheets/
+wp-content/themes/pica/stylesheets/
