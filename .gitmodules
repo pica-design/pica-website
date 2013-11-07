@@ -1,0 +1,3 @@
+[submodule "approval"]
+	path = approval
+	url = git@git.pica.is:approval
