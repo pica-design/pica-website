@@ -1,7 +1,7 @@
 <?php 
 	get_header();
 
-    global $site_url, $template_directory;
+    global $cdn ;
 ?>
 
         <section class="sub-content-wrapper">
@@ -17,7 +17,7 @@
         </section><!-- end .sub-content-wrapper -->
         <div class="page-horizontal-divider"><div class="inner-page-horizontal-divider"></div></div>
         <section class="sub-content-wrapper">
-            <img src="http://images.<?php echo $template_directory ?>/images/content/american-pika.jpg" alt="American Pika" />
+            <img src="<?php echo $cdn->template_images_url ?>content/american-pika.jpg" alt="American Pika" />
             <br />
             The pika (PY-ka) is a small mammal, with short limbs, rounded ears, and short tail. 
             <br /><br />
