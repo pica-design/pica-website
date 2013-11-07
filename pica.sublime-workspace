@@ -247,7 +247,7 @@
 			"file": "wp-content/themes/pica/sass/_header.scss",
 			"settings":
 			{
-				"buffer_size": 2030,
+				"buffer_size": 2075,
 				"line_ending": "Unix"
 			}
 		},
@@ -296,6 +296,14 @@
 			"settings":
 			{
 				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/pica/header.php",
+			"settings":
+			{
+				"buffer_size": 6017,
 				"line_ending": "Unix"
 			}
 		}
@@ -676,7 +684,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -758,15 +766,15 @@
 					"file": "wp-content/themes/pica/sass/_header.scss",
 					"settings":
 					{
-						"buffer_size": 2030,
+						"buffer_size": 2075,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1789,
-								1789
+								1850,
+								1850
 							]
 						],
 						"settings":
@@ -822,7 +830,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 683.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1299,6 +1307,95 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/pica/header.php",
+					"settings":
+					{
+						"buffer_size": 6017,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										4560,
+										4587
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								4846,
+								4846
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 668.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
