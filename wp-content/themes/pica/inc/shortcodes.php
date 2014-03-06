@@ -24,7 +24,7 @@
                      <?php foreach ($employees as $employee) : ?>
                             <?php $user_meta = get_user_meta($employee->ID); ?>
                             <?php $htmlStr .= '<div class="employee-profile"><strong>'; ?>
-                                <?php $htmlStr .= get_avatar($employee->ID, $size = '195', $default = '', $alt = false)?>  
+                                <?php $htmlStr .= get_avatar($employee->ID, $size = '195', $default = '', $alt = false) . '<br>' ?>  
                                     <?php $htmlStr .= $user_meta['first_name'][0] . ' ' . $user_meta['last_name'][0] ?>
                                     <?php $htmlStr .= '</strong><br>'; ?>
                                     <?php $user_role = $employee->roles[0]; ?>
