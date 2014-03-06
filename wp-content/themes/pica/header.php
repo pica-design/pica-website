@@ -77,6 +77,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
+      <?php wp_head() ?>
     </head>
     <body<?php echo $body_class ?>>
 	<section id="site-wrapper"><?php if (class_exists('Device_Theme_Switcher')) : Device_Theme_Switcher::generate_link_back_to_mobile(); endif; ?>

@@ -27,7 +27,7 @@
 		var single = <?php echo is_single() ? 1 : 0 ?>
 		
         </script><?php //global $template_directory ?>
-
+        <?php wp_footer() ?>
 	<script type="text/javascript" src="<?php echo $cdn->template_scripts_url ?>jquery.pica.scripts.js"></script>
     </body>
 </html>
