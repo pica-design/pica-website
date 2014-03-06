@@ -29,7 +29,12 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 
 //Run our jQuery scripts once the web page has loaded
 (function($){
-	
+	//Determine if the website is being viewed with an iOS device (we need to do some things a little differently in this case)
+	var ua = navigator.userAgent
+	var device = (ua.match(/iPad/i)) ? "tablet" : "screen";
+	if (device == "screen") { device = (ua.match(/iPhone/i)) ? "handheld" : "screen"; }
+	if (device == "screen") { device = (ua.match(/Android/i)) ? "handheld" : "screen"; }
+
 	//Scroll to an element
 	$.fn.scrollHere = function (adjustment) {
 		//When using scrollHere on page load we need to disable the page controller while scrolling
@@ -56,7 +61,6 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 
 	//Scroll back to the top of the page
 	$('.back-to-top').click(function(){
-		console.log('foo')
 		//Scroll back to the top over 800 milliseconds 
 		$('html, body').animate({scrollTop: 0 }, 800);
 	})
@@ -68,7 +72,7 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 	**************************************************/
 	
 	//Our footer grows horizontally when hovered on screen, and when clicked on with iOS
-	if (event != 'touch') {
+	if (device != 'handheld') {
 		$('footer').hoverIntent(function(){
 			//Over	
 			$('footer .footer-copy').animate({
@@ -171,7 +175,7 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 	})
 
 
-	if (event == 'touch') {
+	if (device == 'handheld') {
 		//If a touch device is using the website we don't want to rely on the hover event
 		$('.work-category-wrapper').not('.active').click(function(){
 			//Over	
