@@ -16,25 +16,7 @@
                      'be the spoon', 
                      'be bold', 
                      'be different');
-	$random_quote_key = rand(0, (count($quotes) - 1)) ;
-	
-	//Grab the page seo settings
-	$metadesc = get_post_meta($post->ID, '_yoast_wpseo_metadesc', true);
-	$metakeywords = get_post_meta($post->ID, '_yoast_wpseo_metakeywords', true);
-
-    /*
-    //The following logic gives us a subdomain-less site url so we can prepend our cdn prefixes (images., scripts., and styles.)
-    $host = str_replace('www.', '', $_SERVER['HTTP_HOST']); //$host will either be www.picadesign.com or picadesign.ath.cx
-    $path = str_replace('index.php', '', $_SERVER['PHP_SELF']); //$path will either be /index.php or /pica_website/index.php
-
-    global $site_url, $template_directory;
-    $site_url = $host . $path; //$site_url will either be picadesign.com/ or picadesign.ath.cx/pica_website
-    $template_directory = $host . $path . 'wp-content/themes/pica'; //$template_directory will either be picadesign.com/wp-content/themes/pica or picadesign.ath.cx/pica_website/wp-content/themes/pica
-    */
-
-    //Setup the post data
-    //the_post();
-?>
+	$random_quote_key = rand(0, (count($quotes) - 1)) ; ?>
 <!DOCTYPE HTML> 
 <html>
     <head>    
@@ -54,11 +36,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <meta name="google-site-verification" content="wF-kxO_aFfkTppia2uV5ZWr-p4YENIKKW6ztxF6QTC4" />
         <meta name="msvalidate.01" content="5EEAF8559BB30800CEB7EB72D4B159B9" />
-        <title><?php wp_title(''); ?></title>
-        <?php if(!empty($metadesc)) : ?><meta name="description" content="<?php echo $metadesc ?>" /><?php endif ?>
-
-        <?php if(!empty($metakeywords)) : ?><meta name="keywords" content="<?php echo $metakeywords ?>" /><?php endif ?>
-        
+        <title><?php wp_title() ?></title>
         <link rel="stylesheet" href="<?php echo $cdn->template_styles_url ?>style.css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!-- Add our favicon -->
