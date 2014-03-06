@@ -34,6 +34,7 @@
 			width: 100% ;
 			z-index: 2 ;
 			padding: 72px ;
+			@include opacity(0.0) ; 
 		}
 			.focal-point-text.bottom {
 				bottom: -20px ;

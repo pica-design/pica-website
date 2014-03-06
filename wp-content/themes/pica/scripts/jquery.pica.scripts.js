@@ -1,16 +1,50 @@
 /* HOVERINTENT */
 (function(a){a.fn.hoverIntent=function(l,j){var m={sensitivity:7,interval:100,timeout:0};m=a.extend(m,j?{over:l,out:j}:l);var o,n,h,d;var e=function(f){o=f.pageX;n=f.pageY};var c=function(g,f){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);if((Math.abs(h-o)+Math.abs(d-n))<m.sensitivity){a(f).unbind("mousemove",e);f.hoverIntent_s=1;return m.over.apply(f,[g])}else{h=o;d=n;f.hoverIntent_t=setTimeout(function(){c(g,f)},m.interval)}};var i=function(g,f){f.hoverIntent_t=clearTimeout(f.hoverIntent_t);f.hoverIntent_s=0;return m.out.apply(f,[g])};var b=function(q){var f=this;var g=(q.type=="mouseover"?q.fromElement:q.toElement)||q.relatedTarget;while(g&&g!=this){try{g=g.parentNode}catch(q){g=this}}if(g==this){if(a.browser.mozilla){if(q.type=="mouseout"){f.mtout=setTimeout(function(){k(q,f)},30)}else{if(f.mtout){f.mtout=clearTimeout(f.mtout)}}}return}else{if(f.mtout){f.mtout=clearTimeout(f.mtout)}k(q,f)}};var k=function(p,f){var g=jQuery.extend({},p);if(f.hoverIntent_t){f.hoverIntent_t=clearTimeout(f.hoverIntent_t)}if(p.type=="mouseover"){h=g.pageX;d=g.pageY;a(f).bind("mousemove",e);if(f.hoverIntent_s!=1){f.hoverIntent_t=setTimeout(function(){c(g,f)},m.interval)}}else{a(f).unbind("mousemove",e);if(f.hoverIntent_s==1){f.hoverIntent_t=setTimeout(function(){i(g,f)},m.timeout)}}};return this.mouseover(b).mouseout(b)}})(jQuery);
 
-/*!	
-* FitText.js 1.0
+/*global jQuery */
+/*!
+* FitText.js 1.2
 *
 * Copyright 2011, Dave Rupert http://daverupert.com
-* Released under the WTFPL license 
+* Released under the WTFPL license
 * http://sam.zoy.org/wtfpl/
 *
 * Date: Thu May 05 14:23:00 2011 -0600
 */
-(function(a){a.fn.fitText=function(d,b){var c={minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY};return this.each(function(){var e=a(this);var g=d||1;if(b){a.extend(c,b)}var f=function(){e.css("font-size",Math.max(Math.min(e.width()/(g*10),parseFloat(c.maxFontSize)),parseFloat(c.minFontSize)))};f();a(window).resize(f)})}})(jQuery);
+
+(function( $ ){
+
+  $.fn.fitText = function( kompressor, options ) {
+
+    // Setup options
+    var compressor = kompressor || 1,
+        settings = $.extend({
+          'minFontSize' : Number.NEGATIVE_INFINITY,
+          'maxFontSize' : Number.POSITIVE_INFINITY
+        }, options);
+
+    return this.each(function(){
+
+      // Store the object
+      var $this = $(this);
+
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function () {
+        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+      };
+
+      // Call once to set.
+      resizer();
+
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
+
+    });
+
+  };
+
+})( jQuery );
+
 
 /*
 	Slimbox v2.04 - The ultimate lightweight Lightbox clone for jQuery
@@ -117,8 +151,12 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 	
 	//Initiate our font scaling script 'fitText' for dynamically sizing certain typography elements
 	$(window).load(function() {
-		$(".scalable-text h1").fitText(1.55, { minFontSize: '10px', maxFontSize: '90px' })
-	})
+		$(".scalable-text")
+			.find('h1')
+				.fitText(1.55, { minFontSize: '10px', maxFontSize: '90px' })
+				.end()
+			.fadeTo(300, 1);
+	});
 	
 	////////Displaying blog posts on the main page
 	//Attach a click event handler to the .nav-trigger element
