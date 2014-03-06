@@ -63,8 +63,8 @@
 			//Define the CDN subdomains
 			if ($use_subdomains) : 
 				$this->images_subdomain 	= '//images.';
-				$this->styles_subdomain 	= '//scripts.';
-				$this->scripts_subdomain 	= '//styles.';
+				$this->styles_subdomain 	= '//styles.';
+				$this->scripts_subdomain 	= '//scripts.';
 				$this->fonts_subdomain 		= '//fonts.';
 				$this->downloads_subdomain 	= '//downloads.';
 			else :
