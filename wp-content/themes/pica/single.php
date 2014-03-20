@@ -41,20 +41,22 @@
 								$image_large = wp_get_attachment_image_src($image_id,'large', true);
 								if (!empty($image_thumb[0]) && $image_thumb[0] != get_bloginfo('url') . "/wp-includes/images/crystal/default.png") : 
 							?>
-                            	<a href="<?php echo $image_large[0] ?>" rel="lightbox" title="<?php echo $post->post_title ?> Image" class="post-thumbnail">
+                            	<a href="<?php echo $image_large[0] ?>" rel="lightbox[<?php echo $post->ID ?>]" title="<?php echo $post->post_title ?> Image" class="post-thumbnail">
 	                            	<img class="post-thumbnail" src="<?php echo $image_thumb[0] ?>" alt="<?php echo $post->post_title ?> Thumbnail Image" />
                                 </a>
                             <?php endif ?>
-	                        <?php the_content(); ?>
-                            <?php if (count($post->attachments) > 1) : ?>
-                            	<div class="blog-post-gallery">							
-									<?php foreach ($post->attachments as $attachment) : ?>
-    									<a href="<?php echo $attachment->guid ?>" title="<?php echo $attachment->post_title ?>" rel="lightbox-gallery">
-                                            <img src="<?php echo $cdn->images_url ?>wp-content/uploads/<?php echo $attachment->meta_data['_wp_attachment_metadata']['sizes']['thumbnail']['file'] ?>" alt="<?php echo $attachment->post_title ?>" />
-                                        </a>
-                                	<?php 	endforeach ?>
-                                </div>
-							<?php endif ?>
+                            <div class="blog-post-content">
+    	                        <?php the_content(); ?>
+                                <?php if (count($post->attachments) > 1) : ?>
+                                	<div class="blog-post-gallery">							
+    									<?php foreach ($post->attachments as $attachment) : ?>
+        									<a href="<?php echo $attachment->guid ?>" title="<?php echo $attachment->post_title ?>" rel="lightbox[<?php echo $post->ID ?>]">
+                                                <img src="<?php echo $cdn->images_url ?>wp-content/uploads/<?php echo $attachment->meta_data['_wp_attachment_metadata']['sizes']['thumbnail']['file'] ?>" alt="<?php echo $attachment->post_title ?>" />
+                                            </a>
+                                    	<?php 	endforeach ?>
+                                    </div>
+    							<?php endif ?>
+                            </div>
                         </div>
                     <?php endwhile ?>
                 <?php endif; ?>

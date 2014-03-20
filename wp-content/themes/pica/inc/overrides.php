@@ -18,4 +18,14 @@
 	function disable_stuff( $data ) { return false; }
 	function excerpt_length( $length ) { return 140; }
 	function excerpt_more($more) { return '...'; }
+
+	add_filter('the_content', 'addlightboxrel_replace');
+	function addlightboxrel_replace ($content){	
+		global $post;
+		$pattern = "/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
+	  	$replacement = '<a$1href=$2$3.$4$5 rel="lightbox[%LIGHTID%]"$6>';
+	    $content = preg_replace($pattern, $replacement, $content);
+		$content = str_replace("%LIGHTID%", $post->ID, $content);
+	    return $content;
+	}
 ?>

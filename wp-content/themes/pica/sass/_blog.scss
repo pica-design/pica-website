@@ -19,8 +19,9 @@
 		width: 825px ;
 	}
 	.blog-posts {
-		width: 75% ;
+		width: 825px ;
 		float: left ;
+		margin-bottom: 50px ;
 	}
 		.single .blog-posts {
 			width: 100% ;
@@ -65,19 +66,24 @@
 				line-height: 1.3em ;
 				color: rgb(50,50,50) ;
 			}
-			.blog-post p {
-				font-size: 14px ;
-			}
-				.blog-post p a {
-					text-decoration: underline ;
+
+			.blog-post-content {
+				float: left ;
+				width: 640px ;
+
+				p {
+					font-size: 14px ;
+
+					a {
+						text-decoration: underline ;
+					}
 				}
-			
-			.blog-post-gallery {
-			}
-				.blog-post-gallery img {
-					margin: 0 10px 10px 0 ;
+				.blog-post-gallery {
+					img {
+						margin: 0 10px 10px 0 ;
+					}
 				}
-			
+			}
 			
 			#comments {
 			}
