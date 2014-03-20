@@ -60,6 +60,12 @@
 			font-family: 'DINNextLTProMedium' ;
 			font-size: 26px ;
 			color: rgb(40,40,40) ;
+
+			a {
+				font-family: inherit ;
+				font-size: inherit ;
+				color: inherit ;
+			}
 		}
 	}//.site-slogan
 

@@ -63,7 +63,7 @@
             <section id="site-controller">
                 <a href="#" class="site-controller-trigger inactive" title="Open Page Menu"></a>
                 <a href="<?php bloginfo('url') ?>" class="pica-mark" title="<?php echo $quotes[$random_quote_key] ?>"></a>
-                <div class="site-slogan"><h1 class="text-color-black">Pica Design + Marketing</h1></div>
+                <div class="site-slogan"><h1 class="text-color-black"><a href="<?php bloginfo('url') ?>" title="<?php echo $quotes[$random_quote_key] ?>">Pica Design + Marketing</a></h1></div>
                 <nav>
                     <ul><?php 
                             //Grab our nav menu items
