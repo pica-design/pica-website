@@ -5,21 +5,28 @@
 			$this->search = 0;
 		}
 		public function perform_search ( $query = null, $count = 5 ) {
-			$url = "http://search.twitter.com/search.json?q=" . urlencode( $query ) . "&lang=en&rpp=$count&include_entities=true";
-			$curl = curl_init();
-			curl_setopt( $curl, CURLOPT_URL, $url );
-			curl_setopt( $curl, CURLOPT_RETURNTRANSFER, 1 );
-			curl_setopt( $curl, CURLOPT_HTTPHEADER, array("Expect:")); 
-			$result = curl_exec( $curl );
-			curl_close( $curl );
+			require_once("twitteroauth/twitteroauth/twitteroauth.php"); //Path to twitteroauth library
+ 
+			$twitteruser = "picadesign";
+			$consumerkey = "IfnkoMl7ZZkog9d9tq2Wg";
+			$consumersecret = "qnLMb9MNPw19mLcHOAT8hKGWSpfYUS6elx5Gx4suOk";
+			$accesstoken = "19298506-LL3z0mSPwUNQIWIRFXnmOs7rZqmIjAYPZ0TJLVG7I";
+			$accesstokensecret = "XYntHEGVrKQ0uN9tNffuyTbHEGTdLmPKCxrBn9NXWrw";
+			 
+			function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
+			  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
+			  return $connection;
+			}
+			 
+			$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
 			
-			//Keep a copy of the converted json feed
-			$this->search = json_decode( $result );
-			
-			if(!empty($this->search->results)) :
+			$url = "https://api.twitter.com/1.1/search/tweets.json?q=" . urlencode( $query ) . "&lang=en&count=$count&include_entities=true";
+			$this->search = $connection->get($url);
+
+			if(!empty($this->search->statuses)) :
 			
 				//Replace raw tweet text with some links and flourishes
-				foreach ($this->search->results as &$tweet) :
+				foreach ($this->search->statuses as &$tweet) :
 					
 					//Twitter stores shortened URLs in the tweet text, but we want to show the original url
 					if (isset($tweet->entities)) :

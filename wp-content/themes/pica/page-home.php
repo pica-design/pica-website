@@ -160,19 +160,19 @@
                     $twitter->perform_search("from:PicaDesign OR @picadesign OR @PicaDesign", 6);
                     
                     //We only want to show the social block if there are tweets to show
-                    if (!empty($twitter->search->results)) : 
+                    if (!empty($twitter->search->statuses)) : 
                 ?>
                         
                 <div id="resocial" class="call-out-section">
                     <div class="resocial-title"><h5 class="text-color-black intro">re:</h5><h5 class="text-color-lightgray">social</h5></div>
                     <div class="clear"></div>
-                    <div class="twitter-tweets"><?php foreach ($twitter->search->results as $tweet) : ?>
+                    <div class="twitter-tweets"><?php foreach ($twitter->search->statuses as $tweet) : //print_r($tweet) ?>
                     
                         <div class="tweet">
-                            <img class="tweet-profile-image" src="<?php echo $tweet->profile_image_url ?>" alt="<?php echo $tweet->from_user_name ?>" />
+                            <img class="tweet-profile-image" src="<?php echo $tweet->user->profile_image_url ?>" alt="<?php echo $tweet->user->screen_name ?>" />
                             <div class="tweet-text">
-                                <a href="http://www.twitter.com/<?php echo $tweet->from_user ?>" class="tweet-by" target="_blank"><?php echo $tweet->from_user ?></a> 
-                                <em><?php echo $tweet->from_user_name ?></em><?php
+                                <a href="http://www.twitter.com/<?php echo $tweet->user->screen_name ?>" class="tweet-by" target="_blank"><?php echo $tweet->user->screen_name ?></a> 
+                                <em><?php echo $tweet->user->screen_name ?></em><?php
                                     //If there is a twitpic with this tweet, display a link and icon to it
                                     if (isset($tweet->entities)) :
                                         if (isset($tweet->entities->media)) :
