@@ -48,36 +48,28 @@
         <div class="page-horizontal-divider"><div class="inner-page-horizontal-divider"></div></div>
             
         <section class="sub-content-wrapper single-work">
-			<section class="content-gallery">
-                <div class="loading-bar">
-                    <div class="loaded"></div>
-                </div>
-				<div class="gallery">
-					<?php if (isset($post->post_content)) : ?>
-                	<article class="gallery-item large text-slide" style="background-color: #<?php echo get_post_meta($post->ID, 'work_bg_color', true) ?>; color: #<?php echo get_post_meta($post->ID, 'work_text_color', true) ?>;">
-						<div>
-                            <?php echo $post->post_content ?>
-                        </div>
-                    </article><!--end .intro-slide-->
-                    <?php endif ?>
+			
 					<?php 
 						//Iterate through each attachment in this post's gallery and display them
 						if (count($post->attachments) > 0) :
 							foreach ($post->attachments as $attachment) : 
 								?>
-								<figure class="gallery-item large image-slide">
-									<img src="<?php echo $attachment->guid ?>" alt="<?php echo $attachment->post_title ?>" />
-								</figure>
+								<figure class="brandnew-attachment">
+                        <img class="attachment-image" src="<?php echo $attachment->guid ?>" alt="<?php echo $attachment->post_title ?>" />
+                        <figcaption class="attachment-description">
+                            <?php if ($key == 0) : ?>
+                            <h1><strong><?php echo $post->post_title ?></strong></h1>
+                            <?php endif ?>
+                            <strong><?php echo $attachment->post_title ?></strong>
+                            <p><?php echo $attachment->post_content ?></p>
+                        </figcaption>
+                        <div class="clear"></div>
+                    </figure>
 								<?php 
 							endforeach; 
 						endif;
 					?>
-				</div><!-- end .gallery -->
-                <div class="gallery-nav">
-                	<a class="gallery-prev" href="#" title="Previous"></a> 
-                    <a class="gallery-next" href="#" title="Next"></a>
-				</div><!-- end .gallery-nav -->
-			</section><!-- end .content-gallery -->	
+				
        </section><!-- end .sub-content-wrapper -->
 		
 <?php 

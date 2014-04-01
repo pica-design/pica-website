@@ -1,0 +1,116 @@
+/**********************************************
+	FONTS
+***********************************************/
+@font-face {
+  font-family: "DINNextLTPro";
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot');
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix') format('eot'), url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf') format('truetype'); }
+
+@font-face {
+  font-family: "DINNextLTProMedium";
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot');
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix') format('eot'), url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf') format('truetype'); }
+
+/**********************************************
+	HTML DECLARATIONS 
+**********************************************/
+/* line 6, ../sass/_html-base.scss */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font: 1em/1em "DINNextLTPro", Arial, Helvetica, sans-serif;
+  background-color: #dddddd; }
+
+/* line 14, ../sass/_html-base.scss */
+* {
+  outline: none; }
+
+/* line 17, ../sass/_html-base.scss */
+body {
+  position: relative; }
+
+/* line 20, ../sass/_html-base.scss */
+a img {
+  border: 0px; }
+
+/* line 23, ../sass/_html-base.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  margin: 5px 0px 10px 0px;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  color: black;
+  line-height: 1em; }
+
+/* line 30, ../sass/_html-base.scss */
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong {
+  font-family: "DINNextLTProMedium";
+  font-weight: normal; }
+
+/* line 34, ../sass/_html-base.scss */
+h1 {
+  font-size: 48px; }
+
+/* line 37, ../sass/_html-base.scss */
+h2 {
+  font-size: 22px; }
+
+/* line 40, ../sass/_html-base.scss */
+h3 {
+  font-size: 18px; }
+
+/* line 43, ../sass/_html-base.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  font-size: inherit; }
+
+/* line 46, ../sass/_html-base.scss */
+p {
+  margin-top: 0;
+  color: #666666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  line-height: 1.1em; }
+  /* line 53, ../sass/_html-base.scss */
+  p a {
+    text-decoration: underline; }
+
+/* line 57, ../sass/_html-base.scss */
+a {
+  color: #666666;
+  text-decoration: none;
+  outline: none;
+  font-size: inherit; }
+
+/* line 63, ../sass/_html-base.scss */
+hr {
+  border: 1px dashed #999999;
+  height: 0; }
+
+/* line 67, ../sass/_html-base.scss */
+strong {
+  font-family: "DINNextLTProMedium", Arial, Geneva, Helvetica, sans-serif;
+  font-weight: normal; }
+
+/* line 71, ../sass/_html-base.scss */
+table {
+  border: none; }
+
+/* line 74, ../sass/_html-base.scss */
+table td {
+  border: none;
+  padding: 0px; }
+
+/**********************************************
+	EDITOR OVERRIDES 
+		- These overrides ONLY show in the wp editor
+**********************************************/
+/* line 20, ../sass/editor.scss */
+html {
+  padding: 15px; }
+  /* line 23, ../sass/editor.scss */
+  html body {
+    min-width: 0;
+    background-color: #dddddd;
+    font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+    color: #666666; }

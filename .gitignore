@@ -6,4 +6,3 @@ wp-config.php
 *.sublime-workspace
 config.rb
 .sass-cache
-wp-content/themes/pica/stylesheets/

@@ -43,6 +43,9 @@
 	.inner-page-horizontal-divider {
 		height: 1px ;
 		border-bottom: 2px dashed #c5c5c5 ;
+		 &.portfolio{
+		 	margin-bottom:25px;
+		 }
 	}
 		
 .shadow {

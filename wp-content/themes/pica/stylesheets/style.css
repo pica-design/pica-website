@@ -1,0 +1,2021 @@
+/**********************************************
+	BROWSER CORRECTIONS
+***********************************************/
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 21, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 31, ../sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ */
+/* line 42, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 52, ../sass/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* Apply a natural box layout model to all elements */
+/* line 69, ../sass/_normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 75, ../sass/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 89, ../sass/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 97, ../sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 110, ../sass/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 120, ../sass/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
+/* line 134, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 139, ../sass/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 144, ../sass/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 149, ../sass/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 154, ../sass/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 159, ../sass/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 168, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 177, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 181, ../sass/_normalize.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 189, ../sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 197, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 207, ../sass/_normalize.scss */
+p,
+pre {
+  margin: 1em 0; }
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 219, ../sass/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 229, ../sass/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 242, ../sass/_normalize.scss */
+q {
+  quotes: none; }
+
+/* 2 */
+/* line 249, ../sass/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 254, ../sass/_normalize.scss */
+small {
+  font-size: 75%; }
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 264, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 271, ../sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 275, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 291, ../sass/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+/* line 295, ../sass/_normalize.scss */
+dd {
+  margin: 0 0 0 40px; }
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+/* line 305, ../sass/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/* line 314, ../sass/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 330, ../sass/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 339, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 352, ../sass/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 365, ../sass/_normalize.scss */
+form {
+  margin: 0; }
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 373, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 385, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 401, ../sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 413, ../sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */ }
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 427, ../sass/_normalize.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 438, ../sass/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+/* line 450, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 462, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+/* line 474, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 484, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 494, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 508, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**********************************************
+	FONTS
+***********************************************/
+@font-face {
+  font-family: "DINNextLTPro";
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot');
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.eot?#iefix') format('eot'), url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Regular.ttf') format('truetype'); }
+
+@font-face {
+  font-family: "DINNextLTProMedium";
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot');
+  src: url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.eot?#iefix') format('eot'), url('//dev.pica.is/pica/wp-content/themes/pica/fonts/DINNextLTPro-Medium.ttf') format('truetype'); }
+
+/**********************************************
+	IMAGE SPRITES
+***********************************************/
+/**********************************************
+	HTML DECLARATIONS 
+**********************************************/
+/* line 6, ../sass/_html-base.scss */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font: 1em/1em "DINNextLTPro", Arial, Helvetica, sans-serif;
+  background-color: #dddddd; }
+
+/* line 14, ../sass/_html-base.scss */
+* {
+  outline: none; }
+
+/* line 17, ../sass/_html-base.scss */
+body {
+  position: relative; }
+
+/* line 20, ../sass/_html-base.scss */
+a img {
+  border: 0px; }
+
+/* line 23, ../sass/_html-base.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  margin: 5px 0px 10px 0px;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  color: black;
+  line-height: 1em; }
+
+/* line 30, ../sass/_html-base.scss */
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong {
+  font-family: "DINNextLTProMedium";
+  font-weight: normal; }
+
+/* line 34, ../sass/_html-base.scss */
+h1 {
+  font-size: 48px; }
+
+/* line 37, ../sass/_html-base.scss */
+h2 {
+  font-size: 22px; }
+
+/* line 40, ../sass/_html-base.scss */
+h3 {
+  font-size: 18px; }
+
+/* line 43, ../sass/_html-base.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  font-size: inherit; }
+
+/* line 46, ../sass/_html-base.scss */
+p {
+  margin-top: 0;
+  color: #666666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  line-height: 1.1em; }
+  /* line 53, ../sass/_html-base.scss */
+  p a {
+    text-decoration: underline; }
+
+/* line 57, ../sass/_html-base.scss */
+a {
+  color: #666666;
+  text-decoration: none;
+  outline: none;
+  font-size: inherit; }
+
+/* line 63, ../sass/_html-base.scss */
+hr {
+  border: 1px dashed #999999;
+  height: 0; }
+
+/* line 67, ../sass/_html-base.scss */
+strong {
+  font-family: "DINNextLTProMedium", Arial, Geneva, Helvetica, sans-serif;
+  font-weight: normal; }
+
+/* line 71, ../sass/_html-base.scss */
+table {
+  border: none; }
+
+/* line 74, ../sass/_html-base.scss */
+table td {
+  border: none;
+  padding: 0px; }
+
+/****************************************** 	
+	CSS TEXT SELECTION
+******************************************/
+/* line 1, ../sass/_selection.scss */
+*::-moz-selection {
+  background-color: #323232;
+  color: white; }
+
+/* line 5, ../sass/_selection.scss */
+*::-webkit-selection {
+  background-color: #323232;
+  color: white; }
+
+/* line 9, ../sass/_selection.scss */
+*::-o-selection {
+  background-color: #323232;
+  color: white; }
+
+/* line 13, ../sass/_selection.scss */
+*::selection {
+  background-color: #323232;
+  color: white; }
+
+/**********************************************
+	COMMONLY USED DECLARATIONS 
+**********************************************/
+/* line 1, ../sass/_common.scss */
+.link-fill-container, .twitpic a {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/* line 6, ../sass/_common.scss */
+.color-swatch {
+  width: 24px;
+  height: 24px; }
+
+/* Colors */
+/* line 11, ../sass/_common.scss */
+.bg-color-gray {
+  background-color: #404041; }
+
+/* line 14, ../sass/_common.scss */
+.text-color-lightgray {
+  color: #666666; }
+
+/* line 17, ../sass/_common.scss */
+.text-color-black {
+  color: black; }
+
+/* line 20, ../sass/_common.scss */
+.text-color-white {
+  color: white; }
+
+/* line 24, ../sass/_common.scss */
+.alignleft {
+  float: left; }
+
+/* line 27, ../sass/_common.scss */
+.alignright {
+  float: right; }
+
+/* line 30, ../sass/_common.scss */
+img.alignleft {
+  margin: 0 15px 15px 0; }
+
+/* line 33, ../sass/_common.scss */
+img.alignright {
+  margin: 0 0 15px 15px; }
+
+/* line 37, ../sass/_common.scss */
+.page-horizontal-divider {
+  width: 100%;
+  clear: both;
+  margin: 25px 0 25px 0;
+  padding-left: 72px; }
+
+/* line 43, ../sass/_common.scss */
+.inner-page-horizontal-divider {
+  height: 1px;
+  border-bottom: 2px dashed #c5c5c5; }
+  /* line 46, ../sass/_common.scss */
+  .inner-page-horizontal-divider.portfolio {
+    margin-bottom: 25px; }
+
+/* line 51, ../sass/_common.scss */
+.shadow {
+  -o-box-shadow: 0px 0px 5px #999999;
+  -moz-box-shadow: 0px 0px 5px #999999;
+  -webkit-box-shadow: 0px 0px 5px #999999;
+  box-shadow: 0px 0px 5px #999999;
+  border: 1px solid #cccccc; }
+
+/* line 58, ../sass/_common.scss */
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0; }
+
+/* line 64, ../sass/style.scss */
+#site-wrapper {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  /* This is arbitrary atm - will be our < tablet cut off for this theme - lower resolutions will be served the mobile version of the website */ }
+
+/**********************************************
+	HEADER DECLARATIONS 
+**********************************************/
+/* line 1, ../sass/_header.scss */
+#site-controller {
+  background-color: #999999;
+  width: 100%;
+  overflow: auto;
+  min-width: 1150px; }
+  /* line 8, ../sass/_header.scss */
+  #site-controller .site-controller-trigger {
+    float: left;
+    width: 72px;
+    height: 72px;
+    padding: 22px 0 0 22px;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    /* line 18, ../sass/_header.scss */
+    #site-controller .site-controller-trigger .site-controller-trigger-arrow {
+      width: 25px;
+      height: 28px; }
+    /* line 22, ../sass/_header.scss */
+    #site-controller .site-controller-trigger.inactive .site-controller-trigger-arrow {
+      background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 0 no-repeat; }
+    /* line 25, ../sass/_header.scss */
+    #site-controller .site-controller-trigger.active .site-controller-trigger-arrow {
+      background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -443px no-repeat; }
+    /* line 28, ../sass/_header.scss */
+    #site-controller .site-controller-trigger:hover {
+      -o-opacity: 0.7;
+      -webkit-opacity: 0.7;
+      -moz-opacity: 0.7;
+      opacity: 0.7; }
+  /* line 37, ../sass/_header.scss */
+  #site-controller .pica-mark {
+    width: 47px;
+    height: 47px;
+    float: left;
+    margin-top: 13px;
+    background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -112px no-repeat;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    /* line 48, ../sass/_header.scss */
+    #site-controller .pica-mark:hover {
+      opacity: 0.8; }
+  /* line 54, ../sass/_header.scss */
+  #site-controller .site-slogan {
+    float: right;
+    margin: 30px 72px 0 0; }
+    /* line 58, ../sass/_header.scss */
+    #site-controller .site-slogan h1 {
+      display: inline;
+      font-family: "DINNextLTProMedium";
+      font-size: 26px;
+      color: #282828; }
+      /* line 64, ../sass/_header.scss */
+      #site-controller .site-slogan h1 a {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit; }
+  /* line 73, ../sass/_header.scss */
+  #site-controller nav {
+    float: left;
+    position: relative;
+    padding: 0 0 0 0px;
+    width: 675px;
+    overflow: auto;
+    z-index: 5;
+    margin-top: -8px; }
+    /* line 85, ../sass/_header.scss */
+    #site-controller nav ul {
+      margin-top: 40px; }
+      /* line 88, ../sass/_header.scss */
+      #site-controller nav ul li {
+        display: block;
+        float: left;
+        height: 40px;
+        margin: 0 0 9px 0; }
+        /* line 95, ../sass/_header.scss */
+        #site-controller nav ul li a {
+          display: block;
+          height: 28px;
+          color: white;
+          font-size: 26px;
+          font-family: "DINNextLTPro"; }
+          /* line 102, ../sass/_header.scss */
+          #site-controller nav ul li a span {
+            padding: 4px 9px 3px 9px; }
+        /* line 106, ../sass/_header.scss */
+        #site-controller nav ul li.active a span, #site-controller nav ul li:hover a span {
+          background-color: #262626; }
+
+/**********************************************
+	CONTENT DECLARATIONS 
+**********************************************/
+/* line 1, ../sass/_content.scss */
+#content-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 0 200px 0;
+  overflow: auto;
+  z-index: 6; }
+
+/*Home Page*/
+/* line 1, ../sass/_page-home.scss */
+.focal-point {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -o-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0; }
+
+/* line 10, ../sass/_page-home.scss */
+.focal-point.single {
+  background-color: black; }
+
+/* line 13, ../sass/_page-home.scss */
+.focal-point-item {
+  overflow: visible;
+  position: relative;
+  float: left;
+  width: 100%; }
+
+/* line 19, ../sass/_page-home.scss */
+.focal-point.single .focal-point-item {
+  /* ghetto fix for some odd margins showing up around the focal-point-item img */
+  margin: -2px 0 -6px 0; }
+
+/* line 23, ../sass/_page-home.scss */
+.focal-point.multiple .focal-point-item {
+  margin: 0 2% 15px 0; }
+
+/* line 26, ../sass/_page-home.scss */
+.focal-point.multiple .focal-point-item {
+  width: 48%; }
+
+/* line 29, ../sass/_page-home.scss */
+.focal-point.multiple .focal-point-item img {
+  width: 100%; }
+
+/* line 32, ../sass/_page-home.scss */
+.focal-point-text {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding: 72px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0; }
+
+/* line 39, ../sass/_page-home.scss */
+.focal-point-text.bottom {
+  bottom: -20px; }
+
+/* line 42, ../sass/_page-home.scss */
+.focal-point-text h1 {
+  width: 100%;
+  margin: 0 0 25px 0; }
+
+/* line 46, ../sass/_page-home.scss */
+.focal-point-text h1.right {
+  text-align: right; }
+
+/* line 49, ../sass/_page-home.scss */
+.focal-point-text h1 span {
+  padding: 0px 10px 0px 10px;
+  color: white;
+  font: 1.3em/1em "DINNextLTPro";
+  background-color: rgba(0, 0, 0, 0.6); }
+
+/* line 55, ../sass/_page-home.scss */
+.focal-point-text h1.small span {
+  font-size: 0.7em; }
+
+/* line 58, ../sass/_page-home.scss */
+.focal-point-image {
+  position: relative;
+  /*width: 100% ;*/
+  width: auto;
+  height: 500px;
+  /*min-height: 500px ;
+  max-height: 500px ;*/ }
+
+/*blogroll*/
+/* line 69, ../sass/_page-home.scss */
+.sub-content-wrapper {
+  width: 100%;
+  padding: 0 0 0 72px;
+  /* The right padding should be 72 when below a certain screen width - media_query  - also needed for the single work */
+  position: relative; }
+
+/* line 75, ../sass/_page-home.scss */
+.sub-content-wrapper.single-work, .sub-content-wrapper.brandnew {
+  padding-right: 72px; }
+
+/* line 78, ../sass/_page-home.scss */
+.sub-content-wrapper.homepage {
+  -o-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0; }
+
+/* line 86, ../sass/_page-home.scss */
+.sub-content-wrapper.about .about-wrapper {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 25px;
+  margin-top: 72px; }
+
+/* line 93, ../sass/_page-home.scss */
+.sub-content-wrapper h5 {
+  font-size: 33px;
+  float: left;
+  display: block;
+  padding: 0px;
+  line-height: 1em;
+  font-weight: normal !important; }
+
+/* line 101, ../sass/_page-home.scss */
+.sub-content-wrapper h5.intro {
+  font-family: "DINNextLTProMedium"; }
+
+/* line 105, ../sass/_page-home.scss */
+.call-out-section {
+  float: left; }
+
+/* line 108, ../sass/_page-home.scss */
+#renews {
+  width: 680px;
+  margin-right: 20px; }
+
+/* line 112, ../sass/_page-home.scss */
+.renews-title {
+  position: relative;
+  float: left; }
+
+/* line 116, ../sass/_page-home.scss */
+#blog-feed {
+  float: left; }
+
+/* line 119, ../sass/_page-home.scss */
+.blog-roll-container {
+  float: left;
+  margin-bottom: 23px; }
+
+/* line 123, ../sass/_page-home.scss */
+.blog-roll-preview {
+  float: left;
+  height: 125px; }
+
+/* line 127, ../sass/_page-home.scss */
+.blog-roll-thumbnail {
+  width: 360px;
+  float: left; }
+
+/* line 131, ../sass/_page-home.scss */
+.blog-roll-thumbnail img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: all 0.2s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.2s linear 0;
+  -o-transition: all 0.2s linear 0;
+  transition: all 0.2s linear 0; }
+
+/* line 135, ../sass/_page-home.scss */
+.blog-roll-container:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+/* line 138, ../sass/_page-home.scss */
+.blog-roll-excerpt {
+  width: 300px;
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 0px; }
+
+/* line 144, ../sass/_page-home.scss */
+.blog-roll-excerpt p {
+  font: 1.17em/1.1em Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #666666;
+  margin: 0px;
+  padding: 0px; }
+
+/* line 151, ../sass/_page-home.scss */
+.blog-roll-excerpt h1 {
+  margin-top: -2px;
+  line-height: 0.2em; }
+
+/* line 155, ../sass/_page-home.scss */
+.blog-roll-excerpt h1 a {
+  font: 0.5em/0.7em "DINNextLTProMedium";
+  color: black; }
+
+/* line 159, ../sass/_page-home.scss */
+.blog-roll-toggle {
+  position: relative;
+  overflow: auto;
+  cursor: pointer; }
+
+/* line 168, ../sass/_page-home.scss */
+.blog-roll-toggle .arrow {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  float: left;
+  background-color: #999999;
+  -webkit-transition: all 0.2s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.2s linear 0;
+  -o-transition: all 0.2s linear 0;
+  transition: all 0.2s linear 0; }
+
+/* line 176, ../sass/_page-home.scss */
+.blog-roll-toggle .arrow div {
+  width: 18px;
+  height: 18px; }
+
+/* line 180, ../sass/_page-home.scss */
+.blog-roll-toggle.inactive .arrow div {
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -508px no-repeat; }
+
+/* line 183, ../sass/_page-home.scss */
+.blog-roll-toggle.inactive:hover .arrow {
+  background-color: #666666; }
+
+/* line 187, ../sass/_page-home.scss */
+.blog-roll-toggle.active .arrow div {
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -541px no-repeat; }
+
+/* line 190, ../sass/_page-home.scss */
+.blog-roll-toggle.active .arrow {
+  background-color: #666666; }
+
+/* line 193, ../sass/_page-home.scss */
+.blog-roll-toggle.active:hover .arrow {
+  background-color: #666666; }
+
+/* line 197, ../sass/_page-home.scss */
+.blog-roll-toggle .text {
+  height: 18px;
+  padding: 2px 5px 0 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 11px;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  -webkit-transition: all 0.2s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.2s linear 0;
+  -o-transition: all 0.2s linear 0;
+  transition: all 0.2s linear 0; }
+
+/* line 206, ../sass/_page-home.scss */
+.blog-roll-toggle.inactive .text {
+  color: white;
+  background-color: #999999; }
+
+/* line 210, ../sass/_page-home.scss */
+.blog-roll-toggle.inactive:hover .text {
+  color: #c2c2c2;
+  background-color: #666666; }
+
+/* line 214, ../sass/_page-home.scss */
+.blog-roll-toggle.active .text {
+  color: white;
+  background-color: #666666; }
+
+/* line 218, ../sass/_page-home.scss */
+.blog-roll-toggle.active:hover .text {
+  color: #c2c2c2; }
+
+/* line 221, ../sass/_page-home.scss */
+.blog-roll-text {
+  position: relative;
+  float: left;
+  overflow: auto;
+  color: #333333;
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  line-height: 1.2em;
+  display: none;
+  padding-bottom: 20px;
+  width: 655px; }
+
+/* line 232, ../sass/_page-home.scss */
+.blog-roll-text img {
+  padding: 25px 25px 25px 0; }
+
+/* line 235, ../sass/_page-home.scss */
+#brandnew-callout {
+  width: 360px;
+  float: left;
+  margin-bottom: 35px;
+  margin-right: 20px; }
+
+/* line 241, ../sass/_page-home.scss */
+#brandnew-callout img {
+  width: 359px;
+  height: auto;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: all 0.2s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.2s linear 0;
+  -o-transition: all 0.2s linear 0;
+  transition: all 0.2s linear 0; }
+
+/* line 247, ../sass/_page-home.scss */
+#brandnew-callout:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+/* RE:SOCIAL Column */
+/* line 254, ../sass/_page-home.scss */
+#resocial {
+  width: 520px;
+  float: left;
+  margin-top: 0px;
+  margin-right: 20px;
+  overflow: auto; }
+
+/* line 265, ../sass/_page-home.scss */
+.resocial-title {
+  position: relative;
+  float: left; }
+
+/* line 269, ../sass/_page-home.scss */
+.twitter-tweets {
+  width: 100%;
+  margin: 0px 0 10px 0px; }
+
+/* line 273, ../sass/_page-home.scss */
+.tweet {
+  width: 100%;
+  overflow: auto;
+  margin: 0 0 15px 0;
+  line-height: 130%;
+  font-family: "DINNextLTPro"; }
+
+/* line 280, ../sass/_page-home.scss */
+.twitpic {
+  float: right;
+  width: 15px;
+  height: 14px;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -429px no-repeat; }
+
+/* line 290, ../sass/_page-home.scss */
+.retweet {
+  float: right;
+  width: 18px;
+  height: 14px;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -527px no-repeat; }
+
+/* line 296, ../sass/_page-home.scss */
+.tweet a {
+  color: #0084b4; }
+
+/* line 299, ../sass/_page-home.scss */
+.tweet .at-symbol {
+  color: #7fc2dd; }
+
+/* line 302, ../sass/_page-home.scss */
+.tweet-by {
+  color: black;
+  font-weight: bold; }
+
+/* line 306, ../sass/_page-home.scss */
+p.tweet-text {
+  float: left;
+  color: black;
+  width: 80%; }
+
+/* line 311, ../sass/_page-home.scss */
+img.tweet-profile-image {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 48px;
+  height: 48px; }
+
+/* line 317, ../sass/_page-home.scss */
+.tweet em {
+  color: #999999; }
+
+/* Page Masthead */
+/* line 1, ../sass/_masthead.scss */
+.page-masthead {
+  position: relative;
+  padding: 72px 0 0 0;
+  width: 100%;
+  height: 130px;
+  text-transform: lowercase; }
+
+/* line 9, ../sass/_masthead.scss */
+.page-masthead.pica-work-taxonomy {
+  width: 91%; }
+
+/* line 12, ../sass/_masthead.scss */
+.page-masthead.single-work {
+  width: 94%; }
+
+/* Used on the contact page */
+/* line 17, ../sass/_masthead.scss */
+body.content-bleed .page-masthead {
+  margin-top: 40px;
+  margin-left: 72px; }
+
+/* line 21, ../sass/_masthead.scss */
+.page-title {
+  float: left;
+  padding: 20px 0 0 0;
+  margin: 0px;
+  display: block;
+  position: relative; }
+
+/* line 28, ../sass/_masthead.scss */
+.page-title h1 {
+  float: left;
+  padding: 0px;
+  display: inline;
+  color: #666666; }
+
+/* line 34, ../sass/_masthead.scss */
+.page-title h1 a {
+  font-size: 48px;
+  font-weight: normal;
+  font-family: "DINNextLTPro";
+  color: black; }
+
+/* line 40, ../sass/_masthead.scss */
+.page-title h1 a:hover {
+  text-decoration: underline; }
+
+/* line 43, ../sass/_masthead.scss */
+.dot-seperator {
+  width: 13px;
+  height: 48px;
+  margin: 8px 15px 0px 15px;
+  display: block;
+  position: relative;
+  float: left; }
+
+/* line 51, ../sass/_masthead.scss */
+.dot-seperator .dot-image {
+  width: 13px;
+  height: 12px;
+  margin-top: 15px;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -496px no-repeat; }
+
+/* line 57, ../sass/_masthead.scss */
+.page-title h2 {
+  float: left;
+  font-size: 48px;
+  color: #666666;
+  padding: 0px;
+  display: inline; }
+
+/* line 65, ../sass/_masthead.scss */
+.page-controller {
+  position: relative;
+  float: right;
+  color: #333333;
+  padding: 20px 0 0 0;
+  margin: 5px 0 0 0;
+  font-family: "DINNextLTProMedium";
+  font-size: 16px; }
+
+/* line 75, ../sass/_masthead.scss */
+.sub-content-wrapper.blog-header.single .page-controller {
+  margin-top: 20px; }
+
+/* WORK TAXONOMY */
+/* line 80, ../sass/_masthead.scss */
+.work-category-wrapper {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 89, ../sass/_masthead.scss */
+.work-category-wrapper.active {
+  width: auto; }
+
+/* line 92, ../sass/_masthead.scss */
+.work-category-inner-wrapper {
+  height: 25px;
+  /* The width for this container is set via jQuery on page load - ugly but works crossbrowser */ }
+
+/* line 96, ../sass/_masthead.scss */
+.work-category-trigger {
+  float: left;
+  /*display: inline-block ;*/
+  width: 25px;
+  height: 25px;
+  background-color: #333333;
+  padding-top: 5px;
+  -o-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  font-family: "DINNextLTProMedium" !important; }
+
+/* line 111, ../sass/_masthead.scss */
+.work-category-link {
+  margin: 6px;
+  float: left; }
+
+/* line 115, ../sass/_masthead.scss */
+.work-category-link a {
+  display: block;
+  font-family: "DINNextLTProMedium" !important; }
+
+/* SINGLE WORK */
+/* line 122, ../sass/_masthead.scss */
+#work-testimonial {
+  float: left;
+  position: relative;
+  overflow: visible;
+  margin: 5px 0 0 0; }
+
+/* line 128, ../sass/_masthead.scss */
+#work-testimonial-trigger {
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+  background-color: #666666;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+/* line 138, ../sass/_masthead.scss */
+#work-testimonial-trigger:hover {
+  background-color: #7a7a7a; }
+
+/* line 141, ../sass/_masthead.scss */
+#work-testimonial-trigger.active {
+  background-color: #666666; }
+
+/* line 145, ../sass/_masthead.scss */
+#work-testimonial-trigger a {
+  color: white;
+  text-align: center; }
+
+/* line 149, ../sass/_masthead.scss */
+#work-testimonial-copy {
+  position: absolute;
+  width: 650px;
+  top: 0;
+  right: 33px;
+  z-index: 999999999;
+  background-color: #666666;
+  padding: 20px;
+  color: white;
+  text-transform: none;
+  text-align: left;
+  display: none;
+  box-shadow: 7px 7px 0px rgba(102, 102, 102, 0.7);
+  outline: none; }
+
+/* line 164, ../sass/_masthead.scss */
+#work-testimonial-copy p {
+  color: white;
+  text-transform: none;
+  text-align: left; }
+
+/* line 169, ../sass/_masthead.scss */
+#work-testimonial-copy em {
+  font-style: normal; }
+
+/* line 175, ../sass/_masthead.scss */
+.page-controller .back-to {
+  float: left; }
+
+/* line 178, ../sass/_masthead.scss */
+.page-controller .back-arrow {
+  position: relative;
+  float: left;
+  display: block;
+  width: 13px;
+  height: 11px;
+  margin: 1px 10px 0 0;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -485px no-repeat; }
+
+/* line 187, ../sass/_masthead.scss */
+.page-controller .back-text {
+  position: relative;
+  float: left;
+  display: block; }
+
+/* Contact Page */
+/* line 1, ../sass/_page-contact.scss */
+.call-to-action {
+  position: relative;
+  margin: 24px 0 0 0px;
+  background-color: #666666;
+  padding: 24px;
+  min-width: 360px;
+  max-width: 1052px;
+  /* 1100 - (24px padding * 2) = 1052 */
+  clear: left;
+  overflow: auto; }
+
+/* line 11, ../sass/_page-contact.scss */
+.call-to-action-column {
+  min-width: 200px;
+  max-width: 360px;
+  display: block;
+  float: left;
+  position: relative;
+  color: white;
+  margin: 0 50px 25px 0; }
+
+/* line 20, ../sass/_page-contact.scss */
+.call-to-action-column, .call-to-action-column a {
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  font-weight: normal; }
+
+/* line 26, ../sass/_page-contact.scss */
+.call-to-action-column a:hover {
+  text-decoration: underline; }
+
+/* Portfolio Pages */
+/* 
+	.gallery contains the gallery on the page
+	It has an overflow of visible to display the gallery controls 
+	They are absolutely positioned outside of the .gallery container
+*/
+/* line 6, ../sass/_portfolio.scss */
+.content-gallery {
+  position: relative;
+  overflow: visible;
+  max-width: 1130px !important;
+  max-height: 650px !important; }
+  /* line 12, ../sass/_portfolio.scss */
+  .content-gallery .loading-bar {
+    max-width: 1130px;
+    background-color: #cccccc; }
+    /* line 15, ../sass/_portfolio.scss */
+    .content-gallery .loading-bar .loaded {
+      background-color: #5f6062;
+      height: 5px;
+      width: 0px;
+      max-width: 100%; }
+
+/* line 23, ../sass/_portfolio.scss */
+.content-gallery.grid {
+  max-width: 100% !important;
+  max-height: auto !important; }
+
+/* line 27, ../sass/_portfolio.scss */
+.gallery {
+  position: relative;
+  padding: 0px !important;
+  overflow: visible;
+  /*
+  width: 1106px ;
+  height: 650px ;
+  */ }
+
+/* 
+	Gallery items are displayed in varrying formats
+	The only binding characteristic is that a 'gallery':
+		1) is used to display multiple items in a singular format 
+*/
+/* line 43, ../sass/_portfolio.scss */
+.gallery-item.large {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 650px !important;
+  margin: 0px; }
+
+/* line 49, ../sass/_portfolio.scss */
+.gallery-item.small {
+  width: 100px !important;
+  height: 100px !important;
+  float: left;
+  padding: 10px; }
+
+/* Gallery Items can be composed of text / html */
+/* line 56, ../sass/_portfolio.scss */
+.gallery-item.large.text-slide {
+  /* These are fallback values!! The real colors are set inline with php */
+  background-color: #666666;
+  color: white; }
+
+/* line 61, ../sass/_portfolio.scss */
+.gallery-item.large.text-slide div {
+  height: 90%;
+  width: 90%;
+  margin: 50px;
+  z-index: 1;
+  /*font-size: 48px ;*/
+  font-family: "DINNextLTPro";
+  line-height: 1em; }
+
+/* line 70, ../sass/_portfolio.scss */
+.gallery-item.large.text-slide div a {
+  font: inherit;
+  color: inherit;
+  text-decoration: underline; }
+
+/* Gallery items can be images */
+/* line 77, ../sass/_portfolio.scss */
+.gallery-item.large {
+  display: none; }
+
+/* line 80, ../sass/_portfolio.scss */
+.gallery-item.large img {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 650px !important;
+  margin: 0px;
+  z-index: 1; }
+
+/* Gallery navigation for large slide-based galleries */
+/* line 92, ../sass/_portfolio.scss */
+.gallery-prev, .gallery-next {
+  display: none;
+  /* These will be activated via jQuery on page load to give a nice fadeIn effect */
+  width: 67px;
+  height: 82px;
+  position: absolute;
+  z-index: 1000;
+  top: 225px; }
+
+/* line 100, ../sass/_portfolio.scss */
+.gallery-prev {
+  left: -32px;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -241px no-repeat; }
+
+/* line 104, ../sass/_portfolio.scss */
+.gallery-prev:hover {
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -30px no-repeat; }
+
+/* line 107, ../sass/_portfolio.scss */
+.gallery-next {
+  right: -31px;
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -323px no-repeat; }
+
+/* line 111, ../sass/_portfolio.scss */
+.gallery-next:hover {
+  background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -159px no-repeat; }
+
+/* Gallery items can be displayed in a grid - used on the taxonomy-pica_work_type page */
+/* line 117, ../sass/_portfolio.scss */
+.gallery-item.in-grid {
+  position: relative;
+  width: 340px;
+  height: 244px;
+  background-color: #939598;
+  margin: 0 28px 28px 0;
+  float: left;
+  overflow: hidden; }
+
+/* line 126, ../sass/_portfolio.scss */
+.gallery-item.in-grid a.link-fill-container, .gallery-item.in-grid .twitpic a, .twitpic .gallery-item.in-grid a {
+  position: absolute;
+  font-size: 42px;
+  line-height: 130%;
+  color: white;
+  font-family: "DINNextLTPro"; }
+
+/* line 133, ../sass/_portfolio.scss */
+.gallery-item.in-grid .work-item-title {
+  position: absolute;
+  z-index: 1;
+  margin: 32px;
+  font-size: 42px;
+  line-height: 130%;
+  color: white;
+  font-family: "DINNextLTPro"; }
+
+/* line 142, ../sass/_portfolio.scss */
+.gallery-item.in-grid img {
+  display: none;
+  position: absolute;
+  z-index: 5; }
+
+/* Clients Page */
+/* line 1, ../sass/_page-clients.scss */
+.client-grid {
+  overflow: auto;
+  padding: 0px;
+  width: 100%;
+  margin-left: -15px; }
+
+/* line 7, ../sass/_page-clients.scss */
+.client {
+  float: left;
+  margin: 0 73px 73px 0; }
+
+/* line 12, ../sass/_page-clients.scss */
+.work-image {
+  width: 50%;
+  margin-right: 20px; }
+
+/* Brand New Page */
+/* line 1, ../sass/_page-brand-new.scss */
+.brandnew-post {
+  border-bottom: 2px dashed #999999;
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
+
+/* line 6, ../sass/_page-brand-new.scss */
+.sub-content-wrapper .brandnew-post:last-child {
+  border-bottom: 0px; }
+
+/* line 9, ../sass/_page-brand-new.scss */
+.brandnew-attachment {
+  margin: 0px;
+  margin: 0 0 20px 0; }
+
+/* line 13, ../sass/_page-brand-new.scss */
+.attachment-image {
+  float: left;
+  width: 70%;
+  max-width: 747px;
+  margin: 0 20px 0 0; }
+
+/* line 19, ../sass/_page-brand-new.scss */
+.attachment-description {
+  float: left;
+  width: 27.5%; }
+
+/* line 23, ../sass/_page-brand-new.scss */
+.attachment-description h1 {
+  font-size: 1.5em;
+  line-height: 1.1em;
+  margin: 2px 0 0 0; }
+
+/* line 28, ../sass/_page-brand-new.scss */
+.attachment-description h1 strong {
+  font-family: "DINNextLTProMedium"; }
+
+/* line 33, ../sass/_page-brand-new.scss */
+.attachment-description > strong {
+  color: black;
+  display: block;
+  font-family: "DINNextLTPro";
+  font-weight: normal;
+  margin: 10px 0 10px 0;
+  font-size: 1.3em; }
+
+/*.attachment-description p {
+	color: rgb(102,102,102) ;
+	font: 1.1em/1.1em Georgia, "Times New Roman", Times, serif ;
+}*/
+/* About Page */
+/* line 1, ../sass/_page-about.scss */
+.about-wrapper {
+  overflow: auto; }
+
+/* line 6, ../sass/_page-about.scss */
+.about-content h1 {
+  font-size: 1.8em; }
+
+/* line 9, ../sass/_page-about.scss */
+.about-content table {
+  margin-top: 50px;
+  width: 86%; }
+
+/* line 13, ../sass/_page-about.scss */
+.about-content td {
+  padding-right: 25px;
+  line-height: 1.3em;
+  /*width: 180px ;*/ }
+
+/* line 19, ../sass/_page-about.scss */
+.about-employee-profile {
+  overflow: auto;
+  margin: 50px 0 50px 0; }
+
+/* line 23, ../sass/_page-about.scss */
+.employee-profile {
+  float: left;
+  width: 16%;
+  margin: 0 25px 0 0; }
+
+/* line 28, ../sass/_page-about.scss */
+.employee-profile .employee-photo {
+  margin: 0 5px 5px 0;
+  width: 100%;
+  height: auto; }
+
+/* Blog Pages */
+/* line 1, ../sass/_blog.scss */
+.sub-content-wrapper.blog-header .page-masthead {
+  text-transform: none;
+  line-height: 1em;
+  padding-right: 72px; }
+
+/* line 6, ../sass/_blog.scss */
+.sub-content-wrapper.single .page-masthead h1 {
+  width: 600px;
+  line-height: 1em;
+  float: left; }
+
+/* line 12, ../sass/_blog.scss */
+.sub-content-wrapper .blog-wrapper {
+  overflow: auto;
+  padding: 25px;
+  background-color: #eeeeee; }
+
+/* line 17, ../sass/_blog.scss */
+.single .blog-wrapper {
+  /*width: 70% ;*/
+  width: 840px; }
+
+/* line 21, ../sass/_blog.scss */
+.blog-posts {
+  width: 840px;
+  float: left;
+  margin-bottom: 50px; }
+
+/* line 26, ../sass/_blog.scss */
+.single .blog-posts {
+  width: 100%; }
+
+/* line 29, ../sass/_blog.scss */
+.blog-post {
+  margin-bottom: 50px;
+  padding-top: 3px; }
+
+/* line 33, ../sass/_blog.scss */
+.single .blog-post {
+  margin-bottom: 0px; }
+
+/* line 36, ../sass/_blog.scss */
+.blog-post .post-thumbnail {
+  float: left;
+  margin: 0 10px 10px 0; }
+
+/* line 40, ../sass/_blog.scss */
+.blog-post-date {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 4px;
+  margin-right: 10px;
+  background-color: #dddddd;
+  text-align: center; }
+
+/* line 49, ../sass/_blog.scss */
+.blog-post-date .month {
+  font-size: 15px;
+  display: block;
+  margin-top: 4px; }
+
+/* line 54, ../sass/_blog.scss */
+.blog-post-date .year {
+  font-size: 18px;
+  display: block;
+  margin-top: 4px; }
+
+/* line 60, ../sass/_blog.scss */
+.single .blog-post-date {
+  background-color: #eeeeee; }
+
+/* line 64, ../sass/_blog.scss */
+.blog-post-title a {
+  font-size: 18px;
+  line-height: 1.3em;
+  color: #323232; }
+
+/* line 70, ../sass/_blog.scss */
+.blog-post-content {
+  float: left;
+  width: 660px; }
+  /* line 75, ../sass/_blog.scss */
+  .blog-post-content .blog-post-gallery img {
+    margin: 0 10px 10px 0; }
+
+/* line 83, ../sass/_blog.scss */
+ol.commentlist {
+  margin: 0;
+  padding: 0; }
+
+/* line 87, ../sass/_blog.scss */
+ol.commentlist li {
+  list-style: none;
+  margin: 0 0 30px 0;
+  overflow: auto;
+  border-bottom: 2px dashed #c5c5c5; }
+
+/* line 93, ../sass/_blog.scss */
+.comment-author {
+  float: left;
+  width: 200px;
+  overflow: auto; }
+
+/* line 98, ../sass/_blog.scss */
+.comment-author-left-column {
+  float: left; }
+
+/* line 101, ../sass/_blog.scss */
+.comment-author .avatar {
+  margin: 0 15px 0 0; }
+
+/* line 104, ../sass/_blog.scss */
+.comment-author-right-column {
+  float: left; }
+
+/* line 108, ../sass/_blog.scss */
+.comment-body {
+  float: left;
+  width: 575px; }
+
+/* line 114, ../sass/_blog.scss */
+.blog-sidebar {
+  width: 22%;
+  float: right; }
+
+/* line 118, ../sass/_blog.scss */
+.blog-sidebar ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 122, ../sass/_blog.scss */
+.blog-sidebar ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 129, ../sass/_blog.scss */
+.blog-sidebar ul li:hover a, li.current-cat a {
+  text-decoration: underline; }
+
+/* line 133, ../sass/_blog.scss */
+.older-posts-link {
+  float: left; }
+
+/* line 136, ../sass/_blog.scss */
+.older-posts-link a:hover {
+  text-decoration: underline; }
+
+/* line 139, ../sass/_blog.scss */
+.newer-posts-link {
+  float: right; }
+
+/* line 142, ../sass/_blog.scss */
+.newer-posts-link a:hover {
+  text-decoration: underline; }
+
+/* Widgets */
+/* line 3, ../sass/_widgets.scss */
+.widget.similar-blog-posts img {
+  width: 100%; }
+
+/**********************************************
+	FOOTER DECLARATIONS 
+**********************************************/
+/*********** BACK TO TOP ******************/
+/* line 2, ../sass/_footer.scss */
+.back-to-top {
+  position: fixed;
+  z-index: 10;
+  bottom: 0px;
+  right: 30px;
+  padding: 5px;
+  background-color: #666666;
+  color: white;
+  font-size: 14px;
+  display: none;
+  cursor: pointer; }
+
+/* line 14, ../sass/_footer.scss */
+.back-to-top.active {
+  display: block; }
+
+/*********** Footer ******************/
+/* line 19, ../sass/_footer.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 7;
+  left: 72px;
+  width: 90%;
+  padding-bottom: 72px;
+  font-family: "DINNextLTPro";
+  font-size: 20px;
+  color: #666666;
+  overflow: auto; }
+  /* line 31, ../sass/_footer.scss */
+  footer a {
+    font-family: "DINNextLTPro";
+    font-size: 20px;
+    color: #666666;
+    text-decoration: none; }
+    /* line 37, ../sass/_footer.scss */
+    footer a:hover {
+      text-decoration: underline; }
+  /* line 41, ../sass/_footer.scss */
+  footer .pica-mark-small {
+    position: relative;
+    display: block;
+    float: left;
+    background: url('//dev.pica.is/pica/wp-content/themes/pica/images/assets-s63bbb7e66a.png') 0 -405px no-repeat;
+    width: 24px;
+    height: 24px;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -o-opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7; }
+  /* line 57, ../sass/_footer.scss */
+  footer:hover .pica-mark-small {
+    -o-opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1; }
+  /* line 64, ../sass/_footer.scss */
+  footer .footer-copy {
+    overflow: hidden;
+    width: 0px; }
+  /* line 68, ../sass/_footer.scss */
+  footer span {
+    position: relative;
+    display: block;
+    float: left;
+    margin-top: 6px;
+    width: 700px;
+    height: 24px; }
+
+/**********************************************
+	SLIMBOX DECLARATIONS 
+**********************************************/
+/*********************************************
+WP & JQUERY PLUGINS
+*********************************************/
+/* SLIMBOX */
+/* line 5, ../sass/_slimbox.scss */
+#lbOverlay {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  cursor: pointer; }
+
+/* line 16, ../sass/_slimbox.scss */
+#lbCenter, #lbBottomContainer {
+  position: absolute;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: #fff; }
+
+/* line 23, ../sass/_slimbox.scss */
+.lbLoading {
+  background: white url(http://pica.is/wp-content/themes/pica/images/slimbox/loading.gif) no-repeat center; }
+
+/* line 27, ../sass/_slimbox.scss */
+#lbImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid #fff;
+  background-repeat: no-repeat; }
+
+/* line 35, ../sass/_slimbox.scss */
+#lbPrevLink, #lbNextLink {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  outline: none; }
+
+/* line 43, ../sass/_slimbox.scss */
+#lbPrevLink {
+  left: 0; }
+
+/* line 47, ../sass/_slimbox.scss */
+#lbPrevLink:hover {
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/prevlabel.gif) no-repeat 0 15%; }
+
+/* line 51, ../sass/_slimbox.scss */
+#lbNextLink {
+  right: 0; }
+
+/* line 55, ../sass/_slimbox.scss */
+#lbNextLink:hover {
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/nextlabel.gif) no-repeat 100% 15%; }
+
+/* line 59, ../sass/_slimbox.scss */
+#lbBottom {
+  font-family: "DINNextLTPro", Arial, Geneva, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.4em;
+  text-align: left;
+  border: 10px solid #fff;
+  border-top-style: none; }
+
+/* line 69, ../sass/_slimbox.scss */
+#lbCloseLink {
+  display: block;
+  float: right;
+  width: 66px;
+  height: 22px;
+  background: transparent url(http://pica.is/wp-content/themes/pica/images/slimbox/closelabel.gif) no-repeat center;
+  margin: 5px 0;
+  outline: none; }
+
+/* line 79, ../sass/_slimbox.scss */
+#lbCaption, #lbNumber {
+  margin-right: 71px; }
+
+/* line 83, ../sass/_slimbox.scss */
+#lbCaption {
+  font-weight: bold; }
