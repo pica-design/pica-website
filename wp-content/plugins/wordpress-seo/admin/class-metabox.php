@@ -705,6 +705,7 @@ if ( ! class_exists( 'WPSEO_Metabox' ) ) {
 			if ( $pagenow == 'edit.php' ) {
 				wp_enqueue_style( 'edit-page', plugins_url( 'css/edit-page' . WPSEO_CSSJS_SUFFIX . '.css', WPSEO_FILE ), array(), WPSEO_VERSION );
 			} else {
+				wp_enqueue_media(); // enqueue files needed for upload functionality
 				wp_enqueue_style( 'metabox-tabs', plugins_url( 'css/metabox-tabs' . WPSEO_CSSJS_SUFFIX . '.css', WPSEO_FILE ), array(), WPSEO_VERSION );
 				wp_enqueue_style( "metabox-$color", plugins_url( 'css/metabox-' . esc_attr( $color ) . WPSEO_CSSJS_SUFFIX . '.css', WPSEO_FILE ), array(), WPSEO_VERSION );
 
@@ -979,7 +980,7 @@ if ( ! class_exists( 'WPSEO_Metabox' ) ) {
 
 			$new_where = preg_replace( $find, $replace, $where );
 
-			if( $new_where ) {
+			if ( $new_where ) {
 				return $new_where;
 			}
 			else {

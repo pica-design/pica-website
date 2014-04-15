@@ -12,11 +12,11 @@
 	add_theme_support( 'post-thumbnails', array('post', 'page', 'pica_work', 'pica_brandnew'));
 	//Set our post thumbnail image dimensions
 	set_post_thumbnail_size( 360, 244, true ); // Normal post thumbnails
-	//Add our extra-large image size for media uploads
-	add_image_size( 'homepage', 2560, 500, true );
-	add_image_size( 'brandnew_callout', 329, 266, true);
-	add_image_size( 'blogroll', 355, 125, true);
-	add_image_size( 'portfolio', 1130, 650, true);
+	add_image_size( 'Homepage Hero', 2560, 500, true );
+	add_image_size( 'Homepage Brand New', 329, 266, true);
+	add_image_size( 'Homepage Blogroll', 355, 125, true);
+	add_image_size( 'Large Uncropped', 747, 1200, false);
+	add_image_size( 'Lightbox', 900, 900, true);
 	
 	/* Adding custom attachment fields */
 	add_filter("attachment_fields_to_edit", array('Post_Attachments', 'edit_attachment_fields'), 10, 2);
@@ -34,7 +34,7 @@
 	class Post_Attachments {
 		public static function add_attachments_to_post ($post) {
 			//Load in any post attachments we'll need (images, documents, ..)
-            $post->attachments = Post_Attachments::fetch($post->ID, 'rand', 'ASC');
+            $post->attachments = Post_Attachments::fetch($post->ID, 'menu_order', 'ASC');
 
             return array($post);
 		}
@@ -99,6 +99,7 @@
 					)
 				), ARRAY_A
 			);
+			
 			//Make the attachments object a little cleaner by only using the data we want, the posts.
 			//This also ensures our ->attachments variable holds and array (so we can easily display a random attachment on the website homepage
 			$attachments = $attachments->posts;
@@ -118,6 +119,7 @@
 				//Some of our meta data needs to be unserialized for use to user it
 				$attachment->meta_data['_wp_attachment_metadata'] = @unserialize($attachment->meta_data['_wp_attachment_metadata'][0]);
 			endforeach;
+			
 
 			//Remove the array indecies (they do not help us)
 			return array_values($attachments);

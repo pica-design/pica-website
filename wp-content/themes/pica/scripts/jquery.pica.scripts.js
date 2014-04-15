@@ -262,8 +262,15 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 	
 	if (post_type == "pica_work") {
 		//This applies to both the taxonomy overview page and the single post type page
-		$('.page-title h1').scrollHere(-50)
+		//$('.page-title h1').scrollHere(-50)
+		
 		if (single) {
+			/*
+
+			//commented out the following on 4/2/2014 - James M 
+			//initially we displayed a large slideshow on the single work page
+			//now its just a list of images w/ text
+
 			function SetHeightToTallestChild(i) {
 				//Grab the height of the first gallery item with an image child (the height should be correct)
 				imageParent = $(i).find('figure.gallery-item:first')
@@ -337,6 +344,7 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 				})
 				
 			}
+			*/
 			
 			//Display our testmonial when clicking the testimonial trigger icon
 			$('#work-testimonial-trigger a.link-fill-container').click(function(e){
@@ -371,6 +379,10 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 		}//END if single
 	}//END if post_type == work
 	
+	/**************************************************
+		Auto Scrolling
+	**************************************************/
+	/*
 	if (post_type == "pica_brandnew") {
 		//The url hash is set in the link on the homepage, by adding ! after the hash we can stop it and run our own smooth scroll to
 		if ($('a[name="' + window.location.hash + '"]').length == 1) {
@@ -387,4 +399,5 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 			$('.sub-content-wrapper').scrollHere(-50)
 		}
 	}
+	*/
 })(jQuery)
