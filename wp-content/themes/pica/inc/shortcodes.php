@@ -11,7 +11,7 @@
 			<?php $htmlStr = '<div class="clear"></div>';
 			      $htmlStr .= '<div class="about-employee-profile">';
 
-                    $pica_roles = array('principal', 'art_director', 'senior_web', 'junior_web', 'impact_architect'); ?>
+                    $pica_roles = array('principal', 'art_director', 'web_developer', 'impact_architect'); ?>
                     
                     <?php foreach($pica_roles as $role):?>
                         <?php $args = array(
